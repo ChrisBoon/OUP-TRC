@@ -1,25 +1,48 @@
-<div class="container">
-  <h2>My todos</h2>
+<div class="view view-home" ng-init="getWelcomeStatus()">
+  <div class="container">
 
-  <!-- Todos input -->
-  <form role="form" ng-submit="addTodo()">
-    <div class="row">
-      <div class="input-group">
-        <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
-        <span class="input-group-btn">
-          <input type="submit" class="btn btn-primary" value="Add">
-        </span>
+  <div class="welcome-message-section" ng-if="showWelcome">
+    <!--set as partial?-->
+    <div class="welcome-message-avatar welcome-message-avatar-opd"></div>
+      <div class="welcome-message-container">
+        <div class="welcome-message">
+          <p class="intro-line">Hi there! Welcome to the {{CourseName}} Teacher’s Resource Center.</p>
+          <p class="paragraph">Here you’ll find a wide variety of great materials to support your teaching. Whether you’re looking for lesson plans, resources for creating your own content, extra worksheets, or other teaching guides, we’ve got you covered. Blah blah blah have fun and all that.</p>
+        </div>
+        <div class="welcome-message-dismiss" ng-click="setWelcomeStatus()">Got it</div>
       </div>
     </div>
-  </form>
 
-  <!-- Todos list -->
-  <div ui-sortable ng-model="todos">
-    <p class="input-group" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
-      <input type="text" ng-model="todo" class="form-control">
-      <span class="input-group-btn">
-        <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
-      </span>
-    </p>
-  </div>
-</div>
+    <div class="browse-by-section">
+      <ul class ="browse-by-list">
+        <li class ="browse-by-list-item" ng-repeat="item in browseMethods">
+          <a ng-href="#/{{item.link}}">
+            <img class ="browse-by-icon" ng-src="{{item.imgSrc}}">
+            <div class="browse-by-text">
+              <h1 ng-class="item.class">{{item.title}}</h1>
+              <p class="browse-by-description">{{item.para}}</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="updates-section">
+      <h1 class="updates-section-h1">Updates</h1>
+      <ul class ="updates-list">
+        <li class ="updates-list-item" ng-repeat="item in updatesList">
+          <a class ="updates-list-item-link" ng-href="#/{{item.link}}">
+            <div class="updates-list-item-text">
+              <h1 class="updates-list-item-heading" ng-class="item.class">{{item.title}}</h1>
+              <p class="updates-list-item-description">{{item.para}}</p>
+            </div>
+            <p class="updates-list-item-date">Added {{item.date}}</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div><!--end .container-->
+
+</div><!-- end .view-home -->

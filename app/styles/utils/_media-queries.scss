@@ -1,0 +1,15 @@
+@mixin media-large(){
+	@include mq-morethan(1000px){
+		@content;
+	}
+}
+@mixin media-regUp(){
+	@include mq-morethan(700px){
+		@content;
+	}
+}
+@mixin media-small(){
+	@include mq-lessthan(701px){
+		@content;
+	}
+}

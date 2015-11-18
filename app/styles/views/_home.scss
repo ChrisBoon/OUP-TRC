@@ -1,0 +1,164 @@
+.view-home{
+	background-color: $c-trc-bg;
+}
+
+.welcome-message-section{
+	@include card($padding:$unit*2);
+	margin-top: $unit*2;
+	display: flex;
+	align-items: flex-start;
+}
+
+.welcome-message-avatar{
+	@include avatar($unit*10);
+	flex: 0 0 auto;
+	margin-right: $unit*2;
+	background-color: #aaa;//placeholder for img - course specific
+}
+.welcome-message-container{
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.welcome-message{
+	align-self: flex-start;
+}
+
+.welcome-message-dismiss{
+	@include button-basic($c-trc-accent-1);
+	margin-top: $unit;
+}
+
+
+//TODO: clean up and modularize 'browse-by' section
+.browse-by-section{
+	margin-top: $unit*4;
+}
+.browse-by-list{
+	display: flex;
+	@include media-small{
+		flex-direction: column;
+	}
+}
+.browse-by-list-item{
+	@include card($padding:0);
+	@include card-hover;
+	display: flex;
+	flex-direction: column;
+
+	@include media-regUp{
+		@include thumb-grid(3,16); //assumes 3 items -other courses may have more or less so may want to rewrite using flexbox, min and max sizes, and media queries.
+		.browse-by-text{
+			margin-top: $unit;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	@include media-small{
+		&:not(:first-child){
+			margin-top: $unit*2;
+		}
+	}
+	a{
+		padding:$unit*2;
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: column;
+		align-items: center;
+		@include media-small{
+			flex-direction: row;
+
+		}
+	}
+}
+.browse-by-text h1{
+	@include itemHeading;
+}
+
+.browse-by-icon{
+	width: 100%;
+	max-width: $unit*24;
+	height: auto;
+	border-radius:50%;
+	@include media-small{
+		max-width: $unit*10;
+		margin-right: $unit*2;
+	}
+}
+.browse-by-description{
+	@include textExplain;
+	@include media-regUp{
+		text-align: center;
+	}
+}
+
+.updates-section{
+	@include card($padding:0);
+	margin-top: $unit*4;
+	&-h1{
+		@include itemHeadingLight;
+		padding: $unit*2;
+	}
+}
+
+.updates-list-item{
+	border-top: 1px solid $c-line;
+	&-link{
+		display: flex;
+		align-items: center;
+		padding: $unit*2;
+		@include media-small{
+			flex-direction: column;
+			align-items: stretch;
+		}
+	}
+	&-text{
+		flex: 1 1 auto;
+	}
+	&-heading{
+		@include itemHeading;
+		&:after{
+			//if we use this elsewhere it should become a component
+			display: inline-block;
+			color: #fff;
+			border-radius: 4px;
+			font-weight: 400;
+			font-size: 0.75rem;
+			line-height: 1;
+			margin-left: 0.75em;
+			margin-top: 0.5em;
+			padding: 0.25em 1em;
+			text-transform: uppercase;
+			vertical-align: top;
+			letter-spacing: 0.05em;
+		}
+		&.new:after{
+			content:"new";
+			background-color: $c-new;
+		}
+		&.updated:after{
+			content:"updated";
+			background-color: $c-updated;
+		}
+	}
+	&-description{
+		@include textExplain;
+		@include fa-arrow-circle-right;
+		max-width: 40em;
+	}
+	&-date{
+		flex: 0 0 auto;
+		color: $c-light-text;
+		text-transform: uppercase;
+		font-weight: 300;
+		padding-left: $unit*2;
+		@include media-small{
+			padding-left: 0;
+			padding-top: $unit;
+			text-align: right;
+			line-height: 1;
+		}
+	}
+}

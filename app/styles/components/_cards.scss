@@ -1,0 +1,18 @@
+@mixin card($backgroundColor: #fff, $padding: $unit){
+  border-radius: 2px;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.3);
+  background-color: $backgroundColor;
+  padding: $padding;
+}
+@mixin card-hover{
+	transition: box-shadow 0.25s;
+	&:hover{
+		box-shadow: 0 5px 10px 0 rgba(0,0,0,0.4);
+	}
+}
+
+@mixin avatar($size){
+	width: $size;
+	height: $size;
+	border-radius: 50%;
+}

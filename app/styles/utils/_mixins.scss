@@ -1,0 +1,156 @@
+//when using bg-image to replace text:
+@mixin text-replace{
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+//shortcut for adding decorative pseudo element:
+@mixin before(){
+  position: relative;
+  &:before{
+    position: absolute;
+    display: block;
+    content: " ";
+    @content;
+  }
+}
+
+
+//switch from subpixel to full pixel smoothing in webkit - note this makes text too thin usually but can make white text on dark backgrounds look better at large sizes or bold weights:
+@mixin smooth-text{
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin user-select-none{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+//prevent tap highlight on touch devices:
+@mixin no-tap-color{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+//to add smooth scrolling in iOS to overflow elements:
+@mixin scroll{
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+//hover only on .no-touch (means modernizr is required or no over states will ever appear)
+@mixin hover(){
+  .no-touch &:not(.active):hover{
+    cursor: pointer;
+    @content;
+  }
+}
+
+//media queries
+@mixin mq-lessthan ($lt){
+  @media (max-width: $lt ){
+    @content;
+  }
+}
+@mixin mq-between (){
+  @media (min-width:XXXpx) and (max-width:XXXpx){
+    @content;
+  }
+}
+@mixin mq-morethan ($mt){
+  @media ( min-width:  $mt + 1 ){
+    @content;
+  }
+}
+@mixin mq-exact (){
+  @media ( width:  1200px ){
+    @content;
+  }
+}
+@mixin mq-morethanHeight ($mt){
+  @media ( min-height:  $mt + 1 ){
+    @content;
+  }
+}
+
+//basic transition
+@mixin transitionAll{ transition: all 0.2s;}
+
+
+
+//z-index stuff:
+@function z($layer) {
+  @if not map-has-key($z-layers, $layer) {
+    @warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+  }
+ 
+  @return map-get($z-layers, $layer);
+}
+$z-layers: (
+  "1":1,
+  "2":2,
+  "3":3,
+  "below":-1
+);
+
+//use to change styling depending on context relative to a parent.
+//eg - example below would add CAPS to span within anchor when anchor is hovered over:
+//  span{ 
+//    @include context('a','a:hover'){
+//      text-transform: uppercase;
+//    }
+@mixin context($old-context, $new-context) {
+  @at-root #{selector-replace(&, $old-context, $new-context)} {
+    @content;
+  }
+}
+
+//mixin to create a grid for thumbnails where width is maximum percentage to fill parent and gap is a pixel value (requires calc and border-box):
+
+//takes up to 3 parameters: number of columns (required), gap size in px (required), and whether left or right aligned (optional)
+@mixin thumb-grid($col,$gap,$align:left){
+  //number of spaces between columns is columns minus one:
+  $spaces: ( $col - 1);
+  //this is the number of pixels in total that need removing from 100% to get the gaps:
+  $totalSpace: $spaces * $gap;
+  //get gapless width by dividing 100 by number of columns then find out how much to reduce by dividing the total space required for gaps by the number of columns:
+  width: calc( #{100 / $col}% - #{$totalSpace / $col}px);
+  //set margin top on all thumbs to size of gap:
+  margin-top: #{$gap}px;
+  //set margin to left or right of each thumb to size of gap:
+  margin-#{$align}: #{$gap}px;
+  //use border-box model in case we wish to add padding to thumb:
+  box-sizing: border-box;
+  //remove margin from side of row of thumbs at the aligned edge:
+  &:nth-child(#{$col}n-#{$spaces}){
+    margin-#{$align}: 0;
+  }
+  //remove margin-top from top row of thumbs:
+  &:nth-child(-n+#{$col}){
+    margin-top: 0;
+  }
+  // * Consider refactoring margin rules to use :not selector rather than overwriting back to 0.
+}
+
+@mixin icon-bg($bg){
+ background-image: url($bg);
+ background-repeat: no-repeat;
+ background-position: 50%;
+}
+
+@mixin icon-font{
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

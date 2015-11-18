@@ -1,0 +1,9 @@
+@mixin fa-arrow-circle-right{
+	&:after{
+		content: "\f0a9";
+		font-family: FontAwesome;
+		display: inline-block;
+		color: #666;
+		margin-left: 0.5em;
+	}	
+}
