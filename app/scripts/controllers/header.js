@@ -36,4 +36,39 @@ angular.module('trcApp')
       	'link': '/sign-out'
       }
     ];
+
+    $scope.footerLinks = [
+		{
+			'text': 'Privacy Policy',
+			'link': '/'
+		},
+		{
+			'text': 'Legal Notice',
+		 	'link': '/'
+		},
+		{
+			'text': 'Cookie Policy',
+			'link': '/'
+		},
+		{
+			'text': 'Contact Us',
+			'link': '/'
+		},
+		{
+			'text': 'Terms and Conditions',
+			'link': '/'
+		},
+		{
+			'text': 'Requirements',
+			'link': '/'
+		},
+		{
+			'text': 'Accessibility',
+			'link': '/'
+		},
+		{
+			'text': 'Acknowledgements',
+			'link': '/'
+		}
+    ];
   }]);
