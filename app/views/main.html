@@ -1,7 +1,10 @@
 <div class="view view-home" ng-init="getWelcomeStatus()">
+  <div class="homepage-banner homepage-banner-opd">
+    <img class="logo-opd-huge" src="images/logo-opd-huge.png" alt="OPD">
+  </div>
   <div class="container">
 
-  <div class="welcome-message-section" ng-if="showWelcome">
+  <div class="welcome-message-section" ng-show="showWelcome">
     <!--set as partial?-->
     <div class="welcome-message-avatar welcome-message-avatar-opd"></div>
       <div class="welcome-message-container">
@@ -29,7 +32,7 @@
     </div>
 
     <div class="updates-section">
-      <h1 class="updates-section-h1">Updates</h1>
+      <h1 ng-click="showWelcome = true" class="updates-section-h1">Updates</h1>
       <ul class ="updates-list">
         <li class ="updates-list-item" ng-repeat="item in updatesList">
           <a class ="updates-list-item-link" ng-href="#/{{item.link}}">
