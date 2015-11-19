@@ -23,21 +23,21 @@ angular.module('trcApp')
       	'title': 'Browse by Resource Type',
       	'class':'browse-type-1',
       	'para': 'Looking for a particular resource such as Lesson Plans, or Classroom Activities? Choose this option.',
-      	'imgSrc': 'images/browseby-1.jpg',
+      	'imgSrc': 'images/browseby-1.svg',
       	'link': '/resource'
       },
       {
       	'title': 'Browse by Topic',
       	'class':'browse-type-2',
       	'para': 'Want everything for a particular topic? Choose this option.',
-      	'imgSrc': 'images/browseby-2.jpg',
+      	'imgSrc': 'images/browseby-2.svg',
       	'link': '/topic'
       },
       {
       	'title': 'Custom search',
       	'class':'browse-type-3',
       	'para': 'Looking for something specific? Choose this option for advanced filtering options.',
-      	'imgSrc': 'images/browseby-3.jpg',
+      	'imgSrc': 'images/browseby-3.svg',
       	'link': '/sign-out'
       }
     ];
