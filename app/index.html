@@ -22,13 +22,15 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header" ng-controller="HeaderCtrl">
-    <div ng-class="{{locationClass()}}" class="branding">OPD</div>
+    <div class="page-header page-header-opd" ng-controller="HeaderCtrl">
+    <div ng-class="locationClass()" class="branding">OPD</div>
       <div class="other-stuff-container">
-      <div class="other-stuff-toggle">+</div>
-        <nav class="other-stuff-menu">
+      <div class="other-stuff-toggle" ng-class="{'is-open': openOtherStuffNav.open === true}" ng-click="openOtherStuffNav.open = !openOtherStuffNav.open">
+        <div class="other-stuff-toggle-icon"></div>
+      </div>
+        <nav class="other-stuff-menu" ng-show="openOtherStuffNav.open" >
           <ul>
-            <li ng-repeat="item in otherStuff"><a>{{item.text}}</a></li>
+            <li ng-repeat="item in otherStuff"><a class="other-stuff-menu-link">{{item.text}}</a></li>
           </ul>
         </nav>
       </div>
@@ -36,8 +38,32 @@
 
     <div class="view-holder" ng-view=""></div>
 
-    <div class="footer">
-      <div class="container">
+    <div class="page-footer" ng-controller="HeaderCtrl">
+      <div class="slt-banner"  ng-class="locationClass()">
+        <div class="container">
+          <div class="logo-holder">
+            <img class="logo-slt" src="images/logo-SLT.svg" alt="Shaping Learning Together">
+          </div>
+        </div>      
+      </div>
+      <div class="container main-footer-content">
+        <a class="logo-oup-a" href="https://elt.oup.com/">
+          <img src="images/logo-OUP.svg" alt="Oxford University Press" class="logo-oup">
+        </a>
+        <div class="boring-footer-stuff">
+          <ul class="footer-links-list">
+            <li><a href="">Help and Support</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Legal Notice</a></li>
+            <li><a href="">Cookie Policy</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+            <li><a href="">Requirements</a></li>
+            <li><a href="">Accessibility</a></li>
+            <li><a href="">Acknowledgements</a></li>
+          </ul>
+          <p class="copyright-line">Copyright © Oxford University Press, 2015. All Rights Reserved.</p>
+        </div>
       </div>
     </div>
 

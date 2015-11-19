@@ -19,6 +19,8 @@ angular.module('trcApp')
   		}
   	};
 
+	$scope.openOtherStuffNav = {"open":false};
+
   	//defines content of dropdown on hamburger
     $scope.otherStuff = [
       {

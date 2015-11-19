@@ -19,6 +19,11 @@
 	}
 }
 
+@mixin footerText{
+	font-size: 0.8em;
+	color: $c-light-text;
+}
+
 html{
   font-family: $base-font-stack;
   font-size: $base-font-size;
