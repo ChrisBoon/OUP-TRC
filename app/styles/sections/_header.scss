@@ -11,10 +11,18 @@
 	align-items: stretch;
 	justify-content: space-between;
 	align-content: stretch;
+
+	.logo-container-link{
+		display: block;
+	}
+	.home .logo-container-link{
+		display: none;
+	}
 }
 
-.branding{
-
+.logo-opd-small{
+	width: $unit*12;
+	padding: $unit;
 }
 
 .other-stuff-container{

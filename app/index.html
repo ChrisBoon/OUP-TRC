@@ -23,7 +23,11 @@
 
     <!-- Add your site or application content here -->
     <div class="page-header page-header-opd" ng-controller="HeaderCtrl">
-    <div ng-class="locationClass()" class="branding">OPD</div>
+    <div ng-class="locationClass()" class="logo-container logo-container-opd-small">
+      <a class="logo-container-link">
+        <img class="logo-opd-small" src="images/logo-opd-small.png" alt="OPD">
+      </a>
+    </div>
       <div class="other-stuff-container">
       <div class="other-stuff-toggle" ng-class="{'is-open': openOtherStuffNav.open === true}" ng-click="openOtherStuffNav.open = !openOtherStuffNav.open">
         <div class="other-stuff-toggle-icon"></div>
@@ -36,7 +40,7 @@
       </div>
     </div>
 
-    <div class="view-holder" ng-view="" ng-click="openOtherStuffNav.open = false"></div>
+    <div class="view-holder" ng-view=""></div>
 
     <div class="page-footer" ng-controller="HeaderCtrl">
       <div class="slt-banner"  ng-class="locationClass()">
