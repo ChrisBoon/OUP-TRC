@@ -18,7 +18,9 @@
 	@include avatar($unit*10);
 	flex: 0 0 auto;
 	margin-right: $unit*2;
-	background-color: #aaa;//placeholder for img - course specific
+	background-image: url('../images/avatar-opd.png'); //placeholder for img - course specific
+	background-size: 100%;
+
 }
 .welcome-message-container{
 	flex: 1 1 auto;
