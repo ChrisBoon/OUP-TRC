@@ -31,7 +31,7 @@ angular.module('trcApp')
     $http.get('json/home.json').success(function(data) {
     	thisHome.json = data;
     }).error(function(){
-    	console.log("couldn't find the json for this page")
+    	console.log('couldnt find the json for this page');
     });
 
 
