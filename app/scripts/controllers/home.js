@@ -3,22 +3,21 @@
 angular.module('trcApp')
   .controller('MainCtrl', function ($scope, localStorageService) {
 
-  	$scope.showWelcome = true;
+  	this.showWelcome = true;
 
-
-	$scope.getWelcomeStatus = function(){
+	this.getWelcomeStatus = function(){
       if (localStorageService.get('isWelcomeHidden') === true) {
-        $scope.showWelcome = false;
+        this.showWelcome = false;
       }
     };
 
     //Updates localstorage so we can use getLang next time a user is here.
-    $scope.setWelcomeStatus = function(){
-    	$scope.showWelcome = false;
+    this.setWelcomeStatus = function(){
+    	this.showWelcome = false;
 	    localStorageService.set('isWelcomeHidden',true);
     };
 
-    $scope.browseMethods = [
+    this.browseMethods = [
       {
       	'title': 'Browse by Resource Type',
       	'class':'browse-type-1',
@@ -41,7 +40,7 @@ angular.module('trcApp')
       	'link': '/sign-out'
       }
     ];
-     $scope.updatesList = [
+     this.updatesList = [
       {
       	'title': 'Newsela Articles',
       	'class':'new',
