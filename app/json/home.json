@@ -5,7 +5,7 @@
 	      	"class":"browse-type-1",
 	      	"para": "Looking for a particular resource such as Lesson Plans, or Classroom Activities? Choose this option.",
 	      	"imgSrc": "images/browseby-1.svg",
-	      	"link": "/resource"
+	      	"link": "folder/folder-collections"
 	    },
 	    {
 	      	"title": "Browse by Topic",

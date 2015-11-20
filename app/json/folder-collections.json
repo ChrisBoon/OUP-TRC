@@ -1,0 +1,65 @@
+{
+	"template" : "grid-view",
+	"title" : "Browse by resource",
+	"icon" : "browseby-1.svg",
+	"color1" : "#68C2C2",
+	"description" : "Some helpful, friendly text could go here. Just a sentence or two. Maybe it metions to look for updates, or perhaps we use it to shout out one particular resource type we think people might otherwise not pay attention to.",
+	"folderList" : [
+		{
+			"icon" : "images/icon-rt-lesson-plan.svg",
+			"color1" : "#68C2C2",
+			"title" : "Lesson Plans",
+			"description" : "They're for planning lessons, yeah.",
+			"link" : "resource-files/lesson-plan"
+		},
+		{
+			"icon" : "images/icon-rt-dictionary-audio.svg",
+			"color1" : "#68C2C2",
+			"title" : "Dictionary Audio",
+			"description" : "Paragraph text goes here. This one is a bit longer than the first one. Lets me figure out how to deal with line length.",
+			"link" : "resource-files/dictionary-audio"
+		},
+		{
+			"icon" : "images/icon-rt-vocabulary-images.svg",
+			"color1" : "#68C2C2",
+			"title" : "Vocabulary Images",
+			"description" : "Check out Corrrelations - it doesn't have any description text!",
+			"link" : "resource-files/vocabulary-images"
+		},
+		{
+			"icon" : "images/icon-rt-correlations.svg",
+			"color1" : "#68C2C2",
+			"title" : "Correlations",
+			"link" : "resource-files/correlations",
+			"badge" : "new"
+		},
+		{
+			"icon" : "images/icon-rt-videos.svg",
+			"color1" : "#68C2C2",
+			"title" : "Videos",
+			"description" : "Description text goes here.",
+			"link" : "resource-files/videos"
+		},
+		{
+			"icon" : "images/icon-rt-newsela.svg",
+			"color1" : "#68C2C2",
+			"title" : "Newsela",
+			"description" : "Check out my 'new' badge.",
+			"link" : "resource-files/newsela"
+		},
+		{
+			"icon" : "images/icon-rt-classroom-activities.svg",
+			"color1" : "#68C2C2",
+			"title" : "Classroom Activities",
+			"description" : "Description text goes here.",
+			"link" : "resource-files/classroom-activities"
+		},
+		{
+			"icon" : "images/icon-rt-assessment.svg",
+			"color1" : "#68C2C2",
+			"title" : "Assessment",
+			"description" : "Description text goes here.",
+			"link" : "resource-files/assessment"
+		}
+	]
+}
