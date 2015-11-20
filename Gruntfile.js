@@ -290,6 +290,7 @@ module.exports = function (grunt) {
     usemin: {
       html: ['<%= yeoman.dist %>/{,*/}*.html'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
+      json: ['<%= yeoman.dist %>/json/*.json'],
       js: ['<%= yeoman.dist %>/scripts/{,*/}*.js'],
       options: {
         assetsDirs: [
@@ -413,6 +414,7 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '*.html',
             'images/{,*/}*.{webp}',
+            'json/*',
             'styles/fonts/{,*/}*.*'
           ]
         }, {

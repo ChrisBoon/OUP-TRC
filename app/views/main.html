@@ -18,7 +18,7 @@
 
     <div class="browse-by-section">
       <ul class ="browse-by-list">
-        <li class ="browse-by-list-item" ng-repeat="item in home.browseMethods">
+        <li class ="browse-by-list-item" ng-repeat="item in home.json.browseMethods">
           <a ng-href="#/{{item.link}}">
             <img class ="browse-by-icon" ng-src="{{item.imgSrc}}">
             <div class="browse-by-text">
@@ -34,7 +34,7 @@
     <div class="updates-section">
       <h1 ng-click="home.showWelcome = true" class="updates-section-h1">Updates</h1>
       <ul class ="updates-list">
-        <li class ="updates-list-item" ng-repeat="item in home.updatesList">
+        <li class ="updates-list-item" ng-repeat="item in home.json.updatesList">
           <a class ="updates-list-item-link" ng-href="#/{{item.link}}">
             <div class="updates-list-item-text">
               <h1 class="updates-list-item-heading" ng-class="item.class">{{item.title}}</h1>
