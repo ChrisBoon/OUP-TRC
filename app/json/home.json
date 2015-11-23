@@ -14,7 +14,7 @@
 	      	"animateID" : "bt2",
 	      	"para": "Want everything for a particular topic? Choose this option.",
 	      	"imgSrc": "images/browseby-2.svg",
-	      	"link": "/topic"
+	      	"link": "browse/by-topic"
 	    },
 	    {
 	      	"title": "Custom search",
