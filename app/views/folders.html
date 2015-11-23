@@ -1,1 +1,41 @@
-<p>{{folder.json.title}}</p>
+<header class="folder-view-header">
+
+	<div class="container">
+		<div class="page-icon-holder">
+			<img ng-src="{{folder.json.icon}}" alt="">
+		</div>
+		<div class="folder-view-header-text">
+			<h1 class="folder-view-heading-main" style="color: {{folder.json.color1}}">
+				{{folder.json.title}}
+			</h1>
+			<p class="folder-view-page-desc">
+				{{folder.json.description}}
+			</p>
+		</div>
+	</div>
+
+</header>
+
+<div class="folder-view-content" ng-class="folder.json.template">
+	<div class="container">
+		<ul class="folder-view-list">
+			<li ng-repeat="item in folder.json.folderList" class="folder-view-list-item" ng-class="folder.json.template">
+				<a class="folder-view-list-item-link" ng-href="item.link">
+					<div class="folder-view-list-item-icon-holder" style="background-color: {{item.color1}}">
+						<img ng-src="item.icon" alt="">
+						<div 
+						  class="folder-view-badge"
+						  ng-if="item.badge"
+						  ng-class="item.badge"
+						>
+						{{item.badge}}
+						</div>
+					</div>
+					<h2 class="folder-view-list-item-title">{{item.title}}</h2>
+					<p class="folder-view-list-item-desc">{{item.description}}</p>
+
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
