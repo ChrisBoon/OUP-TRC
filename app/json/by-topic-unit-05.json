@@ -1,0 +1,53 @@
+{
+	"template" : "list-view",
+	"title" : "Clothing",
+	"icon" : "images/icon-unit-05.svg",
+	"bgImage" : "images/bg-unit-05.png",
+	"animateID" : "unit05",
+	"color1" : "#1e82c1",
+	"color2" : "#1e82c1",
+	"description" : "Some helpful, friendly text could go here. Just a sentence or two. Maybe it metions something which topics are particularly interesting, or it could point out if there’s a new one added for the third edition.",
+	"folderList" : [
+		{
+			"title" : "Everyday Clothes",
+			"link" : "list/casual-work-and-formal-clothes"
+		},
+		{
+			"title" : "Seasonal Clothing",
+			"link" : "list/seasonal-clothing"
+		},
+		{
+			"title" : "Underwear & Sleepwear",
+			"link" : "list/underwear-&-sleepwear",
+			"badge" : "new"
+		},
+		{
+			"title" : "Workplace Clothing",
+			"link" : "list/workplace-clothing"
+		},
+		{
+			"title" : "Shoes and Accessories",
+			"link" : "list/shoes-and-accessories"
+		},
+		{
+			"title" : "Describing Clothes",
+			"link" : "list/describing-clothes"
+		},
+		{
+			"title" : "Making Clothes",
+			"link" : "list/making-clothes"
+		},
+		{
+			"title" : "Making Alterations",
+			"link" : "list/making-alterations"
+		},
+		{
+			"title" : "Doing the Laundry",
+			"link" : "list/doing-the-laundry"
+		},
+		{
+			"title" : "A Garage Sale",
+			"link" : "list/a-garage-sale"
+		}
+	]
+}
