@@ -1,5 +1,4 @@
 @mixin textExplain{
-	// font-size: 0.8em;
 	color: $c-light-text;
 }
 
@@ -10,6 +9,11 @@
 @mixin itemHeadingLight{
 	font-weight: 400;
 	font-size: 1.1em;
+}
+
+@mixin pageHeadingLight{
+	font-weight: 400;
+	font-size: 1.2em;
 }
 
 @mixin paragraph{

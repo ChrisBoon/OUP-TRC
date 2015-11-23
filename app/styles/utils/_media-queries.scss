@@ -13,3 +13,8 @@
 		@content;
 	}
 }
+@mixin media-xtraSmall(){
+	@include mq-lessthan(501px){
+		@content;
+	}
+}

@@ -3,7 +3,7 @@
 //controllerAs set to 'home'.
 
 angular.module('trcApp')
-.controller('MainCtrl', function ($scope, localStorageService,$http) {
+.controller('MainCtrl', function ($scope, localStorageService, $http) {
 
 	//use a variable to track whether to display the welcome message
 	this.showWelcome = true;

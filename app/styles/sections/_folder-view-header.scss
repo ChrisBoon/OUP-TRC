@@ -1,0 +1,29 @@
+.folder-view-header{
+	flex: 0 0 auto;
+	padding: $unit*3 $unit*2;
+	>.container{
+		display: flex;
+		align-items: stretch;
+	}
+}
+
+.view-icon-holder{
+	flex: 0 0 auto;
+	padding-right: $unit*2;
+	display: flex;
+	img{
+		display: block;
+		width: 8vmax;
+		min-width: $unit*4;
+		max-width: $unit*12;
+	}
+}
+
+.folder-view-heading-main{
+	@include pageHeadingLight;
+}
+
+.folder-view-page-desc{
+	@include paragraph;
+	@include textExplain;
+}

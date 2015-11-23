@@ -1,0 +1,33 @@
+.view-folder{
+	display: flex;
+	flex-direction: column;
+}
+
+@import "sections/_folder-view-header";
+
+.folder-view-content{
+	flex: 1 0 auto;
+}
+
+.folder-view-list-item{
+	position: relative;
+}
+
+.folder-view-list-item-title{
+	@include itemHeadingLight;
+	padding: $unit $unit 0;
+	
+	&:last-child{
+		padding-bottom: $unit;
+	}
+}
+
+.folder-view-badge-new{
+	@include badge(new);
+}
+
+.folder-view-badge-updated{
+	@include badge(updated);
+}
+
+@import "sections/_folder-view-grid";

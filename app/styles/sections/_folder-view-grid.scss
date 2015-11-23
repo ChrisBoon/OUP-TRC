@@ -1,0 +1,57 @@
+.folder-view-list-grid-view{
+	display: flex;
+	flex-wrap: wrap;
+	padding: $unit;
+
+	.folder-view-list-item{
+		flex: 1 1 auto;
+		padding: $unit;
+		display: flex;
+		width: 50%;
+
+
+		@include media-xtraSmall{
+			width: 100%;
+		}
+		@include media-regUp{
+			width: 33%;
+		}
+		@include media-large{
+			width: 25%;
+		}
+	}
+
+	.folder-view-list-item-link{
+		@include card($padding:0);
+		@include card-hover;
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		&.ng-enter {
+			transition: 3s linear;
+			opacity: 0;
+		}
+		 
+		&.animate-enter.ng-enter-active {
+			opacity: 1;
+		}
+
+	}
+
+	.folder-view-list-item-desc{
+		@include textExplain;
+		padding: 0 $unit $unit;
+	}
+
+	.folder-view-list-item-icon-holder{
+		padding: $unit;
+		img{
+			display: block;
+			width: 100%;
+			max-width: $unit*16;
+			margin: 0 auto;
+		}
+	}
+
+}
