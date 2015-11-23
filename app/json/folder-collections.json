@@ -1,8 +1,10 @@
 {
 	"template" : "grid-view",
 	"title" : "Browse by resource",
-	"icon" : "browseby-1.svg",
+	"icon" : "images/browseby-1.svg",
+	"bgImage" : "images/some-image.html",
 	"color1" : "#68C2C2",
+	"color2" : "#68C2C2",
 	"description" : "Some helpful, friendly text could go here. Just a sentence or two. Maybe it metions to look for updates, or perhaps we use it to shout out one particular resource type we think people might otherwise not pay attention to.",
 	"folderList" : [
 		{
