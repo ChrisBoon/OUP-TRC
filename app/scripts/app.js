@@ -34,7 +34,7 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/folder/:id', {
+      .when('/browse/:id', {
         templateUrl: 'views/folders.html',
         controller: 'FoldersCtrl',
         controllerAs: 'folder'

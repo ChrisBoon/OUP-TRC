@@ -2,9 +2,9 @@
 	"template" : "grid-view",
 	"title" : "Browse by resource",
 	"icon" : "images/browseby-1.svg",
-	"bgImage" : "images/some-image.html",
+	"animateID" : "bt1",
 	"color1" : "#68C2C2",
-	"color2" : "#68C2C2",
+	"color2" : "#e4e8eb",
 	"description" : "Some helpful, friendly text could go here. Just a sentence or two. Maybe it metions to look for updates, or perhaps we use it to shout out one particular resource type we think people might otherwise not pay attention to.",
 	"folderList" : [
 		{
@@ -12,7 +12,7 @@
 			"color1" : "#68C2C2",
 			"title" : "Lesson Plans",
 			"description" : "They're for planning lessons, yeah.",
-			"link" : "resource-files/lesson-plan"
+			"link" : ""
 		},
 		{
 			"icon" : "images/icon-rt-dictionary-audio.svg",
@@ -46,8 +46,9 @@
 			"icon" : "images/icon-rt-newsela.svg",
 			"color1" : "#68C2C2",
 			"title" : "Newsela",
-			"description" : "Check out my 'new' badge.",
-			"link" : "resource-files/newsela"
+			"description" : "Check out my 'updated' badge.",
+			"link" : "resource-files/newsela",
+			"badge" : "updated"
 		},
 		{
 			"icon" : "images/icon-rt-classroom-activities.svg",
