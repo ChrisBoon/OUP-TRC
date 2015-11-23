@@ -1,0 +1,31 @@
+.folder-view-content.list-view{
+	padding: $unit*2;
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-size: auto 100%;
+	@include media-small{
+		background-image: none !important;
+	}
+}
+.folder-view-list-list-view{
+	@include card($padding:0);
+	@include media-regUp{
+		width: 50%;
+		max-width: $unit*75;		
+	}
+	
+	.folder-view-list-item{
+		&:not(:last-child){
+			border-bottom: 1px solid $c-line;
+		}
+	}
+
+	.folder-view-list-item-link{
+		display: block;
+		padding: $unit;
+		transition: background-color 0.2s;
+		&:hover{
+			background-color: #eee;
+		}
+	}
+}
