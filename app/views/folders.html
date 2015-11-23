@@ -19,16 +19,22 @@
 
 	<div class="folder-view-content" ng-class="folder.json.template" style="background-color: {{folder.json.color2}}; background-image:url({{folder.json.bgImage}})">
 		<div class="container">
-			<ul class="folder-view-list " ng-class="'folder-view-list-'+folder.json.template">
+			<ul class="folder-view-list" ng-class="'folder-view-list-'+folder.json.template">
 				<li ng-repeat="item in folder.json.folderList" class="folder-view-list-item" ng-class="folder.json.template">
 					<a class="folder-view-list-item-link" ng-href="#/{{item.link}}">
 						
-						<div class="folder-view-list-item-icon-holder" style="background-color: {{item.color1}}">
+						<div ng-if="item.icon"
+						     class="folder-view-list-item-icon-holder"
+						     style="background-color: {{item.color1}}">
 							<img ng-src="{{item.icon}}" alt="">
 
 						</div>
+
 						<h2 class="folder-view-list-item-title">{{item.title}}<span ng-if="item.badge" ng-class="'folder-view-badge-'+item.badge"></span></h2>
-						<p class="folder-view-list-item-desc">{{item.description}}</p>
+						<p ng-if="item.description" 
+						   class="folder-view-list-item-desc">
+						   {{item.description}}
+						</p>
 
 					</a>
 				</li>
