@@ -1,0 +1,95 @@
+{
+	"template" : "grid-view",
+	"title" : "Browse by topic",
+	"icon" : "images/browseby-2.svg",
+	"animateID" : "bt2",
+	"color1" : "#EF7D45",
+	"color2" : "#e4e8eb",
+	"description" : "Some helpful, friendly text could go here. Just a sentence or two. Maybe it metions to look for updates, or perhaps we use it to shout out one particular resource type we think people might otherwise not pay attention to.",
+	"folderList" : [
+		{
+			"icon" : "images/icon-unit-01.svg",
+			"color1" : "#27845D",
+			"title" : "Everyday Language",
+			"link" : "browse/by-topic-unit-01"
+
+		},
+		{
+			"icon" : "images/icon-unit-02.svg",
+			"color1" : "#74ae58",
+			"title" : "People",
+			"link" : "browse/by-topic-unit-01"
+
+		},
+		{
+			"icon" : "images/icon-unit-03.svg",
+			"color1" : "#a1c15d",
+			"title" : "Housing",
+			"link" : "browse/by-topic-unit-01"
+
+		},
+		{
+			"icon" : "images/icon-unit-04.svg",
+			"color1" : "#61b0b0",
+			"title" : "Food",
+			"link" : "browse/by-topic-unit-01"
+
+		},
+		{
+			"icon" : "images/icon-unit-05.svg",
+			"color1" : "#1e82c1",
+			"title" : "Clothing",
+			"link" : "browse/by-topic-unit-05"
+
+		},
+		{
+			"icon" : "images/icon-unit-06.svg",
+			"color1" : "#3157a0",
+			"title" : "Health",
+			"link" : "browse/by-topic-unit-01"
+
+		},
+		{
+			"icon" : "images/icon-unit-07.svg",
+			"color1" : "#493180",
+			"title" : "Community",
+			"link" : "browse/by-topic-unit-01"
+
+		},
+		{
+			"icon" : "images/icon-unit-08.svg",
+			"color1" : "#70257d",
+			"title" : "Transportation",
+			"link" : "browse/by-topic-unit-01"
+
+		},
+		{
+			"icon" : "images/icon-unit-09.svg",
+			"color1" : "#aa1b52",
+			"title" : "Job Search",
+			"link" : "browse/by-topic-unit-01"
+
+		},
+		{
+			"icon" : "images/icon-unit-10.svg",
+			"color1" : "#c73646",
+			"title" : "The Workplace",
+			"link" : "browse/by-topic-unit-01"
+
+		},
+		{
+			"icon" : "images/icon-unit-11.svg",
+			"color1" : "#ed7348",
+			"title" : "Academic Study",
+			"link" : "browse/by-topic-unit-01"
+
+		},
+		{
+			"icon" : "images/icon-unit-12.svg",
+			"color1" : "#f7ad10",
+			"title" : "Recreation",
+			"link" : "browse/by-topic-unit-01"
+
+		}
+	]
+}
