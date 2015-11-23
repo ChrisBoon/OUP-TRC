@@ -8,12 +8,14 @@
 	&-opd{
 		background-color: #000;
 	}
-	align-items: stretch;
+	align-items: center;
 	justify-content: space-between;
 	align-content: stretch;
 
 	.logo-container-link{
-		display: block;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 	.home .logo-container-link{
 		display: none;
