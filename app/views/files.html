@@ -17,7 +17,7 @@
 
 	</header>
 
-	<div class="folder-view-content" ng-class="files.json.template" style="background-color: {{files.json.color2}}; background-image:url({{files.json.bgImage}})">
+	<div class="files-view-content" ng-class="files.json.template" style="background-color: {{files.json.color2}}; background-image:url({{files.json.bgImage}})">
 		<div class="container">
 
 
@@ -52,8 +52,11 @@
 							</td>
 
 							<td class="file-view-list-name">
-								<h2 class="topic">{{item.topic}}</h2>
-								<span ng-if="item.resourceSubtitle">{{item.resourceSubtitle}}</span>
+								<h2 class="file-view-list-main-title">{{item.topic}}</h2>
+								<span 
+								  class="file-view-list-subtitle"
+								  ng-if="item.resourceSubtitle"
+								>{{item.resourceSubtitle}}</span>
 							</td>
 							<td class="file-view-list-unit-name">
 								{{unit.unitName}}
