@@ -1,0 +1,394 @@
+{
+	"category" : "resourceType",
+	"title" : "Lesson Plans",
+	"icon" : "images/icon-rt-lesson-plan.svg",
+	"animateID" : "x",
+	"color1" : "#68C2C2",
+	"color2" : "#e4e8eb",
+	"description" : "Do we really need the 'read more' thing?",
+	"filter" : "units",
+	"sort" : [ "default", "alphabetical"],
+	"hasIcons" : true,
+	"hasUnits" : true,
+	"unitList" : [
+		{
+			"unitName" : "Everyday English",
+			"icon" : "images/icon-unit-01.svg",
+			"fileList" : [
+				{
+					"topic" : "Meeting and Greeting",
+					"resourceSubtitle" : "Topic 1.1",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "270KB"
+				},
+				{
+					"topic" : "Personal Info",
+					"resourceSubtitle" : "Topic 1.2",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "240KB"
+				},
+				{
+					"topic" : "School",
+					"resourceSubtitle" : "Topic 1.3",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "310KB"
+				},
+				{
+					"topic" : "Classroom",
+					"resourceSubtitle" : "Topic 1.4",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "420KB"
+				},
+				{
+					"topic" : "Studying",
+					"resourceSubtitle" : "Topic 1.5",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "260KB"
+				},
+				{
+					"topic" : "Succeeding in School",
+					"resourceSubtitle" : "Topic 1.6",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "270KB"
+				},
+				{
+					"topic" : "A Day at School",
+					"resourceSubtitle" : "Topic 1.7",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "110KB"
+				},
+				{
+					"topic" : "Everyday Conversation",
+					"resourceSubtitle" : "Topic 1.8",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "190KB"
+				},
+				{
+					"topic" : "The Weather",
+					"resourceSubtitle" : "Topic 1.9",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "250KB"
+				},
+				{
+					"topic" : "The Telephone",
+					"resourceSubtitle" : "Topic 1.10",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "200KB"
+				},
+				{
+					"topic" : "Numbers",
+					"resourceSubtitle" : "Topic 1.11",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "310KB"
+				},
+				{
+					"topic" : "Measurements",
+					"resourceSubtitle" : "Topic 1.12",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "270KB"
+				},
+				{
+					"topic" : "Time",
+					"resourceSubtitle" : "Topic 1.13",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "270KB"
+				},
+				{
+					"topic" : "Calendar",
+					"resourceSubtitle" : "Topic 1.14",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "200KB"
+				},
+				{
+					"topic" : "Calendar Events",
+					"resourceSubtitle" : "Topic 1.15",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "210KB"
+				},
+				{
+					"topic" : "Describing Things",
+					"resourceSubtitle" : "Topic 1.16",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "160KB"
+				},
+				{
+					"topic" : "Colors",
+					"resourceSubtitle" : "Topic 1.17",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "140KB"
+				},
+				{
+					"topic" : "Prepositions",
+					"resourceSubtitle" : "Topic 1.18",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "190KB"
+				},
+				{
+					"topic" : "Money",
+					"resourceSubtitle" : "Topic 1.19",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "280KB"
+				},
+				{
+					"topic" : "Shopping",
+					"resourceSubtitle" : "Topic 1.20",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "220KB"
+				},
+				{
+					"topic" : "Same and Different",
+					"resourceSubtitle" : "Topic 1.21",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "300KB"
+				}				
+			]
+
+		},
+		{
+			"unitName" : "People",
+			"icon" : "images/icon-unit-02.svg",
+			"fileList" : [
+				{
+					"topic" : "Adults and Children",
+					"resourceSubtitle" : "Topic 2.1",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "240KB"
+				},
+				{
+					"topic" : "Describing People",
+					"resourceSubtitle" : "Topic 2.2",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "220KB"
+				},
+				{
+					"topic" : "Describing Hair",
+					"resourceSubtitle" : "Topic 2.3",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "300KB"
+				},
+				{
+					"topic" : "Families",
+					"resourceSubtitle" : "Topic 2.4",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "240KB"
+				},
+				{
+					"topic" : "Childcare and Parenting",
+					"resourceSubtitle" : "Topic 2.5",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "210KB"
+				},
+				{
+					"topic" : "Daily Routines",
+					"resourceSubtitle" : "Topic 2.6",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "190KB"
+				},
+				{
+					"topic" : "Life Events and Documents",
+					"resourceSubtitle" : "Topic 2.7",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "210KB"
+				},
+				{
+					"topic" : "Feelings",
+					"resourceSubtitle" : "Topic 2.8",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "110KB"
+				},
+				{
+					"topic" : "A Family Reunion",
+					"resourceSubtitle" : "Topic 2.9",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "170KB"
+				}
+			]
+		},
+		{
+			"unitName" : "Housing",
+			"icon" : "images/icon-unit-03.svg",
+			"fileList" : [
+				{
+					"topic" : "The Home",
+					"resourceSubtitle" : "Topic 3.1",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "240KB"
+				},
+				{
+					"topic" : "Finding a Home",
+					"resourceSubtitle" : "Topic 3.2",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "210KB"
+				},
+				{
+					"topic" : "Apartments",
+					"resourceSubtitle" : "Topic 3.3",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "310KB"
+				},
+				{
+					"topic" : "Different Places to Live",
+					"resourceSubtitle" : "Topic 3.4",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "270KB"
+				},
+				{
+					"topic" : "A House and Yard",
+					"resourceSubtitle" : "Topic 3.5",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "140KB"
+				},
+				{
+					"topic" : "A Kitchen",
+					"resourceSubtitle" : "Topic 3.6",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "260KB"
+				},
+				{
+					"topic" : "A Dining Area",
+					"resourceSubtitle" : "Topic 3.7",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "190KB"
+				},
+				{
+					"topic" : "A Living Room",
+					"resourceSubtitle" : "Topic 3.8",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "220KB"
+				},
+				{
+					"topic" : "A Bathroom",
+					"resourceSubtitle" : "Topic 3.9",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "210KB"
+				},
+				{
+					"topic" : "A Bedroom",
+					"resourceSubtitle" : "Topic 3.10",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "490KB"
+				},
+				{
+					"topic" : "The Kids' Bedroom",
+					"resourceSubtitle" : "Topic 3.11",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "270KB"
+				},
+				{
+					"topic" : "Housework",
+					"resourceSubtitle" : "Topic 3.12",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "210KB"
+				},
+				{
+					"topic" : "Cleaning Supplies",
+					"resourceSubtitle" : "Topic 3.13",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "240KB"
+				},
+				{
+					"topic" : "Household Problems and Repairs",
+					"resourceSubtitle" : "Topic 3.14",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "440KB"
+				},
+				{
+					"topic" : "The Tenant Meeting",
+					"resourceSubtitle" : "Topic 3.15",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "02/27/2016",
+					"size" : "220KB"
+				}
+			]
+		}
+	]
+}

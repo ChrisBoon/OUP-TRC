@@ -1,0 +1,76 @@
+<div class="view view-files">
+	<header class="folder-view-header">
+
+		<div class="container">
+			<div class="view-icon-holder">
+				<img ng-src="{{files.json.icon}}" alt="">
+			</div>
+			<div class="folder-view-header-text">
+				<h1 class="folder-view-heading-main" style="color: {{files.json.color1}}">
+					{{files.json.title}}
+				</h1>
+				<p class="folder-view-page-desc">
+					{{files.json.description}}
+				</p>
+			</div>
+		</div>
+
+	</header>
+
+	<div class="folder-view-content" ng-class="files.json.template" style="background-color: {{files.json.color2}}; background-image:url({{files.json.bgImage}})">
+		<div class="container">
+
+
+			<section
+			  class="file-view-list-holder"
+			  ng-repeat="unit in files.json.unitList"
+			>
+				<div
+				  ng-if="files.json.hasIcons"
+				  class="file-view-list-section-icon-holder"
+				>
+					<img
+					  ng-src="unit.icon"
+					  alt="{{unit.unitName}}"
+					  class="file-view-list-section-icon">
+				</div>
+				<div class="file-view-list-table-holder">
+					<table
+					  class="file-view-list-table"
+					  ng-class="'file-view-list-table-'+files.json.category"
+					>
+						<tr
+						  class="file-view-list-link"
+						  ng-click=""
+						  ng-repeat="item in unit.fileList"
+						>
+							<td class="file-view-list-iconType-cell">
+								<div
+								  class="file-view-list-iconType"
+								  ng-class="'file-view-list-iconType-'+item.filetypeIcon"
+								></div>
+							</td>
+
+							<td class="file-view-list-name">
+								<h2 class="topic">{{item.topic}}</h2>
+								<span ng-if="item.resourceSubtitle">{{item.resourceSubtitle}}</span>
+							</td>
+							<td class="file-view-list-unit-name">
+								{{unit.unitName}}
+							</td>
+							<td class="file-view-list-date">
+								{{item.date}}
+							</td>
+							<td class="file-view-list-size">
+								{{item.size}}
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				
+
+			</section>
+		</div>
+	</div>
+</div>

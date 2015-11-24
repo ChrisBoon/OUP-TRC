@@ -39,6 +39,11 @@ angular
         controller: 'FoldersCtrl',
         controllerAs: 'folder'
       })
+      .when('/files/:id', {
+        templateUrl: 'views/files.html',
+        controller: 'FilesCtrl',
+        controllerAs: 'files'
+      })
       .otherwise({
         redirectTo: '/'
       });
