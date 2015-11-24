@@ -15,7 +15,16 @@ body{
 .view{
 	flex: 1 0 auto;
 	@include scroll;
+	margin-top: $unit*7;
 }
+.page-header{
+	//styling of header can be found in _header.scss
+	position: fixed;
+	height: $unit*7;
+	width: 100%;
+	z-index: 1;
+}
+
 .container{
 	max-width: $unit*140;
 	margin: 0 auto;
