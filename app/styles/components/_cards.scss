@@ -16,3 +16,13 @@
 	height: $size;
 	border-radius: 50%;
 }
+
+@mixin cardListHover{
+	cursor: pointer;
+	@include user-select-none;
+	@include no-tap-color;
+	transition: background-color 0.2s;
+	&:hover{
+		background-color: #eee;
+	}
+}
