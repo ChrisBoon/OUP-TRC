@@ -1,9 +1,14 @@
-.folder-view-header{
+.content-view-header{
 	flex: 0 0 auto;
 	padding: $unit*3 $unit*2;
 	>.container{
 		display: flex;
 		align-items: stretch;
+	}
+	&-text{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 }
 
@@ -19,11 +24,11 @@
 	}
 }
 
-.folder-view-heading-main{
+.content-view-heading-main{
 	@include pageHeadingLight;
 }
 
-.folder-view-page-desc{
+.content-view-page-desc{
 	@include paragraph;
 	@include textExplain;
 }

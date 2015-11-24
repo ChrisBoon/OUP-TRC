@@ -1,15 +1,15 @@
 <div class="view view-files">
-	<header class="folder-view-header">
+	<header class="content-view-header">
 
 		<div class="container">
 			<div class="view-icon-holder">
 				<img ng-src="{{files.json.icon}}" alt="">
 			</div>
-			<div class="folder-view-header-text">
-				<h1 class="folder-view-heading-main" style="color: {{files.json.color1}}">
+			<div class="content-view-header-text">
+				<h1 class="content-view-heading-main" style="color: {{files.json.color1}}">
 					{{files.json.title}}
 				</h1>
-				<p class="folder-view-page-desc">
+				<p class="content-view-page-desc">
 					{{files.json.description}}
 				</p>
 			</div>
@@ -30,7 +30,7 @@
 				  class="file-view-list-section-icon-holder"
 				>
 					<img
-					  ng-src="unit.icon"
+					  ng-src="{{unit.icon}}"
 					  alt="{{unit.unitName}}"
 					  class="file-view-list-section-icon">
 				</div>
