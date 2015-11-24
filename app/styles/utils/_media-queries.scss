@@ -8,6 +8,13 @@
 		@content;
 	}
 }
+@mixin media-regDown(){
+	@include mq-lessthan(701px){
+		@content;
+	}
+}
+
+
 @mixin media-small(){
 	@include mq-lessthan(701px){
 		@content;
