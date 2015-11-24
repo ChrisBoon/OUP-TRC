@@ -1,0 +1,96 @@
+{
+	"template" : "list-view",
+	"title" : "Everyday Language",
+	"icon" : "images/icon-unit-01.svg",
+	"bgImage" : "images/bg-unit-01.png",
+	"animateID" : "unit01",
+	"color1" : "#27845D",
+	"color2" : "#27845D",
+	"description" : "Some helpful, friendly text could go here. Just a sentence or two. Maybe it metions something which topics are particularly interesting, or it could point out if there’s a new one added for the third edition.",
+	"folderList" : [
+		{
+			"title" : "Meeting and Greeting",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "Personal Info",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "School",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "Classroom",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "Studying",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "Succeeding in School",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "A Day at School",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "Everyday Conversation",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "The Weather",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "The Telephone",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "Numbers",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "Measurements",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "Time",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "Calendar",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "Calendar Events",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "Describing Things",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "Colors",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "Prepositions",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "Money",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "Shopping",
+			"link" : "list/meeting-and-greeting"
+		},
+		{
+			"title" : "Same and Different",
+			"link" : "list/meeting-and-greeting"
+		}
+	]
+}
