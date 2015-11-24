@@ -1,11 +1,16 @@
 .view-home{
 	background-color: $c-trc-bg;
-	padding: 0 $unit*2 $unit*2;
+	display: flex;
+	flex-direction: column;
+	>.container{
+		flex: 1 0 auto;
+		padding: 0 $unit*2 $unit*6;
+	}
 }
 
 .welcome-message-section{
 	@include card($padding:$unit*2);
-	margin-top: $unit*2;
+	margin-top: $unit*4;
 	display: flex;
 	align-items: flex-start;
 	transition: all 0.5s;
