@@ -23,9 +23,6 @@
 	.folder-view-list-item-link{
 		display: block;
 		padding: $unit;
-		transition: background-color 0.2s;
-		&:hover{
-			background-color: #eee;
-		}
+		@include cardListHover;
 	}
 }
