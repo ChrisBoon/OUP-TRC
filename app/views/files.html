@@ -17,49 +17,50 @@
 
 	</header>
 	
-	<div class="files-view-controls">
-		<!-- Filter -->
-			<div 
-			  class="files-view-filter-holder"
-			  ng-if="files.filter"
-			>
-
-
+	<div class="files-view-controls" ng-if="files.sort || files.filter">
+		<div class="container">
+			<!-- Filter -->
 				<div 
-				  uib-dropdown 
-				  on-toggle="toggled(open)"
-			      <a href uib-dropdown-toggle>
-			        {{files.filter.setAs}}
-			      </a>
-			      <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
-			        <li ng-repeat="choice in files.filter.options">
-			          <a
-			            href
-			            ng-click = "files.filter.setAs = choice;"
-			          >{{choice}}</a>
-			        </li>
-			      </ul>
-			    </div>
+				  class="files-view-filter-holder"
+				  ng-if="files.filter"
+				>
 
 
-			</div>
-		<!-- Sort -->
-		<div 
-		  uib-dropdown 
-		  on-toggle="toggled(open)"
-	      <a href uib-dropdown-toggle>
-	        {{files.sort.setAs.name}}
-	      </a>
-	      <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
-	        <li ng-repeat="choice in files.sort.by">
-	          <a
-	            href
-	            ng-click = "files.sort.setAs = choice;"
-	          >{{choice.name}}</a>
-	        </li>
-	      </ul>
-	    </div>
+					<div 
+					  uib-dropdown 
+					  on-toggle="toggled(open)"
+				      <a href uib-dropdown-toggle>
+				        {{files.filter.setAs}}
+				      </a>
+				      <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
+				        <li ng-repeat="choice in files.filter.options">
+				          <a
+				            href
+				            ng-click = "files.filter.setAs = choice;"
+				          >{{choice}}</a>
+				        </li>
+				      </ul>
+				    </div>
 
+
+				</div>
+			<!-- Sort -->
+			<div 
+			  uib-dropdown 
+			  on-toggle="toggled(open)"
+		      <a href uib-dropdown-toggle>
+		        {{files.sort.setAs.name}}
+		      </a>
+		      <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
+		        <li ng-repeat="choice in files.sort.by">
+		          <a
+		            href
+		            ng-click = "files.sort.setAs = choice;"
+		          >{{choice.name}}</a>
+		        </li>
+		      </ul>
+		    </div>
+		</div>
 
 	</div>
 
