@@ -74,6 +74,10 @@ td.file-view-list-iconType-cell{
 	height: $thisSize;
 	border-radius: 50%;
 	background-color: #eee;
+	&-pdf{
+		background-image: url('../images/icon-filetype-pdf.svg');
+		background-size: contain;
+	}
 }
 td.file-view-list-name{
 	width: 45%;
@@ -115,3 +119,48 @@ td.file-view-list-size{
 		width: auto;
 	}
 }
+
+.files-view-controls{
+	padding: 0 $unit*2;
+	background-color: #aaa;
+
+	.container{
+		display: flex;
+		justify-content: flex-start;
+	}
+
+}
+
+.files-view-controls-button>a{
+	display: block;
+	@include button-toolbar;
+	@include button-toolbar-isdropdown;
+	transition: all 0.2s;
+	&:hover{
+		color: $base-text-color;
+	}
+}
+.files-view-controls-list{
+	@include dropdown-basic;
+	transform-origin: top left;
+	transform: translate(0, -20px) scale(0);
+	opacity: 0;
+	@at-root .open>& {
+	    display: block;
+	    transform: translate(0, 0) scale(1);
+        opacity: 1;
+	}
+    top: calc(100% + #{$unit/2});
+    left: -$unit;
+	&:before{
+	    top: -$unit*1.5;
+	    left: $unit*2;
+	}
+	li a{
+		min-width: 160px;
+		padding: $unit;
+	}	
+}
+
+
+

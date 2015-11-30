@@ -1,0 +1,41 @@
+//this is messy. Also i'm aplying it to the hamburger menu dropdown and controls dropdowns even though they use different js and html.
+//TODO: Standardize them and consolidate css better
+@mixin dropdown-basic{
+    position: absolute;
+    z-index: z("1");    
+    background-color: #fff;
+    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    transition: all 0.35s;
+      &:before{
+            $this-c: #fff;
+            $this-s: $unit*1.5;
+            position: absolute;
+            display: block;
+            content: "";
+
+            width: 0;
+            height: 0;
+            border-bottom: $this-s solid $this-c;
+            border-right: $this-s solid transparent;
+            border-left: $this-s solid transparent;
+      }
+    li{
+        white-space: nowrap;
+    	&:not(:first-child){
+    		border-top: 1px solid $c-line;
+    	}
+    }
+	li>a {
+        padding: $unit $unit*3;
+        display: block;
+        min-width: $unit*16;
+        cursor: pointer;
+        @include user-select-none;
+        @include no-tap-color;
+        transition: background-color 0.2s;
+        &:hover{
+            background-color: #eee;
+        }   
+	}
+}

@@ -29,10 +29,11 @@
 					<div 
 					  uib-dropdown 
 					  on-toggle="toggled(open)"
+					  class="files-view-controls-button">
 				      <a href uib-dropdown-toggle>
 				        {{files.filter.setAs}}
 				      </a>
-				      <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
+				      <ul class="uib-dropdown-menu files-view-controls-list" aria-labelledby="simple-dropdown">
 				        <li ng-repeat="choice in files.filter.options">
 				          <a
 				            href
@@ -45,22 +46,29 @@
 
 				</div>
 			<!-- Sort -->
-			<div 
-			  uib-dropdown 
-			  on-toggle="toggled(open)"
-		      <a href uib-dropdown-toggle>
-		        {{files.sort.setAs.name}}
-		      </a>
-		      <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
-		        <li ng-repeat="choice in files.sort.by">
-		          <a
-		            href
-		            ng-click = "files.sort.setAs = choice;"
-		          >{{choice.name}}</a>
-		        </li>
-		      </ul>
+				<div 
+				  class="files-view-sort-holder"
+				  ng-if="files.sort"
+				>
+					<div 
+					  uib-dropdown 
+					  on-toggle="toggled(open)"
+					  class="files-view-controls-button">
+				      <a href uib-dropdown-toggle>
+				        {{files.sort.setAs.name}}
+				      </a>
+				      <ul class="uib-dropdown-menu files-view-controls-list" aria-labelledby="simple-dropdown">
+				        <li ng-repeat="choice in files.sort.by" class="files-view-controls-list-item">
+				          <a
+				            href
+				            ng-click = "files.sort.setAs = choice"  class="files-view-controls-list-a"
+				          >{{choice.name}}</a>
+				        </li>
+				      </ul>
+				    </div>
+    			</div>
+
 		    </div>
-		</div>
 
 	</div>
 
@@ -69,13 +77,13 @@
 
 
 			<section
-			  ng-hide="files.sort.setAs.name ==='alphabetical' && files.filter.setAs ==='All Units'"
+			  ng-hide="files.sort.setAs.orderon ==='topic' && files.filter.setAs ==='All Units'"
 			  class="file-view-list-holder"
 			  ng-repeat="unit in files.json.unitList | filter: {showFilter: files.filter.setAs}"
 
 			>
 				<div
-				  ng-if="files.json.hasIcons"
+				  ng-if="files.json.hasIcons  && files.filter.setAs ==='All Units'"
 				  class="file-view-list-section-icon-holder"
 				>
 					<img
@@ -129,7 +137,7 @@
 
 
 			<section
-			  ng-show="files.sort.setAs.name ==='alphabetical' && files.filter.setAs ==='All Units'"
+			  ng-show="files.sort.setAs.orderon ==='topic' && files.filter.setAs ==='All Units'"
 			  class="file-view-list-holder"
 
 			>

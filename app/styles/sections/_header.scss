@@ -95,45 +95,23 @@
 }
 
 .other-stuff-menu{
-  background:#fff;
-  position: absolute;
-  box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
+  @include dropdown-basic;
+
   top: calc(100% + #{$unit});
   right: $unit;
-  // border-radius: $brad;
-  z-index: z("1");
-  transition: all 0.35s;
   transform-origin: top right;
   &:before{
-  		$this-c: #fff;
-  		$this-s: $unit*1.5;
-	    position: absolute;
-	    display: block;
-	    content: "";
-	    top: -$this-s;
-	    right: $unit*2.5;
-	    transform: translate(50%);
-	    width: 0;
-	    height: 0;
-	    border-bottom: $this-s solid $this-c;
-	    border-right: $this-s solid transparent;
-	    border-left: $this-s solid transparent;
+            top: -$unit*1.5;
+            right: $unit*2.5;
+            transform: translate(50%);
   }
     &.ng-hide {
       transform: translate(0, -20%) scale(0);
       opacity: 0;
     }
-    li{
-    	&:not(:first-child){
-    		border-top: 1px solid #eee;
-    	}
-    }
 }
 .other-stuff-menu-link{
-	padding: $unit $unit*3;
-	display: block;
-	min-width: $unit*16;
+	
 	cursor: pointer;
 	transition: background-color 0.2s;
 	@include user-select-none;

@@ -14,3 +14,36 @@
 		background-color: lighten($backgroundColor,10);
 	}
 }
+
+@mixin button-toolbar($backgroundColor: #aaa){
+	background-color: $backgroundColor;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 0.25em 0.5em;
+	text-align: center;
+	cursor: pointer;
+	transition: background-color 0.2s;
+	@include smooth-text;
+	@include user-select-none;
+	@include no-tap-color;
+	&:hover{
+		background-color: lighten($backgroundColor,10);
+	}
+}
+@mixin button-toolbar-isdropdown{
+	padding-right: 1.6em;
+	position: relative;
+	&:after{
+		content:"";
+		display: block;
+		position: absolute;
+		top: 50%;
+		right: 0.5em;
+		transform: translate(0, -50%);
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0.4em 0.3em 0 0.3em;
+		border-color: currentColor transparent transparent transparent;
+	}
+}

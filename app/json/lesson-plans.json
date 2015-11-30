@@ -27,11 +27,11 @@
 	},
 	"sort" : [ 
 		{
-			"name" : "default",
+			"name" : "Default",
 			"orderon" : false
 		},
 		{
-			"name" : "alphabetical",
+			"name" : "A-Z",
 			"orderon" : "topic"
 		}
 	],
