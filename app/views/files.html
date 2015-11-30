@@ -16,14 +16,62 @@
 		</div>
 
 	</header>
+	
+	<div class="files-view-controls">
+		<!-- Filter -->
+			<div 
+			  class="files-view-filter-holder"
+			  ng-if="files.filter"
+			>
+
+
+				<div 
+				  uib-dropdown 
+				  on-toggle="toggled(open)"
+			      <a href uib-dropdown-toggle>
+			        {{files.filter.setAs}}
+			      </a>
+			      <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
+			        <li ng-repeat="choice in files.filter.options">
+			          <a
+			            href
+			            ng-click = "files.filter.setAs = choice;"
+			          >{{choice}}</a>
+			        </li>
+			      </ul>
+			    </div>
+
+
+			</div>
+		<!-- Sort -->
+		<div 
+		  uib-dropdown 
+		  on-toggle="toggled(open)"
+	      <a href uib-dropdown-toggle>
+	        {{files.sort.setAs.name}}
+	      </a>
+	      <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
+	        <li ng-repeat="choice in files.sort.by">
+	          <a
+	            href
+	            ng-click = "files.sort.setAs = choice;"
+	          >{{choice.name}}</a>
+	        </li>
+	      </ul>
+	    </div>
+
+
+	</div>
 
 	<div class="files-view-content" ng-class="files.json.template" style="background-color: {{files.json.color2}}; background-image:url({{files.json.bgImage}})">
 		<div class="container">
 
 
 			<section
+			  ng-hide="files.sort.setAs.name ==='alphabetical' && files.filter.setAs ==='All Units'"
 			  class="file-view-list-holder"
-			  ng-repeat="unit in files.json.unitList"
+			  ng-repeat="unit in files.json.unitList | filter: {showFilter: files.filter.setAs}"
+
 			>
 				<div
 				  ng-if="files.json.hasIcons"
@@ -42,7 +90,7 @@
 						<tr
 						  class="file-view-list-link"
 						  ng-click=""
-						  ng-repeat="item in unit.fileList"
+						  ng-repeat="item in unit.fileList | orderBy: files.sort.setAs.orderon"
 						>
 							<td class="file-view-list-iconType-cell">
 								<div
@@ -77,6 +125,58 @@
 				
 
 			</section>
+
+
+			<section
+			  ng-show="files.sort.setAs.name ==='alphabetical' && files.filter.setAs ==='All Units'"
+			  class="file-view-list-holder"
+
+			>
+				<div class="file-view-list-table-holder">
+					<table
+					  class="file-view-list-table"
+					  ng-class="'file-view-list-table-'+files.json.category"
+					>
+						<tr
+						  class="file-view-list-link"
+						  ng-click=""
+						  ng-repeat="item in files.oneList | orderBy: files.sort.setAs.orderon"
+						>
+							<td class="file-view-list-iconType-cell">
+								<div
+								  class="file-view-list-iconType"
+								  ng-class="'file-view-list-iconType-'+item.filetypeIcon"
+								></div>
+							</td>
+
+							<td class="file-view-list-name">
+								<h2 class="file-view-list-main-title">
+									{{item.topic}}
+									<span 
+									  class="file-view-list-subtitle"
+									  ng-if="item.resourceSubtitle"
+									>{{item.resourceSubtitle}}</span>
+								</h2>
+								
+							</td>
+							<td class="file-view-list-unit-name">
+								{{unit.unitName}}
+							</td>
+							<td class="file-view-list-date">
+								{{item.date | date:'MMM yyyy'}}
+							</td>
+							<td class="file-view-list-size">
+								{{item.size}}
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				
+
+			</section>
+
+
 		</div>
 	</div>
 </div>

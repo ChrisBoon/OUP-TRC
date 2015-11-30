@@ -6,13 +6,41 @@
 	"color1" : "#68C2C2",
 	"color2" : "#e4e8eb",
 	"description" : "Do we really need the 'read more' thing?",
-	"filter" : "units",
-	"sort" : [ "default", "alphabetical"],
+	"filter" : {
+		"filterType" : "units",
+		"options" : [
+			"All Units",
+			"Everyday Language",
+			"People",
+			"Housing",
+			"Food",
+			"Clothing",
+			"Health",
+			"Community",
+			"Transportation",
+			"Job Search",
+			"The Workplace",
+			"Academic Study",
+			"Recreation"
+		],
+		"setAs" : "All Units"
+	},
+	"sort" : [ 
+		{
+			"name" : "default",
+			"orderon" : false
+		},
+		{
+			"name" : "alphabetical",
+			"orderon" : "topic"
+		}
+	],
 	"hasIcons" : true,
 	"hasUnits" : true,
 	"unitList" : [
 		{
-			"unitName" : "Everyday English",
+			"unitName" : "Everyday Language",
+			"showFilter" : ["Everyday Language", "All Units"],
 			"icon" : "images/icon-unit-01.svg",
 			"fileList" : [
 				{
@@ -188,6 +216,7 @@
 		},
 		{
 			"unitName" : "People",
+			"showFilter" : ["People", "All Units"],
 			"icon" : "images/icon-unit-02.svg",
 			"fileList" : [
 				{
@@ -266,6 +295,7 @@
 		},
 		{
 			"unitName" : "Housing",
+			"showFilter" : ["Housing", "All Units"],
 			"icon" : "images/icon-unit-03.svg",
 			"fileList" : [
 				{
