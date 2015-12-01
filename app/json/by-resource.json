@@ -29,10 +29,11 @@
 			"link" : "resource-files/vocabulary-images"
 		},
 		{
-			"icon" : "images/icon-rt-correlations.svg",
+			"icon" : "images/icon-rt-professional-dev.svg",
 			"color1" : "#68C2C2",
-			"title" : "Correlations",
-			"link" : "resource-files/correlations",
+			"title" : "Professional Development",
+			"link" : "resource-files/professional-development",
+			"description" : "View this resource type to see what it is like when the assets aren't split into units.",
 			"badge" : "new"
 		},
 		{
