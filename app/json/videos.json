@@ -1,0 +1,307 @@
+{
+	"category" : "resourceType",
+	"title" : "Videos",
+	"icon" : "images/icon-rt-videos.svg",
+	"animateID" : "x",
+	"color1" : "#68C2C2",
+	"color2" : "#e4e8eb",
+	"description" : "All videos are MP4. Don't share or post these online or whatever.",
+	"filter" : {
+		"filterType" : "units",
+		"options" : [
+			"All Units",
+			"Everyday Language",
+			"People",
+			"Housing",
+			"Food",
+			"Clothing",
+			"Health",
+			"Community",
+			"Transportation",
+			"Job Search",
+			"The Workplace",
+			"Academic Study",
+			"Recreation"
+		],
+		"setAs" : "All Units"
+	},
+	"sort" : [ 
+		{
+			"name" : "Default",
+			"orderon" : false
+		},
+		{
+			"name" : "A-Z",
+			"orderon" : "name"
+		}
+	],
+	"hasIcons" : true,
+	"hasUnits" : true,
+	"unitList" : [
+		{
+			"unitName" : "Everyday Language",
+			"showFilter" : ["Everyday Language", "All Units"],
+			"icon" : "images/icon-unit-01.svg",
+			"fileList" : [
+				{
+					"name" : "Personal Info",
+					"unitName" : "Everyday Language",
+					"resourceSubtitle" : "Topic 1.2",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "10.4MB"
+				},
+				{
+					"name" : "Reality Weather",
+					"unitName" : "Everyday Language",
+					"resourceSubtitle" : "Topic 1.9",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "11.8MB"
+				},
+				{
+					"name" : "Cash or Credit",
+					"unitName" : "Everyday Language",
+					"resourceSubtitle" : "Topic 1.20",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "15.9MB"
+				}				
+			]
+
+		},
+		{
+			"unitName" : "People",
+			"showFilter" : ["People", "All Units"],
+			"icon" : "images/icon-unit-02.svg",
+			"fileList" : [
+				{
+					"name" : "Phoning it in",
+					"resourceSubtitle" : "Topic 2.5",
+					"unitName" : "People",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "15.9MB"
+				}
+			]
+		},
+		{
+			"unitName" : "Housing",
+			"showFilter" : ["Housing", "All Units"],
+			"icon" : "images/icon-unit-03.svg",
+			"fileList" : [
+				{
+					"name" : "Are utilities included?",
+					"resourceSubtitle" : "Topic 3.2",
+					"unitName" : "Housing",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "12.8MB"
+				},
+				{
+					"name" : "Call the Plumber",
+					"resourceSubtitle" : "Topic 3.14",
+					"unitName" : "Housing",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "13.5MB"
+				}
+			]
+		},
+		{
+			"unitName" : "Food",
+			"showFilter" : ["Food", "All Units"],
+			"icon" : "images/icon-unit-04.svg",
+			"fileList" : [
+				{
+					"name" : "Don't eat that",
+					"resourceSubtitle" : "Topic 4.12",
+					"unitName" : "Food",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "12.8MB"
+				},
+				{
+					"name" : "A new job",
+					"resourceSubtitle" : "Topic 4.13",
+					"unitName" : "Food",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "13.5MB"
+				}
+			]
+		},
+		{
+			"unitName" : "Clothing",
+			"showFilter" : ["Clothing", "All Units"],
+			"icon" : "images/icon-unit-05.svg",
+			"fileList" : [
+				{
+					"name" : "Laundry woes",
+					"resourceSubtitle" : "Topic 5.10",
+					"unitName" : "Community",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "12.6MB"
+				}
+			]
+		},
+		{
+			"unitName" : "Health",
+			"showFilter" : ["Health", "All Units"],
+			"icon" : "images/icon-unit-06.svg",
+			"fileList" : [
+				{
+					"name" : "Pain relief",
+					"resourceSubtitle" : "Topic 6.6",
+					"unitName" : "Transportation",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "12.8MB"
+				},
+				{
+					"name" : "The doctor is in",
+					"resourceSubtitle" : "Topic 6.10",
+					"unitName" : "Transportation",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "13.5MB"
+				}
+			]
+		},
+		{
+			"unitName" : "Community",
+			"showFilter" : ["Community", "All Units"],
+			"icon" : "images/icon-unit-07.svg",
+			"fileList" : [
+				{
+					"name" : "Send the police",
+					"resourceSubtitle" : "Topic 7.12",
+					"unitName" : "Job Search",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "12.8MB"
+				},
+				{
+					"name" : "All shook up",
+					"resourceSubtitle" : "Topic 7.15",
+					"unitName" : "Job Search",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "13.5MB"
+				}
+			]
+		},
+		{
+			"unitName" : "Transportation",
+			"showFilter" : ["Transportation", "All Units"],
+			"icon" : "images/icon-unit-08.svg",
+			"fileList" : [
+				{
+					"name" : "Get lost",
+					"resourceSubtitle" : "Topic 8.5",
+					"unitName" : "Transportation",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "12.8MB"
+				},
+				{
+					"name" : "Sold",
+					"resourceSubtitle" : "Topic 8.7",
+					"unitName" : "Transportation",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "13.5MB"
+				}
+			]
+		},
+		{
+			"unitName" : "Job Search",
+			"showFilter" : ["Job Search", "All Units"],
+			"icon" : "images/icon-unit-09.svg",
+			"fileList" : [
+				{
+					"name" : "I need it today",
+					"resourceSubtitle" : "Topic 9.7",
+					"unitName" : "Job Search",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "12.8MB"
+				},
+				{
+					"name" : "Careful and careless",
+					"resourceSubtitle" : "Topic 9.15",
+					"unitName" : "Job Search",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "13.5MB"
+				}
+			]
+		},
+		{
+			"unitName" : "The Workplace",
+			"showFilter" : ["The Workplace", "All Units"],
+			"icon" : "images/icon-unit-10.svg",
+			"fileList" : [
+				{
+					"name" : "Forty percent off",
+					"resourceSubtitle" : "Topic 10.3",
+					"unitName" : "The Workplace",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "12.8MB"
+				}
+			]
+		},
+		{
+			"unitName" : "Academic Study",
+			"showFilter" : ["Academic Study", "All Units"],
+			"icon" : "images/icon-unit-11.svg",
+			"fileList" : [
+				{
+					"name" : "Lights out",
+					"resourceSubtitle" : "Topic 11.8",
+					"unitName" : "Academic Study",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "12.8MB"
+				}
+			]
+		},
+		{
+			"unitName" : "Recreation",
+			"showFilter" : ["Recreation", "All Units"],
+			"icon" : "images/icon-unit-12.svg",
+			"fileList" : [
+				{
+					"name" : "Weekend warrior",
+					"resourceSubtitle" : "Topic 12.9",
+					"unitName" : "Recreation",
+					"link" : "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "12.8MB"
+				}
+			]
+		}
+	]
+}

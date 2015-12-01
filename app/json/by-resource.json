@@ -40,7 +40,7 @@
 			"color1" : "#68C2C2",
 			"title" : "Videos",
 			"description" : "Description text goes here.",
-			"link" : "resource-files/videos"
+			"link" : "files/videos"
 		},
 		{
 			"icon" : "images/icon-rt-newsela.svg",
