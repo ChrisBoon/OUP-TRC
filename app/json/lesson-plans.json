@@ -45,6 +45,7 @@
 			"fileList" : [
 				{
 					"topic" : "Meeting and Greeting",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.1",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -53,6 +54,7 @@
 				},
 				{
 					"topic" : "Personal Info",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.2",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -61,6 +63,7 @@
 				},
 				{
 					"topic" : "School",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.3",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -69,6 +72,7 @@
 				},
 				{
 					"topic" : "Classroom",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.4",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -77,6 +81,7 @@
 				},
 				{
 					"topic" : "Studying",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.5",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -85,6 +90,7 @@
 				},
 				{
 					"topic" : "Succeeding in School",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.6",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -93,6 +99,7 @@
 				},
 				{
 					"topic" : "A Day at School",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.7",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -101,6 +108,7 @@
 				},
 				{
 					"topic" : "Everyday Conversation",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.8",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -109,6 +117,7 @@
 				},
 				{
 					"topic" : "The Weather",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.9",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -117,6 +126,7 @@
 				},
 				{
 					"topic" : "The Telephone",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.10",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -125,6 +135,7 @@
 				},
 				{
 					"topic" : "Numbers",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.11",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -133,6 +144,7 @@
 				},
 				{
 					"topic" : "Measurements",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.12",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -141,6 +153,7 @@
 				},
 				{
 					"topic" : "Time",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.13",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -149,6 +162,7 @@
 				},
 				{
 					"topic" : "Calendar",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.14",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -157,6 +171,7 @@
 				},
 				{
 					"topic" : "Calendar Events",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.15",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -165,6 +180,7 @@
 				},
 				{
 					"topic" : "Describing Things",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.16",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -173,6 +189,7 @@
 				},
 				{
 					"topic" : "Colors",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.17",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -181,6 +198,7 @@
 				},
 				{
 					"topic" : "Prepositions",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.18",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -189,6 +207,7 @@
 				},
 				{
 					"topic" : "Money",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.19",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -197,6 +216,7 @@
 				},
 				{
 					"topic" : "Shopping",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.20",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -205,6 +225,7 @@
 				},
 				{
 					"topic" : "Same and Different",
+					"unitName" : "Everyday Language",
 					"resourceSubtitle" : "Topic 1.21",
 					"link" : "",
 					"filetypeIcon" : "pdf",
@@ -222,6 +243,7 @@
 				{
 					"topic" : "Adults and Children",
 					"resourceSubtitle" : "Topic 2.1",
+					"unitName" : "People",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -230,6 +252,7 @@
 				{
 					"topic" : "Describing People",
 					"resourceSubtitle" : "Topic 2.2",
+					"unitName" : "People",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -238,6 +261,7 @@
 				{
 					"topic" : "Describing Hair",
 					"resourceSubtitle" : "Topic 2.3",
+					"unitName" : "People",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -246,6 +270,7 @@
 				{
 					"topic" : "Families",
 					"resourceSubtitle" : "Topic 2.4",
+					"unitName" : "People",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -254,6 +279,7 @@
 				{
 					"topic" : "Childcare and Parenting",
 					"resourceSubtitle" : "Topic 2.5",
+					"unitName" : "People",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -262,6 +288,7 @@
 				{
 					"topic" : "Daily Routines",
 					"resourceSubtitle" : "Topic 2.6",
+					"unitName" : "People",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -270,6 +297,7 @@
 				{
 					"topic" : "Life Events and Documents",
 					"resourceSubtitle" : "Topic 2.7",
+					"unitName" : "People",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -278,6 +306,7 @@
 				{
 					"topic" : "Feelings",
 					"resourceSubtitle" : "Topic 2.8",
+					"unitName" : "People",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -286,6 +315,7 @@
 				{
 					"topic" : "A Family Reunion",
 					"resourceSubtitle" : "Topic 2.9",
+					"unitName" : "People",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -301,6 +331,7 @@
 				{
 					"topic" : "The Home",
 					"resourceSubtitle" : "Topic 3.1",
+					"unitName" : "Housing",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -309,6 +340,7 @@
 				{
 					"topic" : "Finding a Home",
 					"resourceSubtitle" : "Topic 3.2",
+					"unitName" : "Housing",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -317,6 +349,7 @@
 				{
 					"topic" : "Apartments",
 					"resourceSubtitle" : "Topic 3.3",
+					"unitName" : "Housing",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -325,6 +358,7 @@
 				{
 					"topic" : "Different Places to Live",
 					"resourceSubtitle" : "Topic 3.4",
+					"unitName" : "Housing",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -333,6 +367,7 @@
 				{
 					"topic" : "A House and Yard",
 					"resourceSubtitle" : "Topic 3.5",
+					"unitName" : "Housing",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -341,6 +376,7 @@
 				{
 					"topic" : "A Kitchen",
 					"resourceSubtitle" : "Topic 3.6",
+					"unitName" : "Housing",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -349,6 +385,7 @@
 				{
 					"topic" : "A Dining Area",
 					"resourceSubtitle" : "Topic 3.7",
+					"unitName" : "Housing",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -357,6 +394,7 @@
 				{
 					"topic" : "A Living Room",
 					"resourceSubtitle" : "Topic 3.8",
+					"unitName" : "Housing",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -365,6 +403,7 @@
 				{
 					"topic" : "A Bathroom",
 					"resourceSubtitle" : "Topic 3.9",
+					"unitName" : "Housing",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -373,6 +412,7 @@
 				{
 					"topic" : "A Bedroom",
 					"resourceSubtitle" : "Topic 3.10",
+					"unitName" : "Housing",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -381,6 +421,7 @@
 				{
 					"topic" : "The Kids' Bedroom",
 					"resourceSubtitle" : "Topic 3.11",
+					"unitName" : "Housing",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -389,6 +430,7 @@
 				{
 					"topic" : "Housework",
 					"resourceSubtitle" : "Topic 3.12",
+					"unitName" : "Housing",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -397,6 +439,7 @@
 				{
 					"topic" : "Cleaning Supplies",
 					"resourceSubtitle" : "Topic 3.13",
+					"unitName" : "Housing",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -405,6 +448,7 @@
 				{
 					"topic" : "Household Problems and Repairs",
 					"resourceSubtitle" : "Topic 3.14",
+					"unitName" : "Housing",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
@@ -413,6 +457,7 @@
 				{
 					"topic" : "The Tenant Meeting",
 					"resourceSubtitle" : "Topic 3.15",
+					"unitName" : "Housing",
 					"link" : "",
 					"filetypeIcon" : "pdf",
 					"date" : "2016-02-27",
