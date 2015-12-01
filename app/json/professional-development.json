@@ -1,0 +1,96 @@
+{
+	"category" : "resourceType",
+	"title" : "Professional Development",
+	"icon" : "images/icon-rt-personal-dev.svg",
+	"animateID" : "x",
+	"color1" : "#68C2C2",
+	"color2" : "#e4e8eb",
+	"sort" : [ 
+		{
+			"name" : "Default",
+			"orderon" : false
+		},
+		{
+			"name" : "A-Z",
+			"orderon" : "name"
+		}
+	],
+	"hasUnits" : false,
+	"assetList" : [
+		{
+			"fileList" : [
+				{
+					"name" : "Vocabulary Teaching Handbook",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "15.9MB"
+				},
+				{
+					"name" : "Readers Teaching Notes",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "15.9MB"
+				},
+				{
+					"name" : "Workbook Answer Key - Low Beginning",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "15.9MB"
+				},
+				{
+					"name" : "Workbook Answer Key - High Beginning",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "15.9MB"
+				},
+				{
+					"name" : "Workbook Answer Key - Low Intermediate",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "15.9MB"
+				},
+				{
+					"name" : "Family Literacy Handbook",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "15.9MB"
+				},
+				{
+					"name" : "Family Literacy Activity Worksheets English",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "15.9MB"
+				},
+				{
+					"name" : "Family Literacy Activity Worksheets Spanish",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "15.9MB"
+				},
+				{
+					"name" : "Family Literacy Activity Worksheets Vietnamese",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "15.9MB"
+				},
+				{
+					"name" : "Family Literacy Activity Worksheets Korean",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "15.9MB"
+				}
+			]
+		}
+
+	]
+}
