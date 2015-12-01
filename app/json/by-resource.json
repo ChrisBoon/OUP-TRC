@@ -32,7 +32,7 @@
 			"icon" : "images/icon-rt-professional-dev.svg",
 			"color1" : "#68C2C2",
 			"title" : "Professional Development",
-			"link" : "resource-files/professional-development",
+			"link" : "files/professional-development",
 			"description" : "View this resource type to see what it is like when the assets aren't split into units.",
 			"badge" : "new"
 		},
