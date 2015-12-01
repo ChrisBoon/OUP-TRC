@@ -77,7 +77,7 @@
 
 
 			<section
-			  ng-hide="files.sort.setAs.orderon ==='topic' && files.filter.setAs ==='All Units'"
+			  ng-hide="files.sort.setAs.orderon ==='name' && files.filter.setAs ==='All Units'"
 			  class="file-view-list-holder"
 			  ng-repeat="unit in files.json.unitList | filter: {showFilter: files.filter.setAs}"
 
@@ -110,7 +110,7 @@
 
 							<td class="file-view-list-name">
 								<h2 class="file-view-list-main-title">
-									{{item.topic}}
+									{{item.name}}
 									<span 
 									  class="file-view-list-subtitle"
 									  ng-if="item.resourceSubtitle"
@@ -137,7 +137,7 @@
 
 
 			<section
-			  ng-show="files.sort.setAs.orderon ==='topic' && files.filter.setAs ==='All Units'"
+			  ng-show="files.sort.setAs.orderon ==='name' && files.filter.setAs ==='All Units'"
 			  class="file-view-list-holder"
 
 			>
@@ -160,7 +160,7 @@
 
 							<td class="file-view-list-name">
 								<h2 class="file-view-list-main-title">
-									{{item.topic}}
+									{{item.name}}
 									<span 
 									  class="file-view-list-subtitle"
 									  ng-if="item.resourceSubtitle"
