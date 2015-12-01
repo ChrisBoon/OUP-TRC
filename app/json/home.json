@@ -34,11 +34,11 @@
 		  	"link": "/resource-files/newsela"
 		},
 		{
-			"title": "Classroom Activities",
+			"title": "Videos",
 			"class":"updated",
-			"para": "We’ve updated all of this resource to include some new stuff that makes them super relavant to users in 2017. Click here to take another look!",
+			"para": "We’ve added a bunch of new videos because we're great.",
 		  	"date": "Sept 2016",
-		  	"link": "/resource-files/classroom-activities"
+		  	"link": "files/videos"
 		}
 	]
 }

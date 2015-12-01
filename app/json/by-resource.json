@@ -40,15 +40,15 @@
 			"color1" : "#68C2C2",
 			"title" : "Videos",
 			"description" : "Description text goes here.",
-			"link" : "files/videos"
+			"link" : "files/videos",
+			"badge" : "updated"
 		},
 		{
 			"icon" : "images/icon-rt-newsela.svg",
 			"color1" : "#68C2C2",
 			"title" : "Newsela",
 			"description" : "Check out my 'updated' badge.",
-			"link" : "resource-files/newsela",
-			"badge" : "updated"
+			"link" : "resource-files/newsela"
 		},
 		{
 			"icon" : "images/icon-rt-classroom-activities.svg",
