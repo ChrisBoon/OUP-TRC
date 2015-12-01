@@ -166,8 +166,8 @@
 									{{item.name}}
 									<span 
 									  class="file-view-list-subtitle"
-									  ng-if="item.resourceSubtitle"
-									>{{item.resourceSubtitle}}</span>
+									  ng-if="item.resourceSubtitle || item.topicSubtitle"
+									>{{item.resourceSubtitle}}{{item.topicSubtitle}}</span>
 								</h2>
 								
 							</td>
