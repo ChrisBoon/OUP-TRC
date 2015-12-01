@@ -1,0 +1,110 @@
+{
+	"category" : "topicView",
+	"title" : "Shoes and Accessories",
+	"icon" : "images/icon-unit-05.svg",
+	"animateID" : "x",
+	"color1" : "#1e82c1",
+	"color2" : "#1e82c1",
+	"sort" : [ 
+		{
+			"name" : "Default",
+			"orderon" : false
+		},
+		{
+			"name" : "A-Z",
+			"orderon" : "name"
+		}
+	],
+	"hasUnits" : false,
+	"downAll": {
+		"text" : "Download everything for Shoes and Accessories",
+		"link" : "",
+		"size" : "36.4MB"
+	},
+	"assetList" : [
+		{
+			"fileList" : [
+				{
+					"name" : "Lesson Plan",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Vocabulary Audio",
+					"link" : "",
+					"filetypeIcon" : "audio",
+					"date" : "2016-02-27",
+					"size" : "3.4MB"
+				},
+				{
+					"name" : "Assessment",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "150KB"
+				},
+				{
+					"name" : "Listening Worksheets",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "1.2MB"
+				},
+				{
+					"name" : "Grammar Worksheet",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "2.9MB"
+				},
+				{
+					"name" : "Pronunciation Worksheets",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "1.2MB"
+				},
+				{
+					"name" : "Classroom Worksheets",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "810KB"
+				},
+				{
+					"name" : "Classroom Activities",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "2.1MB"
+				},
+				{
+					"name" : "Newsela Article",
+					"link" : "",
+					"topicSubtitle": "Can you have too many shoes?",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "3MB"
+				},
+				{
+					"name" : "Video",
+					"link" : "",
+					"topicSubtitle": "",
+					"filetypeIcon" : "video",
+					"date" : "2016-02-27",
+					"size" : "15.9MB"
+				},
+				{
+					"name" : "Vocabulary Images",
+					"link" : "",
+					"filetypeIcon" : "image",
+					"date" : "2016-02-27",
+					"size" : "6.5MB"
+				}
+			]
+		}
+
+	]
+}
