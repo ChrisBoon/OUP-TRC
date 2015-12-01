@@ -77,9 +77,9 @@
 
 
 			<section
-			  ng-hide="files.sort.setAs.orderon ==='name' && files.filter.setAs ==='All Units'"
+			  ng-hide="files.json.hasUnits === false || files.sort.setAs.orderon ==='name' && files.filter.setAs ==='All Units'"
 			  class="file-view-list-holder"
-			  ng-repeat="unit in files.json.unitList | filter: {showFilter: files.filter.setAs}"
+			  ng-repeat="unit in files.fileList | filter: {showFilter: files.filter.setAs}"
 
 			>
 				<div
@@ -108,7 +108,8 @@
 								></div>
 							</td>
 
-							<td class="file-view-list-name">
+							<td class="file-view-list-name"
+								ng-class="{'hasUnitName':item.unitName}">
 								<h2 class="file-view-list-main-title">
 									{{item.name}}
 									<span 
@@ -118,7 +119,8 @@
 								</h2>
 								
 							</td>
-							<td class="file-view-list-unit-name">
+							<td ng-if="unit.unitName"
+							class="file-view-list-unit-name">
 								{{unit.unitName}}
 							</td>
 							<td class="file-view-list-date">
@@ -137,7 +139,7 @@
 
 
 			<section
-			  ng-show="files.sort.setAs.orderon ==='name' && files.filter.setAs ==='All Units'"
+			  ng-show="files.sort.setAs.orderon ==='name' && files.filter.setAs ==='All Units' || files.json.hasUnits === false"
 			  class="file-view-list-holder"
 
 			>
@@ -158,7 +160,8 @@
 								></div>
 							</td>
 
-							<td class="file-view-list-name">
+							<td class="file-view-list-name"
+							  ng-class="{'hasUnitName':item.unitName}">
 								<h2 class="file-view-list-main-title">
 									{{item.name}}
 									<span 
@@ -168,7 +171,8 @@
 								</h2>
 								
 							</td>
-							<td class="file-view-list-unit-name">
+							<td ng-if="item.unitName"
+							class="file-view-list-unit-name">
 								{{item.unitName}}
 							</td>
 							<td class="file-view-list-date">

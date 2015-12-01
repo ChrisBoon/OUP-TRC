@@ -33,11 +33,18 @@ angular.module('trcApp')
       thisPage.filter = thisPage.json.filter;
       thisPage.sort.by = thisPage.json.sort;
       thisPage.sort.setAs = thisPage.sort.by[0];
+      thisPage.fileList = [];
+      if (thisPage.json.hasUnits === true) {
+        thisPage.fileList = thisPage.json.unitList;
+      }
+      else{
+        thisPage.fileList = thisPage.json.assetList;
+      }
       var oneList = function(){
         var tempList = [];
-        for (var i = 0; i < thisPage.json.unitList.length; i++) {
-          for (var j = 0; j < thisPage.json.unitList[i].fileList.length; j++) {
-            tempList.push(thisPage.json.unitList[i].fileList[j]);
+        for (var i = 0; i < thisPage.fileList.length; i++) {
+          for (var j = 0; j < thisPage.fileList[i].fileList.length; j++) {
+            tempList.push(thisPage.fileList[i].fileList[j]);
           }
         }
         return tempList;
