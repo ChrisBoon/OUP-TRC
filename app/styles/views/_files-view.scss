@@ -169,5 +169,41 @@ td.file-view-list-size{
 	}	
 }
 
+.download-all-holder{
+	padding: $unit*2;
+}
+.download-all-button{
+	@include card($padding: $unit*3 $unit*2);
+	@include card-hover;
+	display: flex;
+	align-items: center;
+	background-color: #555;
+	color: #fff;
+	@include smooth-text;
+    cursor: pointer;
+    @include user-select-none;
+    @include no-tap-color;
 
-
+}
+.download-all-text{
+	padding-right: $unit*3;
+	flex: 1 1 auto;
+	display: flex;
+	align-items: center;
+	&:before{
+		content: "";
+		width: 2em;
+		height: 2em;
+		display: block;
+		background-image: url('../images/icon-download-circle.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		margin-right: $unit*2;
+		flex: 0 0 auto;
+	}
+}
+.download-all-size{
+	@include media-regDown{
+		font-size: 0.75em;
+	}
+}
