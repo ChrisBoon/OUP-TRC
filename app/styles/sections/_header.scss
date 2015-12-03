@@ -6,10 +6,10 @@
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	align-items: stretch;
 	&-opd{
 		background-color: #000;
 	}
-	align-items: center;
 	justify-content: space-between;
 	align-content: stretch;
 
@@ -20,6 +20,28 @@
 	}
 	.home .logo-container-link{
 		display: none;
+	}
+}
+
+.upOneLevel{
+	display: flex;
+	align-self: stretch;
+	padding: $unit;
+	img{
+		display: block;
+		max-width: $unit*5;
+	}
+}
+
+.logo-container{
+	display: flex;
+	align-items: stretch;
+}
+
+.logo-container-link{
+	transition: transform 0.2s;
+	&:hover{
+		transform: scale(1.2);
 	}
 }
 

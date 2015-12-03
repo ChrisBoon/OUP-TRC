@@ -24,13 +24,16 @@
 
     <!-- Add your site or application content here -->
     <div class="page-header page-header-opd" ng-controller="HeaderCtrl">
-    <div ng-class="locationClass()" class="logo-container logo-container-opd-small">
-    <a ng-hide = "parentURL===undefined"
+      <a ng-hide = "parentURL===undefined"
        class= "upOneLevel"
-       ng-href="#{{parentURL}}">BACK</a>
-      <a class="logo-container-link" ng-href="#/">
-        <img class="logo-opd-small" src="images/logo-opd-small.png" alt="OPD">
+       ng-href="#{{parentURL}}">
+       <img class="upOneLevel-icon" src="images/icon-back-arrow.svg" alt="Back">
       </a>
+      <div ng-class="locationClass()" class="logo-container logo-container-opd-small">
+
+        <a class="logo-container-link" ng-href="#/">
+          <img class="logo-opd-small" src="images/logo-opd-small.png" alt="OPD">
+        </a>
     </div>
       <div class="other-stuff-container">
       <div class="other-stuff-toggle" ng-class="{'is-open': openOtherStuffNav.open === true}" ng-click="openOtherStuffNav.open = !openOtherStuffNav.open">
