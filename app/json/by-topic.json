@@ -6,6 +6,7 @@
 	"color1" : "#EF7D45",
 	"color2" : "#e4e8eb",
 	"description" : "Some helpful, friendly text could go here. Just a sentence or two. Maybe it metions to look for updates, or perhaps we use it to shout out one particular resource type we think people might otherwise not pay attention to.",
+	"parentURL" : "/",
 	"folderList" : [
 		{
 			"icon" : "images/icon-unit-01.svg",

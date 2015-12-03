@@ -7,6 +7,7 @@
 	"color1" : "#27845D",
 	"color2" : "#27845D",
 	"description" : "Some helpful, friendly text could go here. Just a sentence or two. Maybe it metions something which topics are particularly interesting, or it could point out if there’s a new one added for the third edition.",
+	"parentURL" : "browse/by-topic",
 	"folderList" : [
 		{
 			"title" : "Meeting and Greeting",

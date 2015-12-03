@@ -6,6 +6,7 @@
 	"color1" : "#68C2C2",
 	"color2" : "#e4e8eb",
 	"description" : "Do we really need the 'read more' thing?",
+	"parentURL" : "browse/by-resource",
 	"filter" : {
 		"filterType" : "units",
 		"options" : [

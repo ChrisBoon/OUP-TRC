@@ -6,6 +6,7 @@
 	"color1" : "#68C2C2",
 	"color2" : "#e4e8eb",
 	"description" : "All videos are MP4. Don't share or post these online or whatever.",
+	"parentURL" : "browse/by-resource",
 	"filter" : {
 		"filterType" : "units",
 		"options" : [

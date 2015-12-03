@@ -5,6 +5,7 @@
 	"animateID" : "x",
 	"color1" : "#68C2C2",
 	"color2" : "#e4e8eb",
+	"parentURL" : "browse/by-resource",
 	"sort" : [ 
 		{
 			"name" : "Default",
