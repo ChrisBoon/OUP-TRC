@@ -464,6 +464,378 @@
 					"size" : "220KB"
 				}
 			]
+		},
+		{
+			"unitName" : "Food",
+			"showFilter" : ["Food", "All Units"],
+			"icon" : "images/icon-unit-04.svg",
+			"fileList" : [
+				{
+					"name" : "Back from the Market",
+					"resourceSubtitle" : "Topic 4.1",
+					"unitName" : "Food",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Fruit",
+					"resourceSubtitle" : "Topic 4.2",
+					"unitName" : "Food",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Vegetables",
+					"resourceSubtitle" : "Topic 4.3",
+					"unitName" : "Food",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Meat & Poultry",
+					"resourceSubtitle" : "Topic 4.4",
+					"unitName" : "Food",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Seafood & Deli",
+					"resourceSubtitle" : "Topic 4.5",
+					"unitName" : "Food",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "A Grocery Store",
+					"resourceSubtitle" : "Topic 4.6",
+					"unitName" : "Food",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Containers & Packaging",
+					"resourceSubtitle" : "Topic 4.7",
+					"unitName" : "Food",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Weights & Measures",
+					"resourceSubtitle" : "Topic 4.8",
+					"unitName" : "Food",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Food Preparation & Safety",
+					"resourceSubtitle" : "Topic 4.9",
+					"unitName" : "Food",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Kitchen Utensils",
+					"resourceSubtitle" : "Topic 4.10",
+					"unitName" : "Food",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Fast Food Restaurant",
+					"resourceSubtitle" : "Topic 4.11",
+					"unitName" : "Food",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "A Coffee Shop Menu",
+					"resourceSubtitle" : "Topic 4.12",
+					"unitName" : "Food",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "A Restaurant",
+					"resourceSubtitle" : "Topic 4.13",
+					"unitName" : "Food",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "The Farmer's Market",
+					"resourceSubtitle" : "Topic 4.14",
+					"unitName" : "Food",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				}
+			]
+		},
+		{
+			"unitName" : "Clothing",
+			"showFilter" : ["Clothing", "All Units"],
+			"icon" : "images/icon-unit-05.svg",
+			"fileList" : [
+				{
+					"name" : "Everyday Clothes",
+					"resourceSubtitle" : "Topic 5.1",
+					"unitName" : "Clothing",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Casual Work and Formal Clothes",
+					"resourceSubtitle" : "Topic 5.2",
+					"unitName" : "Clothing",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Seasonal Clothing",
+					"resourceSubtitle" : "Topic 5.3",
+					"unitName" : "Clothing",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Underwear & Sleepwear",
+					"resourceSubtitle" : "Topic 5.4",
+					"unitName" : "Clothing",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Workplace Clothing",
+					"resourceSubtitle" : "Topic 5.5",
+					"unitName" : "Clothing",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Shoes & Accessories",
+					"resourceSubtitle" : "Topic 5.6",
+					"unitName" : "Clothing",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Describing Clothes",
+					"resourceSubtitle" : "Topic 5.7",
+					"unitName" : "Clothing",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Making Clothes",
+					"resourceSubtitle" : "Topic 5.8",
+					"unitName" : "Clothing",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Making Alterations",
+					"resourceSubtitle" : "Topic 5.9",
+					"unitName" : "Clothing",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Doing the Laundry",
+					"resourceSubtitle" : "Topic 5.10",
+					"unitName" : "Clothing",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "A Garage Sale",
+					"resourceSubtitle" : "Topic 5.11",
+					"unitName" : "Clothing",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				}
+			]
+		},
+		{
+			"unitName" : "Health",
+			"showFilter" : ["Health", "All Units"],
+			"icon" : "images/icon-unit-06.svg",
+			"fileList" : [
+				{
+					"name" : "The Body",
+					"resourceSubtitle" : "Topic 6.1",
+					"unitName" : "Health",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Inside & Outside the Body",
+					"resourceSubtitle" : "Topic 6.2",
+					"unitName" : "Health",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Personal Hygiene",
+					"resourceSubtitle" : "Topic 6.3",
+					"unitName" : "Health",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Symptoms & Injuries",
+					"resourceSubtitle" : "Topic 6.4",
+					"unitName" : "Health",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Medical Care",
+					"resourceSubtitle" : "Topic 6.5",
+					"unitName" : "Health",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Illness & Medical Conditions",
+					"resourceSubtitle" : "Topic 6.6",
+					"unitName" : "Health",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "A Pharmacy",
+					"resourceSubtitle" : "Topic 6.7",
+					"unitName" : "Health",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Taking Care of Your Health",
+					"resourceSubtitle" : "Topic 6.8",
+					"unitName" : "Health",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Medical Emergencies",
+					"resourceSubtitle" : "Topic 6.9",
+					"unitName" : "Health",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "First Aid",
+					"resourceSubtitle" : "Topic 6.10",
+					"unitName" : "Health",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Dental Care",
+					"resourceSubtitle" : "Topic 6.11",
+					"unitName" : "Health",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Medical Insurance",
+					"resourceSubtitle" : "Topic 6.12",
+					"unitName" : "Health",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Hospital",
+					"resourceSubtitle" : "Topic 6.13",
+					"unitName" : "Health",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				},
+				{
+					"name" : "A Health Fair",
+					"resourceSubtitle" : "Topic 6.14",
+					"unitName" : "Health",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "240KB"
+				}
+			]
 		}
 	]
 }
