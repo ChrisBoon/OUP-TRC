@@ -3,7 +3,7 @@
 //controller for Header element
 
 angular.module('trcApp')
-  .controller('HeaderCtrl', ['$scope', '$location', function($scope, $location) {
+  .controller('HeaderCtrl', ['$scope', '$location', 'getJSON', '$rootScope', function($scope, $location, getJSON, $rootScope) {
 
   	$scope.$location = $location;
 
@@ -18,6 +18,7 @@ angular.module('trcApp')
   			return 'page';
   		}
   	};
+
 
 	$scope.openOtherStuffNav = {'open':false};
 
@@ -71,4 +72,20 @@ angular.module('trcApp')
 			'link': '/'
 		}
     ];
+
+
+//this is dumb- need a less hacky way to push data to header
+  $scope.$on('$locationChangeStart', function(event) {
+	    getJSON.headerStuff()
+	    .then(
+	      	function(d) {
+		        $rootScope.parentURL = d;
+	        },
+	        function(){
+	        	$rootScope.parentURL = undefined;
+	        }
+
+	    );
+
+	});
   }]);

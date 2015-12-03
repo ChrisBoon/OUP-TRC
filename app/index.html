@@ -25,6 +25,9 @@
     <!-- Add your site or application content here -->
     <div class="page-header page-header-opd" ng-controller="HeaderCtrl">
     <div ng-class="locationClass()" class="logo-container logo-container-opd-small">
+    <a ng-hide = "parentURL===undefined"
+       class= "upOneLevel"
+       ng-href="#{{parentURL}}">BACK</a>
       <a class="logo-container-link" ng-href="#/">
         <img class="logo-opd-small" src="images/logo-opd-small.png" alt="OPD">
       </a>
@@ -81,6 +84,7 @@
         <script src="scripts/controllers/header.js"></script>
         <script src="scripts/controllers/folders.js"></script>
         <script src="scripts/controllers/files.js"></script>
+        <script src="scripts/services/getjson.js"></script>
         <!-- endbuild -->
 </body>
 </html>
