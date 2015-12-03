@@ -86,7 +86,9 @@ td.file-view-list-iconType-cell{
 td.file-view-list-name{
 	width: 80%;
 	&.hasUnitName{
-		width: 45%;
+		@include media-regUp{
+			width: 45%;
+		}
 	}
 	@include media-small{
 		width: 100%;
