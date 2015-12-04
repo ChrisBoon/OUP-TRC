@@ -75,7 +75,7 @@ angular.module('trcApp')
 
 
 //this is dumb- need a less hacky way to push data to header
-  $scope.$on('$locationChangeStart', function(event) {
+  $scope.$on('$locationChangeStart', function() {
 	    getJSON.headerStuff()
 	    .then(
 	      	function(d) {
