@@ -150,15 +150,7 @@ td.file-view-list-size{
 	}
 }
 .files-view-controls-list{
-	@include dropdown-basic;
-	transform-origin: top left;
-	transform: translate(0, -20px) scale(0);
-	opacity: 0;
-	@at-root .open>& {
-	    display: block;
-	    transform: translate(0, 0) scale(1);
-        opacity: 1;
-	}
+	@include dropdown-basic($origin: top left);
     top: calc(100% + #{$unit/2});
     left: -$unit;
 	&:before{

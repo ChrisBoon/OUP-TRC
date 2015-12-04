@@ -69,7 +69,7 @@
 	&:hover{
 		background-color: rgba(#fff,0.2);
 	}
-	&.is-open{
+	.open &{
 		background-color: $c-close;
 	}
 }
@@ -105,7 +105,7 @@
   &:after{
     transform: translate(0,8px);
   }
-  .other-stuff-toggle.is-open &{
+  .open &{
 	  	background: none;
       &:before{
         transform: rotate(45deg);
@@ -117,23 +117,17 @@
 }
 
 .other-stuff-menu{
-  @include dropdown-basic;
-
+  @include dropdown-basic($origin: top right);
   top: calc(100% + #{$unit});
   right: $unit;
-  transform-origin: top right;
   &:before{
-            top: -$unit*1.5;
-            right: $unit*2.5;
-            transform: translate(50%);
+    top: -$unit*1.5;
+    right: $unit*2.5;
+    transform: translate(50%);
   }
-    &.ng-hide {
-      transform: translate(0, -20%) scale(0);
-      opacity: 0;
-    }
 }
+
 .other-stuff-menu-link{
-	
 	cursor: pointer;
 	transition: background-color 0.2s;
 	@include user-select-none;

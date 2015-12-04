@@ -1,12 +1,20 @@
 //this is messy. Also i'm aplying it to the hamburger menu dropdown and controls dropdowns even though they use different js and html.
 //TODO: Standardize them and consolidate css better
-@mixin dropdown-basic{
+@mixin dropdown-basic($origin: top left){
     position: absolute;
     z-index: z("1");    
     background-color: #fff;
     box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.2);
     border-radius: 2px;
     transition: all 0.35s;
+    transform: translate(0, -20px) scale(0);
+    opacity: 0;
+    transform-origin: $origin;
+    .open>& {
+        display: block;
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }    
       &:before{
             $this-c: #fff;
             $this-s: $unit*1.5;

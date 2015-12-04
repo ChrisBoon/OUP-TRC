@@ -35,16 +35,26 @@
           <img class="logo-opd-small" src="images/logo-opd-small.png" alt="OPD">
         </a>
     </div>
-      <div class="other-stuff-container">
-      <div class="other-stuff-toggle" ng-class="{'is-open': openOtherStuffNav.open === true}" ng-click="openOtherStuffNav.open = !openOtherStuffNav.open">
-        <div class="other-stuff-toggle-icon"></div>
-      </div>
-        <nav class="other-stuff-menu" ng-show="openOtherStuffNav.open" >
-          <ul>
-            <li ng-repeat="item in otherStuff"><a class="other-stuff-menu-link">{{item.text}}</a></li>
-          </ul>
-        </nav>
-      </div>
+
+
+
+
+<div 
+  uib-dropdown 
+  on-toggle="toggled(open)"
+  class="other-stuff-container">
+  <a class="other-stuff-toggle"href uib-dropdown-toggle><div class="other-stuff-toggle-icon"></div></a>
+  <ul class="other-stuff-menu" aria-labelledby="simple-dropdown">
+    <li ng-repeat="item in otherStuff">
+      <a
+        href
+        ng-click = "files.filter.setAs = choice;"
+      >{{item.text}}</a>
+    </li>
+  </ul>
+</div>
+
+
     </div>
 
     <div class="view-holder" ng-view=""></div>
