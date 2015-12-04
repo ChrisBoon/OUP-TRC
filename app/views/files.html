@@ -22,7 +22,7 @@
 					{{files.json.title}}
 				</h1>
 				<p class="content-view-page-desc">
-					{{files.json.description}} <span class="more-button" ng-click="files.readMore()">Read more</span>
+					{{files.json.description}} <span ng-if ="files.json.descriptionLong" class="more-button" ng-click="files.readMore()">Read more</span>
 				</p>
 
 			</div>
