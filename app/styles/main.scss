@@ -2,12 +2,13 @@
 // endbower
 @import "base/_reset";
 
-@import "libs/_bootstrap";
 
 
 @import "utils/_mixins";
 @import "utils/_media-queries";
 @import "utils/_variables";
+
+
 
 @import "base/_typography";
 @import "components/_icons";
@@ -15,6 +16,8 @@
 @import "components/_cards";
 @import "components/_buttons";
 @import "components/_dropdowns";
+
+@import "libs/_bootstrap";
 
 
 @import "sections/_header";

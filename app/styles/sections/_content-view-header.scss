@@ -6,6 +6,7 @@
 		align-items: stretch;
 	}
 	&-text{
+		flex: 1 1 auto;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -16,6 +17,7 @@
 	flex: 0 0 auto;
 	padding-right: $unit*2;
 	display: flex;
+	align-items: center;
 	img{
 		display: block;
 		width: $unit*8;
@@ -34,4 +36,14 @@
 .content-view-page-desc{
 	@include paragraph;
 	@include textExplain;
+}
+
+.more-button{
+	@include button-inline($c-trc-accent-1);
+	white-space: nowrap;
+}
+
+.close-modal-button{
+	@include button-basic($c-trc-accent-1);
+	align-self: flex-end;
 }

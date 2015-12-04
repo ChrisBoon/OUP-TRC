@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('trcApp')
-  .controller('FilesCtrl', function ($scope, $http, $routeParams, getJSON) {
+  .controller('FilesCtrl', function ($scope, $http, $routeParams, getJSON, $uibModal) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -53,6 +53,39 @@ angular.module('trcApp')
     });
 
 
+  thisPage.readMore = function () {
+
+    var modalInstance = $uibModal.open({
+      animation: true,
+      templateUrl: 'myModalContent.html',
+      controller: 'ModalInstanceCtrl',
+      controllerAs: 'myModal',
+      resolve: {
+        longText: function () {
+          return thisPage.json.descriptionLong;
+        }
+      }
+    });
+
+    modalInstance.result.then(function (selectedItem) {
+      $scope.selected = selectedItem;
+    });
+  };
+
+
+
     
 
-  });
+  })
+
+.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, longText) {
+  var myModal = this;
+  myModal.longText = longText;
+
+  myModal.ok = function () {
+    $uibModalInstance.close();
+  };
+
+
+});
+

@@ -1,3 +1,15 @@
+    <script type="text/ng-template" id="myModalContent.html">
+
+        <div class="modal-body">
+
+            {{myModal.longText}}
+        </div>
+        <div class="modal-footer">
+          <div class="close-modal-button" ng-click="myModal.ok()">Close</div>
+        </div>
+    </script>
+
+
 <div class="view view-files">
 	<header class="content-view-header">
 
@@ -10,10 +22,14 @@
 					{{files.json.title}}
 				</h1>
 				<p class="content-view-page-desc">
-					{{files.json.description}}
+					{{files.json.description}} <span class="more-button" ng-click="files.readMore()">Read more</span>
 				</p>
+
 			</div>
+			
 		</div>
+
+
 
 	</header>
 	
