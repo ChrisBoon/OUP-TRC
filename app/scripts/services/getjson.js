@@ -16,7 +16,7 @@ angular.module('trcApp')
       
       headerStuff: function() {
         var thePath = $location.path().split(/[\s/]+/).pop();
-        if ( thePath ===" "){
+        if ( thePath ===' '){
           return false;
         }
         else{
