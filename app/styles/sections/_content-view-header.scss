@@ -42,8 +42,3 @@
 	@include button-inline($c-trc-accent-1);
 	white-space: nowrap;
 }
-
-.close-modal-button{
-	@include button-basic($c-trc-accent-1);
-	align-self: flex-end;
-}

@@ -1,0 +1,85 @@
+.modal-open {
+  overflow: hidden;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  transition: all 0.3s ease-out;
+
+}
+.modal.fade .modal-dialog {
+
+  transition: all 0.3s ease-out;
+  transform: scale(0.2);
+  opacity:0;
+}
+.modal.in .modal-dialog {
+    transform: scale(1);
+    opacity:1;
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: $unit*10 $unit*2;
+  @include media-regUp{
+  	margin: $unit*10 auto;
+	max-width: $unit*90;
+
+  }
+
+}
+.modal-content {
+  @include card($padding: $unit*2);
+  @include card-heavyShadow;
+
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+}
+.modal-backdrop.in {
+  opacity: .5;
+  transition: all 0.3s;
+}
+.modal-header {
+
+}
+.modal-header .close {
+
+}
+.modal-title {
+
+}
+.modal-body {
+	min-height: $unit*10;
+}
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.close-modal-button{
+  @include button-basic($c-trc-accent-1);
+  align-self: flex-end;
+}
