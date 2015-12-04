@@ -20,14 +20,13 @@ angular.module('trcApp')
 
     this.oneList = [];
 
-    //for generating the main links on the homepage
-    //this will be unlikely to change during lifecycle of a product but will vary by product to product so will either be best as separate file or at least separate in dev and bundled in at build phase
     getJSON.allJSON()
     .then(function(d) {
       thisPage.json = d;
     })
-    .then(function(){
 
+    
+    .then(function(){
       thisPage.filter = thisPage.json.filter;
       thisPage.sort.by = thisPage.json.sort;
       thisPage.sort.setAs = thisPage.sort.by[0];

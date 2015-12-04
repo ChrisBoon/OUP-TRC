@@ -1,3 +1,14 @@
+    <script type="text/ng-template" id="myModalContent.html">
+
+        <div class="modal-body">
+
+            {{myModal.longText}}
+        </div>
+        <div class="modal-footer">
+          <div class="close-modal-button" ng-click="myModal.ok()">Close</div>
+        </div>
+    </script>
+
 <div class="view view-folder">
 	<header class="content-view-header">
 
@@ -10,7 +21,7 @@
 					{{folder.json.title}}
 				</h1>
 				<p class="content-view-page-desc">
-					{{folder.json.description}}
+					{{folder.json.description}} <span ng-if ="folder.json.descriptionLong" class="more-button" ng-click="folder.readMore()">Read more</span>
 				</p>
 			</div>
 		</div>
