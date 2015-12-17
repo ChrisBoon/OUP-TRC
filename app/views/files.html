@@ -139,11 +139,15 @@
 							class="file-view-list-unit-name">
 								{{unit.unitName}}
 							</td>
-							<td class="file-view-list-date">
+							<td ng-if="item.date"
+							class="file-view-list-date">
 								{{item.date | date:'MMM yyyy'}}
 							</td>
 							<td class="file-view-list-size">
 								{{item.size}}
+							</td>
+							<td class="file-icon">
+								<img src="images/icon-download-grey.svg">
 							</td>
 						</tr>
 					</table>
@@ -191,11 +195,15 @@
 							class="file-view-list-unit-name">
 								{{item.unitName}}
 							</td>
-							<td class="file-view-list-date">
+							<td ng-if="item.date"
+							class="file-view-list-date">
 								{{item.date | date:'MMM yyyy'}}
 							</td>
 							<td class="file-view-list-size">
 								{{item.size}}
+							</td>
+							<td class="file-icon">
+								<img src="images/icon-download-grey.svg">
 							</td>
 						</tr>
 					</table>
