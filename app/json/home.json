@@ -1,20 +1,20 @@
 {
 	"browseMethods": [
 	    {
-	      	"title": "Browse by Resource Type",
-	      	"class":"browse-type-1",
-	      	"animateID" : "bt1",
-	      	"para": "Looking for a particular resource such as Lesson Plans, or Classroom Activities? Choose this option.",
-	      	"imgSrc": "images/browseby-1.svg",
-	      	"link": "browse/by-resource"
-	    },
-	    {
 	      	"title": "Browse by Topic",
 	      	"class":"browse-type-2",
 	      	"animateID" : "bt2",
 	      	"para": "Want everything for a particular topic? Choose this option.",
 	      	"imgSrc": "images/browseby-2.svg",
 	      	"link": "browse/by-topic"
+	    },
+	    {
+	      	"title": "Browse by Resource Type",
+	      	"class":"browse-type-1",
+	      	"animateID" : "bt1",
+	      	"para": "Looking for a particular resource such as Lesson Plans, or Classroom Activities? Choose this option.",
+	      	"imgSrc": "images/browseby-1.svg",
+	      	"link": "browse/by-resource"
 	    },
 	    {
 	      	"title": "Custom search",
