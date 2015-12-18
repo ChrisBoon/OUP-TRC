@@ -32,7 +32,7 @@
     </div>
 
     <div class="updates-section">
-      <h1 ng-click="home.showWelcome = true" class="updates-section-h1">Updates</h1>
+      <h1 class="updates-section-h1">Updates</h1>
       <ul class ="updates-list">
         <li class ="updates-list-item" ng-repeat="item in home.json.updatesList">
           <a class ="updates-list-item-link" ng-href="#/{{item.link}}">
@@ -61,7 +61,7 @@
           <img src="images/logo-OUP.svg" alt="Oxford University Press" class="logo-oup">
         </a>
         <div class="boring-footer-stuff">
-          <ul class="footer-links-list">
+          <ul class="footer-links-list" ng-click="home.unsetWelcomeStatus()">
             <li ng-repeat="item in footerLinks"><a href="">{{item.text}}</a></li>
           </ul>
           <p class="copyright-line">Copyright © Oxford University Press, 2015. All Rights Reserved.</p>

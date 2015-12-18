@@ -21,6 +21,14 @@ angular.module('trcApp')
 	    localStorageService.set('isWelcomeHidden',true);
     };
 
+    //note this is just for testing purposes - it wouldn't be needed in the real app.
+    //if you click the list of links in the footer this is triggering to bring back the welcome message.
+    this.unsetWelcomeStatus = function(){
+        this.showWelcome = true;
+        localStorageService.set('isWelcomeHidden',false);
+    };
+
+
     //store variable ref to this for easy reference
     var thisHome = this;
     // add hook for json
