@@ -16,7 +16,7 @@ angular.module('trcApp')
     getJSON.allJSON()
     .then(function(d) {
       thisPage.json = d;
-    })
+    });
 
 
 
