@@ -3,18 +3,24 @@
 
 .folder-view-content.list-view{
 	padding: $unit*2;
-	background-repeat: no-repeat;
-	background-position: 100% 100%;
-	background-size: auto 100%;
-	@include media-small{
-		background-image: none !important;
+	@include OPD{
+		//specific styling/placement of optional bg decoration can content by course.
+		//eg. we're currently including one fixed position image, but another course may choose to use a repeat pattern.
+		background-repeat: no-repeat;
+		background-position: 100% 100%;
+		background-size: auto 100%;
+		@include media-small{
+			background-image: none !important;
+		}
 	}
 }
 .folder-view-list-list-view{
 	@include card($padding:0);
-	@include media-regUp{
-		width: 50%;
-		max-width: $unit*75;		
+	width: 60%;
+	max-width: $unit*75;	
+	@include media-small{
+		width: 100%;
+		max-width: 100%;
 	}
 	
 	.folder-view-list-item{

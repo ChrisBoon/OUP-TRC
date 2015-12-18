@@ -9,19 +9,19 @@
 	}
 }
 @mixin media-regDown(){
-	@include mq-lessthan(701px){
+	@include mq-lessthan(700px){
 		@content;
 	}
 }
 
 
 @mixin media-small(){
-	@include mq-lessthan(701px){
+	@include mq-lessthan(600px){
 		@content;
 	}
 }
 @mixin media-xtraSmall(){
-	@include mq-lessthan(501px){
+	@include mq-lessthan(500px){
 		@content;
 	}
 }
