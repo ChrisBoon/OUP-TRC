@@ -3,7 +3,6 @@
 	"title" : "Everyday Language",
 	"icon" : "images/icon-unit-01.svg",
 	"bgImage" : "images/bg-unit-01.png",
-	"animateID" : "unit01",
 	"color1" : "#27845D",
 	"color2" : "#27845D",
 	"description" : "Some helpful, friendly text could go here. Just a sentence or two. Maybe it metions something which topics are particularly interesting, or it could point out if there’s a new one added for the third edition.",
