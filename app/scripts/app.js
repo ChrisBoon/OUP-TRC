@@ -16,7 +16,6 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ui.sortable',
     'LocalStorageModule',
     'ui.bootstrap'
   ])
