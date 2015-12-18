@@ -25,4 +25,7 @@
 		padding: $unit;
 		@include cardListHover;
 	}
+	.folder-view-list-item-desc{
+		color: $c-light-text;
+	}
 }
