@@ -1,3 +1,4 @@
+//the footer appears on the home page only.
 .page-footer{
 	background-color: $c-trc-bg;
 	flex: 0 0 auto;
@@ -24,9 +25,9 @@
 	    transform: translate(50%);
 	    width: 0;
 	    height: 0;
-	    border-top: 8px solid $this-c;
-	    border-right: 8px solid transparent;
-	    border-left: 8px solid transparent;
+	    border-top: $unit solid $this-c;
+	    border-right: $unit solid transparent;
+	    border-left: $unit solid transparent;
 
 	}
 }

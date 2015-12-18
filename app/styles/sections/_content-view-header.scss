@@ -1,3 +1,5 @@
+//Styles for the 'header' that appears on all content pages (pretty much all pages except homepage).
+
 .content-view-header{
 	flex: 0 0 auto;
 	padding: $unit*2;
@@ -12,6 +14,8 @@
 		justify-content: center;
 	}
 }
+
+//note that just about every item below here is 'optional' so has been coded to work well regardless of which items are included on any given view.
 
 .view-icon-holder{
 	flex: 0 0 auto;

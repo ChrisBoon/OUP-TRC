@@ -1,26 +1,19 @@
+//styles the top header that appears on all pages
+
+
 .page-header{
 	//positioning of header can be found in _shell.scss 
 	flex: 0 0 auto;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	align-items: stretch;
-	&-opd{
-		background-color: #000;
-	}
 	justify-content: space-between;
 	align-content: stretch;
 
-	.logo-container-link{
-		display: flex;
-		align-items: center;
-	}
-	.home .logo-container-link{
-		display: none;
+	@include OPD{
+		background-color: #000;
 	}
 }
+
 
 .upOneLevel{
 	display: flex;
@@ -51,9 +44,18 @@
 	}
 }
 
-.logo-opd-small{
-	width: $unit*12;
+.home .logo-container-link{
+	//on the home page we hide the small logo as we see the large one instead. Also the logo links to home which would be redundant.
+	display: none;
+}
+
+
+.logo-course-small{
+	display: block;
 	padding: $unit;
+	@include OPD{
+		width: $unit*14;
+	}
 }
 
 .other-stuff-container{

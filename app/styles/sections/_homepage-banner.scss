@@ -1,7 +1,13 @@
-.homepage-banner-opd{
-	background: #000;
-	padding: $unit $unit*2 $unit*4;
+//styles the large branding area on the home page
+//all styles in this area are OPD specific as the html content in the area can change on a course by course basis.
+
+.homepage-banner{
+	@include OPD{
+		background: #000;
+		padding: $unit $unit*2 $unit*4;
+	}
 }
+
 .logo-opd-huge{
 	max-width: 600px;
 	width: 100%;
