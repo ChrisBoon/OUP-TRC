@@ -41,11 +41,11 @@
 
 						</div>
 
-						<h2 class="folder-view-list-item-title">{{item.title}}<span ng-if="item.badge" ng-class="'folder-view-badge-'+item.badge"></span></h2>
-						<p ng-if="item.description" 
+						<h2 class="folder-view-list-item-title">{{item.title}}<span ng-if="item.description" 
 						   class="folder-view-list-item-desc">
 						   {{item.description}}
-						</p>
+						</span><span ng-if="item.badge" ng-class="'folder-view-badge-'+item.badge"></span></h2>
+						
 
 					</a>
 				</li>
