@@ -41,12 +41,15 @@
 
 						</div>
 
-						<h2 class="folder-view-list-item-title">{{item.title}}<span ng-if="item.description" 
+						<h2 class="folder-view-list-item-title">{{item.title}}<span ng-if="folder.json.template === 'list-view' && item.description" 
 						   class="folder-view-list-item-desc">
 						   {{item.description}}
 						</span><span ng-if="item.badge" ng-class="'folder-view-badge-'+item.badge"></span></h2>
 						
-
+						<div ng-if="folder.json.template === 'grid-view' && item.description" 
+						   class="folder-view-list-item-desc">
+						   {{item.description}}
+						</div>
 					</a>
 				</li>
 			</ul>
