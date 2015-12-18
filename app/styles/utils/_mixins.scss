@@ -154,3 +154,10 @@ $z-layers: (
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+@mixin OPD{
+  @at-root .product-OPD &{
+    @content;
+  }
+}
