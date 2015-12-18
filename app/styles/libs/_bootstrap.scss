@@ -1,3 +1,6 @@
-.dropdown, .dropup {
-    position: relative;
-}
+//the app uses angular bootstrap for functionality.
+//rather than bloat the filesize with the entire bootstrap css I generally copy the required styles into the main codebase
+//eg the 'modal' component is used so the css for it can be found in components/modal.scss
+//this file is just a temporary store for when I first integrate an element.
+
+

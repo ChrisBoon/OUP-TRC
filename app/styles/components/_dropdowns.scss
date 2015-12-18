@@ -1,5 +1,9 @@
-//this is messy. Also i'm aplying it to the hamburger menu dropdown and controls dropdowns even though they use different js and html.
-//TODO: Standardize them and consolidate css better
+//helper class from boostrap:
+.dropdown, .dropup {
+    position: relative;
+}
+
+//apply to elements we use the bootstrap dropdown on (see views/_folder-view.scss > .files-view-controls-list for an example of implementation)
 @mixin dropdown-basic($origin: top left){
     position: absolute;
     z-index: z("1");    
