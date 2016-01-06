@@ -10,43 +10,53 @@
 	"folderList" : [
 		{
 			"title" : "Everyday Clothes",
+			"description" : "Topic 5.1",			
 			"link" : "list/casual-work-and-formal-clothes"
 		},
 		{
 			"title" : "Seasonal Clothing",
+			"description" : "Topic 5.2",			
 			"link" : "list/seasonal-clothing"
 		},
 		{
 			"title" : "Underwear & Sleepwear",
+			"description" : "Topic 5.3",			
 			"link" : "list/underwear-&-sleepwear",
 			"badge" : "new"
 		},
 		{
 			"title" : "Workplace Clothing",
+			"description" : "Topic 5.4",			
 			"link" : "list/workplace-clothing"
 		},
 		{
 			"title" : "Shoes and Accessories",
+			"description" : "Topic 5.5",			
 			"link" : "files/shoes-and-accessories"
 		},
 		{
 			"title" : "Describing Clothes",
+			"description" : "Topic 5.6",			
 			"link" : "list/describing-clothes"
 		},
 		{
 			"title" : "Making Clothes",
+			"description" : "Topic 5.7",			
 			"link" : "list/making-clothes"
 		},
 		{
 			"title" : "Making Alterations",
+			"description" : "Topic 5.8",			
 			"link" : "list/making-alterations"
 		},
 		{
 			"title" : "Doing the Laundry",
+			"description" : "Topic 5.9",			
 			"link" : "list/doing-the-laundry"
 		},
 		{
 			"title" : "A Garage Sale",
+			"description" : "Topic 5.10",			
 			"link" : "list/a-garage-sale"
 		}
 	]
