@@ -1,15 +1,20 @@
-@mixin button-basic($backgroundColor: #aaa){
-	background-color: $backgroundColor;
-	color: #fff;
-	text-transform: uppercase;
+@mixin button-minimal{
 	padding: 0.25em 0.5em;
-	text-align: center;
 	border-radius: 2px;
 	cursor: pointer;
 	transition: background-color 0.2s;
 	@include smooth-text;
 	@include user-select-none;
 	@include no-tap-color;
+
+}
+
+@mixin button-basic($backgroundColor: #aaa){
+	@include button-minimal;
+	background-color: $backgroundColor;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
 	&:hover{
 		background-color: lighten($backgroundColor,10);
 	}
