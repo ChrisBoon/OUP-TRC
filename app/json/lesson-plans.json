@@ -42,7 +42,12 @@
 		{
 			"unitName" : "Everyday Language",
 			"showFilter" : ["Everyday Language", "All Units"],
-			"icon" : "images/icon-unit-01.svg",
+			"icon" : "images/icon-unit-01-no-bg.svg",
+			"color" : "#27845D",
+			"downloadAll" : {
+				"link" : "",
+				"size" : "3.2MB"
+			},
 			"fileList" : [
 				{
 					"name" : "Meeting and Greeting",
@@ -218,7 +223,12 @@
 		{
 			"unitName" : "People",
 			"showFilter" : ["People", "All Units"],
-			"icon" : "images/icon-unit-02.svg",
+			"icon" : "images/icon-unit-02-no-bg.svg",
+			"color" : "#74ae58",
+			"downloadAll" : {
+				"link" : "",
+				"size" : "3.2MB"
+			},			
 			"fileList" : [
 				{
 					"name" : "Adults and Children",
@@ -297,7 +307,12 @@
 		{
 			"unitName" : "Housing",
 			"showFilter" : ["Housing", "All Units"],
-			"icon" : "images/icon-unit-03.svg",
+			"icon" : "images/icon-unit-03-no-bg.svg",
+			"color" : "#a1c15d",
+			"downloadAll" : {
+				"link" : "",
+				"size" : "3.2MB"
+			},			
 			"fileList" : [
 				{
 					"name" : "The Home",
@@ -424,7 +439,12 @@
 		{
 			"unitName" : "Food",
 			"showFilter" : ["Food", "All Units"],
-			"icon" : "images/icon-unit-04.svg",
+			"icon" : "images/icon-unit-04-no-bg.svg",
+			"color" : "#61b0b0",
+			"downloadAll" : {
+				"link" : "",
+				"size" : "3.2MB"
+			},			
 			"fileList" : [
 				{
 					"name" : "Back from the Market",
@@ -543,7 +563,12 @@
 		{
 			"unitName" : "Clothing",
 			"showFilter" : ["Clothing", "All Units"],
-			"icon" : "images/icon-unit-05.svg",
+			"icon" : "images/icon-unit-05-no-bg.svg",
+			"color" : "#1e82c1",
+			"downloadAll" : {
+				"link" : "",
+				"size" : "3.2MB"
+			},			
 			"fileList" : [
 				{
 					"name" : "Everyday Clothes",
@@ -638,7 +663,12 @@
 		{
 			"unitName" : "Health",
 			"showFilter" : ["Health", "All Units"],
-			"icon" : "images/icon-unit-06.svg",
+			"icon" : "images/icon-unit-06-no-bg.svg",
+			"color" : "#3157a0",
+			"downloadAll" : {
+				"link" : "",
+				"size" : "3.2MB"
+			},			
 			"fileList" : [
 				{
 					"name" : "The Body",

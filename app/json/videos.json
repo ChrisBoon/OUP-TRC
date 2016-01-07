@@ -41,7 +41,12 @@
 		{
 			"unitName" : "Everyday Language",
 			"showFilter" : ["Everyday Language", "All Units"],
-			"icon" : "images/icon-unit-01.svg",
+			"icon" : "images/icon-unit-01-no-bg.svg",
+			"color" : "#27845D",
+			"downloadAll" : {
+				"link" : "",
+				"size" : "38MB"
+			},
 			"fileList" : [
 				{
 					"name" : "Personal Info",
@@ -76,7 +81,8 @@
 		{
 			"unitName" : "People",
 			"showFilter" : ["People", "All Units"],
-			"icon" : "images/icon-unit-02.svg",
+			"icon" : "images/icon-unit-02-no-bg.svg",
+			"color" : "#74ae58",
 			"fileList" : [
 				{
 					"name" : "Phoning it in",
@@ -92,7 +98,12 @@
 		{
 			"unitName" : "Housing",
 			"showFilter" : ["Housing", "All Units"],
-			"icon" : "images/icon-unit-03.svg",
+			"icon" : "images/icon-unit-03-no-bg.svg",
+			"color" : "#a1c15d",
+			"downloadAll" : {
+				"link" : "",
+				"size" : "26MB"
+			},
 			"fileList" : [
 				{
 					"name" : "Are utilities included?",
@@ -117,7 +128,12 @@
 		{
 			"unitName" : "Food",
 			"showFilter" : ["Food", "All Units"],
-			"icon" : "images/icon-unit-04.svg",
+			"icon" : "images/icon-unit-04-no-bg.svg",
+			"color" : "#61b0b0",
+			"downloadAll" : {
+				"link" : "",
+				"size" : "26MB"
+			},
 			"fileList" : [
 				{
 					"name" : "Don't eat that",
@@ -142,7 +158,8 @@
 		{
 			"unitName" : "Clothing",
 			"showFilter" : ["Clothing", "All Units"],
-			"icon" : "images/icon-unit-05.svg",
+			"icon" : "images/icon-unit-05-no-bg.svg",
+			"color" : "#1e82c1",
 			"fileList" : [
 				{
 					"name" : "Laundry woes",
@@ -158,7 +175,12 @@
 		{
 			"unitName" : "Health",
 			"showFilter" : ["Health", "All Units"],
-			"icon" : "images/icon-unit-06.svg",
+			"icon" : "images/icon-unit-06-no-bg.svg",
+			"color" : "#3157a0",
+			"downloadAll" : {
+				"link" : "",
+				"size" : "26MB"
+			},
 			"fileList" : [
 				{
 					"name" : "Pain relief",
@@ -183,7 +205,12 @@
 		{
 			"unitName" : "Community",
 			"showFilter" : ["Community", "All Units"],
-			"icon" : "images/icon-unit-07.svg",
+			"icon" : "images/icon-unit-07-no-bg.svg",
+			"color" : "#493180",
+			"downloadAll" : {
+				"link" : "",
+				"size" : "26MB"
+			},
 			"fileList" : [
 				{
 					"name" : "Send the police",
@@ -208,7 +235,12 @@
 		{
 			"unitName" : "Transportation",
 			"showFilter" : ["Transportation", "All Units"],
-			"icon" : "images/icon-unit-08.svg",
+			"icon" : "images/icon-unit-08-no-bg.svg",
+			"color" : "#70257d",
+			"downloadAll" : {
+				"link" : "",
+				"size" : "26MB"
+			},
 			"fileList" : [
 				{
 					"name" : "Get lost",
@@ -233,7 +265,12 @@
 		{
 			"unitName" : "Job Search",
 			"showFilter" : ["Job Search", "All Units"],
-			"icon" : "images/icon-unit-09.svg",
+			"icon" : "images/icon-unit-09-no-bg.svg",
+			"color" : "#aa1b52",
+			"downloadAll" : {
+				"link" : "",
+				"size" : "26MB"
+			},
 			"fileList" : [
 				{
 					"name" : "I need it today",
@@ -258,7 +295,8 @@
 		{
 			"unitName" : "The Workplace",
 			"showFilter" : ["The Workplace", "All Units"],
-			"icon" : "images/icon-unit-10.svg",
+			"icon" : "images/icon-unit-10-no-bg.svg",
+			"color" : "#c73646",
 			"fileList" : [
 				{
 					"name" : "Forty percent off",
@@ -274,7 +312,8 @@
 		{
 			"unitName" : "Academic Study",
 			"showFilter" : ["Academic Study", "All Units"],
-			"icon" : "images/icon-unit-11.svg",
+			"icon" : "images/icon-unit-11-no-bg.svg",
+			"color" : "#ed7348",
 			"fileList" : [
 				{
 					"name" : "Lights out",
@@ -290,7 +329,8 @@
 		{
 			"unitName" : "Recreation",
 			"showFilter" : ["Recreation", "All Units"],
-			"icon" : "images/icon-unit-12.svg",
+			"icon" : "images/icon-unit-12-no-bg.svg",
+			"color" : "#f7ad10",
 			"fileList" : [
 				{
 					"name" : "Weekend warrior",
