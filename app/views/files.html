@@ -98,16 +98,39 @@
 			  ng-repeat="unit in files.fileList | filter: {showFilter: files.filter.setAs}"
 
 			>
-				<div
-				  ng-if="files.json.hasIcons  && files.filter.setAs ==='All Units'"
-				  class="file-view-list-section-icon-holder"
-				>
-					<img
-					  ng-src="{{unit.icon}}"
-					  alt="{{unit.unitName}}"
-					  class="file-view-list-section-icon">
-				</div>
+				
 				<div class="file-view-list-table-holder">
+					<div
+					  style="background-color: {{unit.color}}"
+					  class="file-view-list-section-header">
+					
+						<div
+						  ng-if="files.json.hasIcons"
+						  class="file-view-list-section-icon-holder">
+
+							<img
+							  ng-src="{{unit.icon}}"
+							  alt="{{unit.unitName}}"
+							  class="file-view-list-section-icon">
+						</div>
+
+						<h1 class="file-view-list-section-title">{{unit.unitName}}</h1>
+
+						<a
+						  class="file-view-list-download-all"
+						  ng-if="unit.downloadAll"
+						  ng-href="{{unit.downloadAll.link}}"
+						>
+							<span class="download-all-text">Download all</span>
+							<span class="download-all-size">{{unit.downloadAll.size}}</span>
+							<svg width="14px" height="14px" viewBox="0 0 110 110">
+								<path fill="{{unit.color}}" d="M55.073,107.375L0.485,56.18h34.818V2.625h39.835v53.703h34.376L55.073,107.375z"/>
+							</svg>
+						</a>
+
+					</div>
+
+
 					<table
 					  class="file-view-list-table"
 					  ng-class="'file-view-list-table-'+files.json.category"
@@ -157,6 +180,23 @@
 
 			</section>
 
+			<section
+			  ng-if="files.json.downAll"
+			  class="download-all-holder"
+		    >
+
+
+			    <a
+				  class="file-view-list-download-all"
+				  ng-href="{{unit.downloadAll.link}}"
+				>
+					<span class="download-all-text">Download all</span>
+					<span class="download-all-size">{{files.json.downAll.size}}</span>
+					<svg width="14px" height="14px" viewBox="0 0 110 110">
+						<path fill="{{files.json.color1}}" d="M55.073,107.375L0.485,56.18h34.818V2.625h39.835v53.703h34.376L55.073,107.375z"/>
+					</svg>
+				</a>
+		    </section>
 
 			<section
 			  ng-show="files.sort.setAs.orderon ==='name' && files.filter.setAs ==='All Units' || files.json.hasUnits === false"
@@ -213,16 +253,7 @@
 
 			</section>
 
-			<section
-			  ng-if="files.json.downAll"
-			  class="download-all-holder"
-		    >
-			    <a ng-href=""
-			      class="download-all-button">
-					<span class="download-all-text">{{files.json.downAll.text}}</span>
-					<span class="download-all-size">{{files.json.downAll.size}}</span>					
-			    </a>
-		    </section>
+
 
 
 		</div>

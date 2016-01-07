@@ -8,39 +8,80 @@
 	flex: 1 0 auto;
 }
 
+.file-view-list-section-header{
+	display: flex;
+	padding: 0 $unit;
+	border-radius: 2px 2px 0 0;
+	@include media-small{
+		padding: 0 $unit;
+	}
+	align-items: center;
+}
+
 .file-view-list-holder{
 	display: flex;
 	padding: $unit*2;
 	@include media-small{
 		flex-direction: column;
 	}
+}
 
-}
-.file-view-list-section-icon-holder{
-	flex: 0 0 auto;
-	width: $unit*5;
-	margin-right: $unit;
-	@include media-small{
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		margin-right: 0;
-		margin-bottom: $unit;
-	}
-}
-.file-view-list-section-icon{
-	display: block;
-	width: 100%;
-	@include media-small{
-		width: auto;
-		height: $unit*5;
-	}
-}
 .file-view-list-table-holder{
 	@include card($padding:0);
 	flex: 1 1 auto;
 }
+
+.file-view-list-section-icon-holder{
+	flex: 0 0 auto;
+	width: $unit*6;
+	@include media-small{
+		width: $unit*5;
+	}
+	margin-right: $unit;
+}
+.file-view-list-section-icon{
+	display: block;
+	width: 100%;
+
+}
+
+.file-view-list-section-title{
+	font-size: 1.2em;
+	color: #fff;
+	padding-right: $unit;
+	@include smooth-text;
+	flex: 1 1 auto;
+}
+
+
+.file-view-list-download-all{
+	@include button-minimal;
+	background-color: rgba(#fff,0.5);
+	color: darken($base-text-color,10);
+	box-shadow: 0 3px 0 0 rgba(#000,0.3);
+	transform: translateY(-2px);
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	margin: $unit 0;
+	@include media-xtraSmall{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	&:hover{
+		background-color: rgba(#fff,0.65);
+	}
+	&:active{
+		box-shadow: none;
+		transform: translateY(0);
+	}
+}
+.download-all-size{
+	margin: 0 $unit;
+}
+
 .file-view-list-table{
 	width: 100%;
 	tr{
@@ -60,12 +101,12 @@
 }
 
 td.file-view-list-iconType-cell{
-	max-width: $unit*7;
-	padding-right: $unit;
-    line-height: 1;
+	width: $unit*6;
+	padding: $unit 0 $unit $unit*2;
     @include media-small{
     	padding: $unit;
     }
+    line-height: 1;
 }
 
 .file-view-list-iconType{
@@ -175,40 +216,11 @@ td.download-icon{
 }
 
 .download-all-holder{
-	padding: $unit*2;
-}
-.download-all-button{
-	@include card($padding: $unit*3 $unit*2);
-	@include card-hover;
+	padding: $unit*2 $unit*2 0;
 	display: flex;
-	align-items: center;
-	background-color: #555;
-	color: #fff;
-	@include smooth-text;
-    cursor: pointer;
-    @include user-select-none;
-    @include no-tap-color;
-
-}
-.download-all-text{
-	padding-right: $unit*3;
-	flex: 1 1 auto;
-	display: flex;
-	align-items: center;
-	&:before{
-		content: "";
-		width: 2em;
-		height: 2em;
-		display: block;
-		background-image: url('../images/icon-download-circle.svg');
-		background-repeat: no-repeat;
-		background-size: contain;
-		margin-right: $unit*2;
+	justify-content: flex-end;
+	.file-view-list-download-all{
 		flex: 0 0 auto;
-	}
-}
-.download-all-size{
-	@include media-regDown{
-		font-size: 0.75em;
+		padding: $unit;
 	}
 }
