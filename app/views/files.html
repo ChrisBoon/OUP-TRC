@@ -147,8 +147,7 @@
 								></div>
 							</td>
 
-							<td class="file-view-list-name"
-								ng-class="{'hasUnitName':item.unitName}">
+							<td class="file-view-list-name">
 								<h2 class="file-view-list-main-title">
 									{{item.name}}
 									<span 
@@ -158,10 +157,7 @@
 								</h2>
 								
 							</td>
-							<td ng-if="unit.unitName"
-							class="file-view-list-unit-name">
-								{{unit.unitName}}
-							</td>
+
 							<td ng-if="item.date"
 							class="file-view-list-date">
 								{{item.date | date:'MMM yyyy'}}
