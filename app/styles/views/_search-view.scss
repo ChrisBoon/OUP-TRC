@@ -1,0 +1,23 @@
+.view-search{
+	display: flex;
+	flex-direction: column;
+}
+
+.search-view-content{
+	flex: 1 0 auto;
+	background-color: #e4e8eb;
+}
+
+.search-view-badge-new{
+	@include badge(new);
+}
+
+.search-view-badge-updated{
+	@include badge(updated);
+}
+
+
+
+.search-view-list-iconType{
+	@include filetype;
+}
