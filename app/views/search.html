@@ -1,1 +1,28 @@
-<p>This is the search view.</p>
+    <script type="text/ng-template" id="myModalContent.html">
+
+        <div class="modal-body" ng-bind-html="myModal.longText">
+
+        </div>
+        <div class="modal-footer">
+          <div class="close-modal-button" ng-click="myModal.ok()">Close</div>
+        </div>
+    </script>
+
+<div class="view view-search">
+	<header class="content-view-header">
+
+		<div class="container">
+			<div class="view-icon-holder">
+				<img ng-src="{{search.json.icon}}" alt="">
+			</div>
+			<div class="content-view-header-text">
+				<h1 class="content-view-heading-main">
+					{{search.json.title}}
+				</h1>
+				<p class="content-view-page-desc" >
+					<span ng-bind-html="search.json.description"></span> <span ng-if ="search.json.descriptionLong" class="more-button" ng-click="search.readMore()">Read more</span>
+				</p>
+			</div>
+		</div>
+
+	</header>
