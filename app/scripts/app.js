@@ -29,9 +29,9 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'home'
       })
-      .when('/search', {
+      .when('/search/:id', {
         templateUrl: 'views/search.html',
-        controller: 'searchCtrl',
+        controller: 'SearchCtrl',
         controllerAs: 'search'
       })
       .when('/browse/:id', {

@@ -1,4 +1,10 @@
 {
+	"title" : "Custom Search",
+	"icon" : "images/browseby-3.svg",
+
+	"description" : "<em>toffee</em> One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.",
+	"descriptionLong" : "Jelly <em>toffee</em> soufflé. Macaroon lemon drops macaroon. Cheesecake cheesecake brownie donut carrot cake tootsie roll. Wafer muffin muffin tootsie roll toffee brownie macaroon. Cotton candy tiramisu jujubes fruitcake chupa chups chocolate. Jujubes dessert dessert cake pastry sugar plum. Chocolate cake toffee lemon drops liquorice marshmallow macaroon marzipan cupcake muffin. Gummies liquorice gummi bears croissant pastry tiramisu.",
+	"parentURL" : "browse/by-resource",	
 	"fileList" : [
 		{
 			"showResTypes" : ["Lesson Plan"],

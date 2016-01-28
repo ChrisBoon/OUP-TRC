@@ -19,7 +19,7 @@
 	      	"class":"browse-type-3",
 	      	"para": "Looking for something specific? Choose this option for advanced filtering options.",
 	      	"imgSrc": "images/browseby-3.svg",
-	      	"link": "/sign-out"
+	      	"link": "search/custom"
     	}
     ],
     "updatesList" : [
