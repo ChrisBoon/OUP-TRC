@@ -71,6 +71,18 @@
 }
 .modal-body {
 	min-height: $unit*10;
+  
+  //styling for content:
+
+  p:not(:last-child){
+    margin-bottom: 0.8em;
+  }
+
+  .link-external{
+    color: $c-link-external;
+    text-decoration: underline;
+  }
+
 }
 .modal-footer {
   display: flex;
