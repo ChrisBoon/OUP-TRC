@@ -1,8 +1,7 @@
     <script type="text/ng-template" id="myModalContent.html">
 
-        <div class="modal-body">
+        <div class="modal-body" ng-bind-html="myModal.longText">
 
-            {{myModal.longText}}
         </div>
         <div class="modal-footer">
           <div class="close-modal-button" ng-click="myModal.ok()">Close</div>
@@ -21,7 +20,7 @@
 					{{folder.json.title}}
 				</h1>
 				<p class="content-view-page-desc">
-					{{folder.json.description}} <span ng-if ="folder.json.descriptionLong" class="more-button" ng-click="folder.readMore()">Read more</span>
+					<span ng-bind-html="folder.json.description"><span ng-if ="folder.json.descriptionLong" class="more-button" ng-click="folder.readMore()">Read more</span>
 				</p>
 			</div>
 		</div>
