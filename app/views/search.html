@@ -26,3 +26,59 @@
 		</div>
 
 	</header>
+
+
+	<div class="search-view-content">
+		<div class="container">
+		<!-- Controls-->
+
+
+		<!--Empty message-->
+
+
+		<!--File list-->
+
+			<div class="file-view-list-table-holder">
+				<table class="search-view-list-table">
+					<tr ng-repeat="item in search.json.fileList"
+						class="search-view-list-item"
+						ng-click=""
+					>
+						<td class="search-view-list-iconType-cell">
+							<div
+							  class="search-view-list-iconType"
+							  ng-class="'search-view-list-iconType-'+item.filetypeIcon"
+							></div>
+						</td>
+							
+						<td class="search-view-list-name">
+							<div class="search-view-list-name-div">
+								<h2 ng-if="item.resourceTypeName"
+									class="search-view-list-name-rt-name"
+								>
+									{{item.resourceTypeName}}
+								</h2>
+								<h2 class="search-view-list-name-r-name">
+									{{item.resourceName}}
+									<span 
+									  class="search-view-list-name-subtitle"
+									  ng-if="item.resourceSubtitle"
+									>{{item.resourceSubtitle}}</span>
+								</h2>
+							</div>
+						</td>
+						<td ng-if="item.date"
+							class="search-view-list-date">
+								{{item.date | date:'MMM yyyy'}}
+						</td>
+						<td class="search-view-list-size">
+							{{item.size}}
+						</td>
+
+
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
