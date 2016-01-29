@@ -6,6 +6,10 @@
 .search-view-content{
 	flex: 1 0 auto;
 	background-color: #e4e8eb;
+
+	.container{
+		display: flex;
+	}
 }
 
 .search-view-badge-new{
@@ -21,3 +25,6 @@
 .search-view-list-iconType{
 	@include filetype;
 }
+
+@import "sections/_search-controls";
+@import "sections/_search-results";

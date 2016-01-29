@@ -1,0 +1,37 @@
+.search-view-list{
+
+	&-table-holder{
+		@include card($padding:0);
+		flex: 1 1 auto;
+		margin: $unit*2; //consider moving spacing to another element
+	}
+	&-table{
+		width: 100%;
+			width: 100%;
+		tr{
+			@include cardListHover;
+			&:not(:last-child){
+				border-bottom: 1px solid $c-line;
+			}
+
+		}
+		td{
+			padding-top: $unit;
+			padding-bottom: $unit;
+			vertical-align: middle;
+			line-height: 1.3;
+			flex: 0 0 auto;
+
+		}
+	}
+
+	&-iconType-cell{
+		width: $unit*8;
+		padding-right: 0;
+		padding-left: $unit*2;
+	}
+	
+	&-name-subtitle{
+		@include textExplain;
+	}
+}
