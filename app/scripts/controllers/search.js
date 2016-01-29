@@ -8,6 +8,9 @@
  * Controller of the trcApp
  */
 angular.module('trcApp')
+
+
+
   .controller('SearchCtrl', function ($scope, $http, $routeParams, getJSON, $uibModal) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
@@ -24,6 +27,13 @@ angular.module('trcApp')
     .then(function(d) {
       thisPage.json = d;
     });
+
+    this.filters = {
+    	resTypes: [],
+    	topics: [],
+    	mediaTypes: []
+
+    };
 
 
 
