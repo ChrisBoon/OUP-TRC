@@ -41,24 +41,107 @@
 		<label>Media type:</label>
 			<input type="text" ng-model="search.filters.mediaTypes">
 		</div>
-			<div class="search-view-control-container search-view-control-resType">
-				<div 
-				  uib-dropdown 
-				  on-toggle="toggled(open)"
-				  class="search-view-controls-toggle search-view-controls-toggle-level-1">
-			      <a href uib-dropdown-toggle>
-			        Resource Type
-			      </a>
-			      <ul class="uib-dropdown-menu files-view-controls-list" aria-labelledby="simple-dropdown">
+
+
+		<!-- using accordion: -->
+		<uib-accordion close-others="true">
+
+			<!-- Resource Type filter -->
+		    <uib-accordion-group>
+		      <uib-accordion-heading>
+		        Resource Types
+				<!-- TODO: Rework this to use my styling -->
+		        <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+				<!-- Area in header where 'chips' for currently selected options sit - makes it easy to clear them without opening accordion. -->
+		        <div ng-repeat="chosen in search.filters.resTypes"
+		        	 class="search-view-control-header-chosen-stuff"
+		        	 ng-click="$event.preventDefault();$event.stopPropagation();search.customFilterMe('mediaTypes',chosen)"
+		        >
+		        	{{chosen}}
+		        </div>
+
+		      </uib-accordion-heading>
+			      <ul class="search-view-control-choices">
 			        <li ng-repeat="type in search.json.filterList.resTypes">
-			          <a
+			          <div
+			          	class="search-view-control-choices"
 			            href
-			            ng-click = "files.filter.setAs = choice;"
+			            ng-click = "search.customFilterMe('resTypes',type.search)"
+			          >{{type.name}}</div>
+			        </li>
+			      </ul>
+		    </uib-accordion-group>
+
+
+			<!-- Topics filter -->
+		    <uib-accordion-group>
+		      <uib-accordion-heading>
+		        Topics
+				<!-- TODO: Rework this to use my styling -->
+		        <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+				<!-- Area in header where 'chips' for currently selected options sit - makes it easy to clear them without opening accordion. -->
+		        <div ng-repeat="chosen in search.filters.topics"
+		        	 class="search-view-control-header-chosen-stuff"
+		        	 ng-click="$event.preventDefault();$event.stopPropagation();search.customFilterMe('mediaTypes',chosen)"
+		        >
+		        	{{chosen}}
+		        </div>
+
+		      </uib-accordion-heading>
+
+			      <ul class="search-view-control-subAccordion">
+			        <li ng-repeat="unit in search.json.filterList.topics">
+			        <uib-accordion>
+						<uib-accordion-group>
+							<uib-accordion-heading>{{unit.unitName}}</uib-accordion-heading>
+							<ul>
+								<li ng-repeat="topic in unit.topicList">
+									<div
+							          	class="search-view-control-choices"
+							            href
+							            ng-click = "search.customFilterMe('topics',topic.search)"
+							          >{{topic.name}}</div>
+								</li>
+							</ul>
+						</uib-accordion-group>
+
+			        </uib-accordion>
+
+
+			        </li>
+			      </ul>
+		    </uib-accordion-group>
+
+
+
+
+
+
+		    <uib-accordion-group>
+		      <uib-accordion-heading>
+		        Media Types <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+
+		        <div ng-repeat="chosen in search.filters.mediaTypes"
+		        	 class="search-view-control-header-chosen-stuff"
+		        	 ng-click="$event.preventDefault();$event.stopPropagation();search.customFilterMe('mediaTypes',chosen)"
+		        >
+		        	{{chosen}}
+
+		        </div>
+		      </uib-accordion-heading>
+			      <ul class="search-view-control-choices">
+			        <li ng-repeat="type in search.json.filterList.mediaTypes">
+			          <a
+			          	class="search-view-control-choices"
+			            href
+			            ng-click = "search.customFilterMe('mediaTypes',type.search)"
 			          >{{type.name}}</a>
 			        </li>
 			      </ul>
-			    </div>
-			</div>
+		    </uib-accordion-group>
+
+
+	  </uib-accordion>
 
 
 		</div>

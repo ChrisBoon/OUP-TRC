@@ -34,8 +34,32 @@ angular.module('trcApp')
     	mediaTypes: []
 
     };
+    
+    //for adding and removing elements from filter arrays - 1st arg is the Array/Filter Type, 2nd arg is the tag/option to filter
+    this.customFilterMe = function(filterType,filterBy){
+
+    	//DEBUG (array before):
+    	console.log(this.filters.resTypes);
+    	
+    	// Check if ites is already in array:
+		if (this.filters[filterType].indexOf(filterBy) > -1) {
+		    
+		    // If it is in the array, we want to remove it.
+		    // Get its position in array:
+		    var thisPos = this.filters[filterType].indexOf;
+		    // Remove it from the array:
+		    this.filters[filterType].splice(thisPos, 1);
+
+		} else {
+		    //If it's not in the array we want to add it:
+		    this.filters[filterType].push(filterBy);
+		}
+
+		//DEBUG (array after): 
+    	console.log(this.filters.resTypes);
 
 
+    };
 
   thisPage.readMore = function () {
 
