@@ -26,43 +26,43 @@
 				"topicList" : [
 					{
 						"name" : "Meeting and Greeting",
-						"search" : "1.1"
+						"search" : "Meeting and Greeting"
 					},
 					{
 						"name" : "Personal Info",
-						"search" : "1.2"
+						"search" : "Personal Info"
 					},
 					{
 						"name" : "School",
-						"search" : "1.3"
+						"search" : "School"
 					},
 					{
 						"name" : "Classroom",
-						"search" : "1.4"
+						"search" : "Classroom"
 					},
 					{
 						"name" : "Studying",
-						"search" : "1.5"
+						"search" : "Studying"
 					},
 					{
 						"name" : "Succeeding in School",
-						"search" : "1.6"
+						"search" : "Succeeding in School"
 					},
 					{
 						"name" : "A Day at School",
-						"search" : "1.7"
+						"search" : "A Day at School"
 					},
 					{
 						"name" : "Everyday Conversation",
-						"search" : "1.8"
+						"search" : "Everyday Conversation"
 					},
 					{
 						"name" : "The Weather",
-						"search" : "1.9"
+						"search" : "The Weather"
 					},
 					{
 						"name" : "The Telephone",
-						"search" : "1.10"
+						"search" : "The Telephone"
 					}
 				]
 			},
@@ -71,39 +71,39 @@
 				"topicList" : [
 					{
 						"name" : "Adults and Children",
-						"search" : "2.1"
+						"search" : "Adults and Children"
 					},
 					{
 						"name" : "Describing People",
-						"search" : "2.2"
+						"search" : "Describing People"
 					},
 					{
 						"name" : "Describing Hair",
-						"search" : "2.3"
+						"search" : "Describing Hair"
 					},
 					{
 						"name" : "Families",
-						"search" : "2.4"
+						"search" : "Families"
 					},
 					{
 						"name" : "Childcare and Parenting",
-						"search" : "2.5"
+						"search" : "Childcare and Parenting"
 					},
 					{
 						"name" : "Daily Routines",
-						"search" : "2.6"
+						"search" : "Daily Routines"
 					},
 					{
 						"name" : "Life Events and Documents",
-						"search" : "2.7"
+						"search" : "Life Events and Documents"
 					},
 					{
 						"name" : "Feelings",
-						"search" : "2.8"
+						"search" : "Feelings"
 					},
 					{
 						"name" : "A Family Reunion",
-						"search" : "2.9"
+						"search" : "A Family Reunion"
 					}
 				]
 			},
@@ -112,62 +112,62 @@
 				"topicList" : [
 					{
 						"name" : "The Home",
-						"search" : "3.1"
+						"search" : "The Home"
 					},
 					{
 						"name" : "Finding a Home",
-						"search" : "3.2"
+						"search" : "Finding a Home"
 					},
 					{
 						"name" : "Apartments",
-						"search" : "3.3"
+						"search" : "Apartments"
 					},
 					{
 						"name" : "Different Places to Live",
-						"search" : "3.4"
+						"search" : "Different Places to Live"
 					},
 					{
 						"name" : "A House and Yard",
-						"search" : "3.5"
+						"search" : "A House and Yard"
 					},
 					{
 						"name" : "A Kitchen",
-						"search" : "3.6"
+						"search" : "A Kitchen"
 					},
 					{
 						"name" : "A Dining Area",
-						"search" : "3.7"
+						"search" : "A Dining Area"
 					},
 					{
 						"name" : "A Living Room",
-						"search" : "3.8"
+						"search" : "A Living Room"
 					},
 					{
 						"name" : "A Bathroom",
-						"search" : "3.9"
+						"search" : "A Bathroom"
 					},
 					{
 						"name" : "A Bedroom",
-						"search" : "3.10"
+						"search" : "A Bedroom"
 					}
 				]
 			}
 		],
 		"mediaTypes" : [
 			{
-				"search" : "doc",
+				"search" : "Text documents",
 				"name": "Text documents"
 			}, 
 			{
-				"search" : "pdf",
+				"search" : "PDFs",
 				"name": "PDFs"
 			}, 
 			{
-				"search" : "video",
+				"search" : "Video",
 				"name": "Videos"
 			}, 
 			{
-				"search" : "audio",
+				"search" : "Audio",
 				"name": "Audio"
 			}
 		]
@@ -175,8 +175,8 @@
 	"fileList" : [
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["1.1"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["Meeting and Greeting"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "Meeting and Greeting",
 			"resourceSubtitle" : "Topic 1.1",
@@ -187,8 +187,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["1.2"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["Personal Info"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "Personal Info",
 			"resourceSubtitle" : "Topic 1.2",
@@ -199,8 +199,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["1.3"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["School"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "School",
 			"resourceSubtitle" : "Topic 1.3",
@@ -211,8 +211,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["1.4"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["Classroom"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "Classroom",
 			"resourceSubtitle" : "Topic 1.4",
@@ -223,8 +223,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["1.5"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["Studying"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "Studying",
 			"resourceSubtitle" : "Topic 1.5",
@@ -235,8 +235,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["1.6"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["Succeeding in School"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "Succeeding in School",
 			"resourceSubtitle" : "Topic 1.6",
@@ -247,8 +247,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["1.7"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["A Day at School"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "A Day at School",
 			"resourceSubtitle" : "Topic 1.7",
@@ -259,8 +259,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["1.8"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["Everyday Conversation"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "Everyday Conversation",
 			"resourceSubtitle" : "Topic 1.8",
@@ -271,8 +271,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["1.9"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["The Weather"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "The Weather",
 			"resourceSubtitle" : "Topic 1.9",
@@ -283,8 +283,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["1.10"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["The Telephone"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "The Telephone",
 			"resourceSubtitle" : "Topic 1.10",
@@ -295,8 +295,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["2.1"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["Adults and Children"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "Adults and Children",
 			"resourceSubtitle" : "Topic 2.1",
@@ -307,8 +307,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["2.2"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["Describing People"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "Describing People",
 			"resourceSubtitle" : "Topic 2.2",
@@ -319,8 +319,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["2.3"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["Describing Hair"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "Describing Hair",
 			"resourceSubtitle" : "Topic 2.3",
@@ -331,8 +331,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["2.4"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["Families"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "Families",
 			"resourceSubtitle" : "Topic 2.4",
@@ -343,8 +343,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["2.5"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["Childcare and Parenting"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "Childcare and Parenting",
 			"resourceSubtitle" : "Topic 2.5",
@@ -355,8 +355,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["2.6"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["Daily Routines"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "Daily Routines",
 			"resourceSubtitle" : "Topic 2.6",
@@ -367,8 +367,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["2.7"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["Life Events and Documents"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "Life Events and Documents",
 			"resourceSubtitle" : "Topic 2.7",
@@ -379,8 +379,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["2.8"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["Feelings"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "Feelings",
 			"resourceSubtitle" : "Topic 2.8",
@@ -391,8 +391,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["2.9"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["A Family Reunion"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "A Family Reunion",
 			"resourceSubtitle" : "Topic 2.9",
@@ -403,8 +403,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["3.1"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["The Home"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "The Home",
 			"resourceSubtitle" : "Topic 3.1",
@@ -415,8 +415,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["3.2"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["Finding a Home"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "Finding a Home",
 			"resourceSubtitle" : "Topic 3.2",
@@ -427,8 +427,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["3.3"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["Apartments"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "Apartments",
 			"resourceSubtitle" : "Topic 3.3",
@@ -439,8 +439,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["3.4"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["Different Places to Live"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "Different Places to Live",
 			"resourceSubtitle" : "Topic 3.4",
@@ -451,8 +451,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["3.5"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["A House and Yard"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "A House and Yard",
 			"resourceSubtitle" : "Topic 3.5",
@@ -463,8 +463,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["3.6"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["A Kitchen"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "A Kitchen",
 			"resourceSubtitle" : "Topic 3.6",
@@ -475,8 +475,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["3.7"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["A Dining Area"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "A Dining Area",
 			"resourceSubtitle" : "Topic 3.7",
@@ -487,8 +487,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["3.8"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["A Living Room"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "A Living Room",
 			"resourceSubtitle" : "Topic 3.8",
@@ -499,8 +499,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["3.9"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["A Bathroom"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "A Bathroom",
 			"resourceSubtitle" : "Topic 3.9",
@@ -511,8 +511,8 @@
 		},
 		{
 			"showResTypes" : ["Lesson Plans"],
-			"showTopics": ["3.10"],
-			"showMediaTypes": ["pdf"],
+			"showTopics": ["A Bedroom"],
+			"showMediaTypes": ["PDFs"],
 			"resourceTypeName" : "Lesson Plan",
 			"resourceName" : "A Bedroom",
 			"resourceSubtitle" : "Topic 3.10",
@@ -523,8 +523,8 @@
 		},
 		{
 			"showResTypes" : ["Videos"],
-			"showTopics": ["1.1","1.2","1.3","1.5"],
-			"showMediaTypes": ["video"],
+			"showTopics": ["Meeting and Greeting","Personal Info","School","Studying"],
+			"showMediaTypes": ["Video"],
 			"resourceTypeName" : "Video",
 			"resourceName" : "Personal Information",
 			"resourceSubtitle" : "Topics 1.1–3, 1.5",
@@ -535,8 +535,8 @@
 		},				
 		{
 			"showResTypes" : ["Videos"],
-			"showTopics": ["1.5","1.6","1.7"],
-			"showMediaTypes": ["video"],
+			"showTopics": ["Studying","Succeeding in School","A Day at School"],
+			"showMediaTypes": ["Video"],
 			"resourceTypeName" : "Video",
 			"resourceName" : "Back to School",
 			"resourceSubtitle" : "Topics 1.5–7",
@@ -547,8 +547,8 @@
 		},				
 		{
 			"showResTypes" : ["Videos"],
-			"showTopics": ["1.9"],
-			"showMediaTypes": ["video"],
+			"showTopics": ["The Weather"],
+			"showMediaTypes": ["Video"],
 			"resourceTypeName" : "Video",
 			"resourceName" : "Global Warming",
 			"resourceSubtitle" : "Topics 1.9",
@@ -559,8 +559,8 @@
 		},				
 		{
 			"showResTypes" : ["Videos"],
-			"showTopics": ["2.5","2.6"],
-			"showMediaTypes": ["video"],
+			"showTopics": ["Childcare and Parenting","Daily Routines"],
+			"showMediaTypes": ["Video"],
 			"resourceTypeName" : "Video",
 			"resourceName" : "Phoning It In",
 			"resourceSubtitle" : "Topics 2.5–6",
@@ -571,8 +571,8 @@
 		},				
 		{
 			"showResTypes" : ["Videos"],
-			"showTopics": ["3.2","3.3","3.4"],
-			"showMediaTypes": ["video"],
+			"showTopics": ["Finding a Home","Apartments","Different Places to Live"],
+			"showMediaTypes": ["Video"],
 			"resourceTypeName" : "Video",
 			"resourceName" : "Are Utilities Included?",
 			"resourceSubtitle" : "Topics 3.2–4",
@@ -583,8 +583,8 @@
 		},				
 		{
 			"showResTypes" : ["Videos"],
-			"showTopics": ["3.4","3.5","3.6","3.7","3.8"],
-			"showMediaTypes": ["video"],
+			"showTopics": ["Different Places to Live","A House and Yard","A Kitchen","A Dining Area","A Living Room"],
+			"showMediaTypes": ["Video"],
 			"resourceTypeName" : "Video",
 			"resourceName" : "A Fake Video Title",
 			"resourceSubtitle" : "Topics 3.4–8",
@@ -595,8 +595,8 @@
 		},
 		{
 			"showResTypes" : ["Listening Worksheets"],
-			"showTopics": ["1.2"],
-			"showMediaTypes": ["pdf","audio","doc"],
+			"showTopics": ["Personal Info"],
+			"showMediaTypes": ["PDFs","Audio","Text documents"],
 			"resourceTypeName" : "Multilevel Listening",
 			"resourceName" : "Personal Info",
 			"resourceSubtitle" : "Topic 1.2",
@@ -607,8 +607,8 @@
 		},
 		{
 			"showResTypes" : ["Listening Worksheets"],
-			"showTopics": ["1.4"],
-			"showMediaTypes": ["pdf","audio","doc"],
+			"showTopics": ["Classroom"],
+			"showMediaTypes": ["PDFs","Audio","Text documents"],
 			"resourceTypeName" : "Multilevel Listening",
 			"resourceName" : "Classroom",
 			"resourceSubtitle" : "Topic 1.4",
@@ -619,8 +619,8 @@
 		},
 		{
 			"showResTypes" : ["Listening Worksheets"],
-			"showTopics": ["1.9"],
-			"showMediaTypes": ["pdf","audio","doc"],
+			"showTopics": ["The Weather"],
+			"showMediaTypes": ["PDFs","Audio","Text documents"],
 			"resourceTypeName" : "Multilevel Listening",
 			"resourceName" : "The Weather",
 			"resourceSubtitle" : "Topic 1.9",
@@ -632,8 +632,8 @@
 
 		{
 			"showResTypes" : ["Listening Worksheets"],
-			"showTopics": ["2.4"],
-			"showMediaTypes": ["pdf","audio","doc"],
+			"showTopics": ["Families"],
+			"showMediaTypes": ["PDFs","Audio","Text documents"],
 			"resourceTypeName" : "Multilevel Listening",
 			"resourceName" : "Families",
 			"resourceSubtitle" : "Topic 2.4",
@@ -644,8 +644,8 @@
 		},
 		{
 			"showResTypes" : ["Listening Worksheets"],
-			"showTopics": ["2.5"],
-			"showMediaTypes": ["pdf","audio","doc"],
+			"showTopics": ["Childcare and Parenting"],
+			"showMediaTypes": ["PDFs","Audio","Text documents"],
 			"resourceTypeName" : "Multilevel Listening",
 			"resourceName" : "Childcare and Parenting",
 			"resourceSubtitle" : "Topic 2.5",
@@ -656,8 +656,8 @@
 		},
 		{
 			"showResTypes" : ["Listening Worksheets"],
-			"showTopics": ["2.6"],
-			"showMediaTypes": ["pdf","audio","doc"],
+			"showTopics": ["Daily Routines"],
+			"showMediaTypes": ["PDFs","Audio","Text documents"],
 			"resourceTypeName" : "Multilevel Listening",
 			"resourceName" : "Daily Routines",
 			"resourceSubtitle" : "Topic 2.6",
@@ -668,8 +668,8 @@
 		},
 		{
 			"showResTypes" : ["Listening Worksheets"],
-			"showTopics": ["2.7"],
-			"showMediaTypes": ["pdf","audio","doc"],
+			"showTopics": ["Life Events and Documents"],
+			"showMediaTypes": ["PDFs","Audio","Text documents"],
 			"resourceTypeName" : "Multilevel Listening",
 			"resourceName" : "Life Events and Documents",
 			"resourceSubtitle" : "Topic 2.7",
@@ -680,8 +680,8 @@
 		},
 		{
 			"showResTypes" : ["Listening Worksheets"],
-			"showTopics": ["3.3"],
-			"showMediaTypes": ["pdf","audio","doc"],
+			"showTopics": ["Apartments"],
+			"showMediaTypes": ["PDFs","Audio","Text documents"],
 			"resourceTypeName" : "Multilevel Listening",
 			"resourceName" : "Apartments",
 			"resourceSubtitle" : "Topic 3.3",
@@ -692,8 +692,8 @@
 		},
 		{
 			"showResTypes" : ["Listening Worksheets"],
-			"showTopics": ["3.8"],
-			"showMediaTypes": ["pdf","audio","doc"],
+			"showTopics": ["A Living Room"],
+			"showMediaTypes": ["PDFs","Audio","Text documents"],
 			"resourceTypeName" : "Multilevel Listening",
 			"resourceName" : "A Living Room",
 			"resourceSubtitle" : "Topic 3.8",
