@@ -28,6 +28,7 @@ angular.module('trcApp')
       thisPage.json = d;
     });
 
+    //stores the selected tags - powers the filtering:
     this.filters = {
     	resTypes: [],
     	topics: [],
@@ -35,13 +36,18 @@ angular.module('trcApp')
 
     };
 
+    //Keeps track of which accoridon is currently open - used to add 'is-open' class.
+    this.dropdowns = {
+	    isResTypesOpen: false,
+	    isTopicsOpen: false,
+	    isMediaTypesOpen: false
+	};
+
     //for adding and removing elements from filter arrays - 1st arg is the Array/Filter Type, 2nd arg is the tag/option to filter
     this.customFilterMe = function(filterType,filterBy){
 
-    	//DEBUG (array before):
-    	console.log(this.filters.resTypes);
     	
-    	// Check if ites is already in array:
+    	// Check if it is already in array:
 		if (this.filters[filterType].indexOf(filterBy) > -1) {
 		    
 		    // If it is in the array, we want to remove it.
@@ -55,9 +61,53 @@ angular.module('trcApp')
 		    this.filters[filterType].push(filterBy);
 		}
 
-		//DEBUG (array after): 
-    	console.log(this.filters.resTypes);
+    };
 
+    this.toggleAll = function(unit){
+    	//by default we will assume all are checked and we want to uncheck
+    	var toggleTo = 'off';
+
+    	//loop through
+    	for (var i in unit.topicList){
+    		//if one is missing we actually want to turn it on
+    		if ( this.filters.topics.indexOf(unit.topicList[i].search) === -1) {
+    			toggleTo = 'on';
+    		}
+
+    	}
+    	if (toggleTo === 'on') {
+    		for (var j in unit.topicList){
+    			if (this.filters.topics.indexOf(unit.topicList[j].search) === -1) {
+    				this.filters.topics.push(unit.topicList[j].search);
+    			}
+    		}
+    	}
+    	else{
+    		for (var k in unit.topicList){
+	    		if (this.filters.topics.indexOf(unit.topicList[k].search) > -1) {
+	    			var thisPos = this.filters.topics.indexOf(unit.topicList[k].search);
+					this.filters.topics.splice(thisPos, 1);
+				}
+			}
+    	}
+    };
+
+    this.allTopicsActive = function(unit){
+    	var count = 0;
+    	for (var i in unit.topicList){
+    		if (this.filters.topics.indexOf(unit.topicList[i].search) > -1){
+    			count++;
+    		}
+    	}
+    	if (count === unit.topicList.length) {
+    		return true;
+    	}
+    };
+
+    this.isTagActive = function(filterType,filterBy){
+    	if (this.filters[filterType].indexOf(filterBy) > -1) {
+    		return true;
+    	}
 
     };
 

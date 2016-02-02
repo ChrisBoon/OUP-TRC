@@ -35,3 +35,8 @@
 		@include textExplain;
 	}
 }
+
+.search-view-nothing-selected{
+	flex: 1 1 auto;
+	margin: $unit*2
+}

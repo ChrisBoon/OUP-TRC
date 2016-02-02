@@ -9,7 +9,12 @@
 
 	.container{
 		display: flex;
+		align-items: flex-start;
 	}
+}
+
+.search-view-content-holder{
+	flex: 1 1 auto;
 }
 
 .search-view-badge-new{

@@ -1,4 +1,168 @@
-.temp{
+$c-search: $c-trc-accent-1;
+$panel-time: 0.35s;
+.search-view-controls{
+	padding: $unit*2 0;
+	width: $unit*30;
+}
+
+.search-view-controls{
+	.panel{
+		transition: margin $panel-time;
+		&.panel-open{
+			margin-bottom: $unit*2;
+			&:not(:first-child){
+				margin-top: $unit*2;
+			}
+		}
+	}
+	.panel-title{
+		>a{
+			cursor: default;
+			&:focus{
+				outline:none; 
+			}
+		}
+	}
+    .panel-body{
+      border-top: 1px solid $c-search;
+	}
+}
+
+.search-view-controls-level1-heading{
+	@include itemHeading;
+	cursor: pointer;
+	padding: $unit*1.5;
 	display: flex;
-	flex-direction: column;
+	.search-view-controls-toggle{
+		display: block;
+		width: 1.5em;
+		height: 1.5em;
+		background:$c-light-text url(../images/icon-up-arrow.svg);
+		background-size: contain;
+		border-radius: 50%;
+		transform: rotate(180deg);
+		transition: all $panel-time;
+		&.is-open{
+			transform: rotate(0deg);
+			background-color: $c-search;
+		}
+	}
+}
+.search-view-controls-level1-title{
+	flex: 1 0 auto;
+}
+.search-view-controls-level2-title{
+	@extend .search-view-controls-level1-title;
+}
+
+
+.search-view-controls-level2-heading{
+	@extend .search-view-controls-level1-heading;
+	@include itemHeadingLight;
+}
+
+.search-view-control-toggle-all-container{
+	display: flex;
+	justify-content: flex-start;
+	padding: $unit $unit*1.5;
+}
+
+.search-view-control-toggle-all{
+	@include smallUiText;
+	cursor: pointer;
+	flex: 1 1 auto;
+	display: block;
+	background-color: #aaa;
+	padding: $unit/4 $unit/2;
+	border-radius: 2px;
+	color:#fff;
+	text-transform: uppercase;
+	@include smooth-text;
+	&.all-active{
+		&:before{
+			content:"de";
+		}
+	}
+}
+
+.search-view-control-header-chosen-stuff{
+	padding: 0 $unit;
+	display: flex;
+	flex-wrap: wrap;
+}
+.search-view-control-header-chosen-thing{
+	@include smallUiText;
+	cursor: pointer;
+	background:$c-search;
+	color: #fff;
+	display: inline-block;
+	border-radius: 2px;
+	margin: 0 $unit/2 $unit;
+	padding: 2px 2px 2px $unit;
+	line-height:1em;
+	&:after{
+		display: inline-block;
+		content: "";
+		width: 1.2em;
+		height: 1.2em;
+		background:url(../images/icon-close-x.svg);
+		background-size: contain;
+		vertical-align: bottom;
+		margin-left: 4px;
+	}
+}
+
+.search-view-control-choice{
+	color: $c-light-text;
+	padding: $unit $unit*1.5;
+	position: relative;
+	@include cardListHover;
+	&:before{
+		content: "";
+		display: inline-block;
+		border: 2px solid $c-search;
+		border-radius: 2px;
+		height: 1em;
+		width: 1em;
+		margin-right: $unit;
+		vertical-align: text-bottom;
+	}
+	&.is-active{
+		&:before{
+			background:$c-search url(../images/icon-check-tick.svg);
+			background-size: contain;
+		}
+	}
+}
+.search-view-controls-level1{
+	//the sections sold look like cards when open:
+	@include card($padding:0);
+
+	//when not open:
+	&:not(.panel-open){
+		//they should look like one solid card:
+		border-radius: 0;
+		&:first-child{
+			border-top-left-radius: 2px;
+			border-top-right-radius: 2px;
+		}
+		&:last-child{
+			border-bottom-right-radius: 2px;
+			border-bottom-left-radius: 2px;
+		}
+		//also when closed and they have another item above they should have a border to separate them:
+		&:not(:first-child){
+			border-top: 1px solid $c-line;
+		}
+	}
+	//also the panel after below the open panel should have the rounding and no border.
+	// (ideally we'd do something similar with the item above open panel but until there as an eaiser way to achieve with css I'm going to let that go)
+	&.panel-open + .panel{
+		border-top: none;
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
+	}
+}
+.search-view-control-subAccordion>li:not(:first-child) .search-view-controls-level2-panel{
+	border-top: 1px solid $c-line;
 }
