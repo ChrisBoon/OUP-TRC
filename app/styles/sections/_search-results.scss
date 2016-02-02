@@ -27,8 +27,17 @@
 
 	&-iconType-cell{
 		width: $unit*8;
-		padding-right: 0;
+		padding-right: $unit*2;
 		padding-left: $unit*2;
+	}
+
+	&-name {
+	    width: 100%;
+	}
+
+	&-size {
+	    padding-left: $unit*2;
+	    padding-right: $unit*2;
 	}
 	
 	&-name-subtitle{
@@ -39,4 +48,12 @@
 .search-view-nothing-selected{
 	flex: 1 1 auto;
 	margin: $unit*2
+}
+
+.search-view-list-no-results:first-child{
+	font-size: 30px;
+}
+
+.search-view-list-no-results:not(:first-child){
+	display: none;
 }
