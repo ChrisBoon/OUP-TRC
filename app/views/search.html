@@ -188,9 +188,9 @@
 
 		<!--File list-->
 
-			<div class="search-view-list-table-holder" ng-hide="search.filters.resTypes.length ===0 && search.filters.topics.length ===0 && search.filters.mediaTypes.length ===0">
+			<div class="search-view-list-table-holder" ng-hide="search.filteredList.length === search.json.fileList.length|| search.filteredList.length ===0">
 				<table class="search-view-list-table">
-					<tr ng-repeat="item in search.json.fileList | filterSearch:search.filters.resTypes:'showResTypes' | filterSearch:search.filters.topics:'showTopics' | filterSearch:search.filters.mediaTypes:'showMediaTypes' "
+					<tr ng-repeat="item in search.filteredList = (search.json.fileList | filterSearch:search.filters.resTypes:'showResTypes' | filterSearch:search.filters.topics:'showTopics' | filterSearch:search.filters.mediaTypes:'showMediaTypes' )"
 						class="search-view-list-item"
 						ng-click=""
 					>
