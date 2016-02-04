@@ -54,3 +54,8 @@ html{
 .paragraph{
 	@include paragraph;
 }
+
+.link-external{
+color: $c-link-external;
+text-decoration: underline;
+}
