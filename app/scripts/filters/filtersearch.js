@@ -8,6 +8,8 @@
  * # filterSearch
  * Filter in the trcApp.
  */
+
+//This should probably be rewritten to apply all three possible filters - right now we call it 3 times on the same data - that's probably inefficient.
 angular.module('trcApp')
     .filter('filterSearch', function () {
 	    return function(assetList, userChoseThese, jsonToFilter) {
