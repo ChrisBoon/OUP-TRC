@@ -180,11 +180,20 @@
 
 		<!--Empty message-->
 		<div ng-show="search.filters.resTypes.length ===0 && search.filters.topics.length ===0 && search.filters.mediaTypes.length ===0" class="search-view-nothing-selected">
-			Make a selection to get started! NOTE: Text and styling still to be worked on here.
+		<div class="search-view-nothing-selected-image">
+			<img class="search-view-nothing-selected-svg" src="images/icon-custom-search-empty-v2.svg">
 		</div>
 
-		<!-- experimental idea -->
-		<!-- If we do use this it should probably be moved out to a directive or something -->
+			<p class="search-view-nothing-selected-text">Make a selection to get started!</p>
+		</div>
+
+
+		<div ng-show="search.filteredList.length ===0"
+		class="search-view-list-no-results">
+			<p class="search-view-list-no-results-text">Sorry, no matches.</p>
+			<img src= "images/icon-custom-search-no-results.svg" class="search-view-list-no-results-image">
+				<p class="search-view-list-no-results-text-small">If you think we're wrong and there should be something let us know at <a class="link-external" href="mailto:ELTsupport@oup.com?subject= OPD TRC query">ELT Support</a></p>
+		</div>
 
 		<!--File list-->
 
@@ -227,11 +236,10 @@
 
 
 					</tr>
-					<tr class="search-view-list-no-results">
-						<td>Hmmm, looks like we don't have anything that matches that criteria. If you think we're wrong and there should be something let us know at [email address]. NOTE: Text and styling still to be worked on here.</td>
-					</tr>
+
 				</table>
 			</div>
+			
 
 			</div> <!-- end .search-view-content-holder -->
 		</div>

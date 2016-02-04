@@ -6,16 +6,25 @@
 .search-view-content{
 	flex: 1 0 auto;
 	background-color: #e4e8eb;
+	display: flex;
+	flex-direction: column;
 
 	.container{
 		display: flex;
 		align-items: flex-start;
 		padding: 0 $unit*2;
+		flex: 1 1 auto;
+		width: 100%;
+		@include mq-lessthan(650px){
+			flex-direction: column;
+		}
 	}
 }
 
 .search-view-content-holder{
 	flex: 1 1 auto;
+	align-self: stretch;
+	display: flex;
 }
 
 .search-view-badge-new{

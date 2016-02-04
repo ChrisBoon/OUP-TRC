@@ -1,9 +1,18 @@
+//TODO: this sheet is very messy, follows no real order.
+//Also due to poor isolation of my classes from bootstrap accordion 
+//classes we have too many different selectors targeting the same 
+//elements, making it harder to separate.
+//Some css for this 'section' is still in the bootstrap.scss file too.
+
 $c-search: $c-trc-accent-1;
 $panel-time: 0.35s;
 .search-view-controls{
 	padding: $unit*2 0;
 	width: $unit*30;
 	flex: 0 0 auto;
+	@include mq-lessthan(650px){
+		width: 100%;
+	}
 }
 
 .search-view-controls{

@@ -4,6 +4,10 @@
 		@include card($padding:0);
 		flex: 1 1 auto;
 		margin: $unit*2; //consider moving spacing to another element
+	    align-self: flex-start;
+	    @include mq-lessthan(650px){
+			margin: 0 0 $unit*2;
+	    }
 	}
 	&-table{
 		width: 100%;
@@ -46,14 +50,77 @@
 }
 
 .search-view-nothing-selected{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	flex: 1 1 auto;
-	margin: $unit*2
+	margin: $unit*2;
+	&-svg{
+		display: block;
+		width: $unit*30;
+		@include mq-lessthan(400px){
+			width: $unit*20;
+		}
+	}
+	&-image{
+		position: relative;
+		&:before{
+			position: absolute;
+			display: block;
+			content: '';
+			background:url('../images/icon-custom-search-empty.svg') center no-repeat;
+			background-size: $unit*10;
+			width: $unit*10;
+			height: $unit*16;
+			@include mq-lessthan(400px){
+				width: $unit*6;
+				height: $unit*10;
+				background-size: $unit*6;
+			}	
+			animation: nothingSelected 2.5s ease-in-out infinite alternate;
+
+		}
+		@at-root{
+			@keyframes nothingSelected{
+				to{
+					transform: translate(200%);
+				}
+			}
+		}
+	}
+	&-text{
+		@include decorativeText;
+		font-weight: 300;
+		color:#777;
+		text-align: center;
+
+	}
 }
 
-.search-view-list-no-results:first-child{
-	font-size: 30px;
-}
 
-.search-view-list-no-results:not(:first-child){
-	display: none;
+
+.search-view-list-no-results{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex: 1 1 auto;
+	margin: $unit*2 $unit*2 $unit*4;
+	&-image{
+		display: block;
+		width: 10vw;
+		min-width: $unit*16;
+		margin: 1em 0 2em;
+	}
+	&-text{
+		@include decorativeText;
+		font-weight: 300;
+		color:#777;
+		text-align: center;
+		&-small{
+			font-size: 1.2rem;
+			text-align: center;
+		}
+	}	
 }

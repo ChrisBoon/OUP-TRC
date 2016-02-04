@@ -27,6 +27,9 @@
 	font-size: 0.8em;
 	color: $c-light-text;
 }
+@mixin decorativeText{
+	font-size: 1.6em;
+}
 
 @mixin smallUiText{
 	//only to be used on nonessesntial UI elements.
