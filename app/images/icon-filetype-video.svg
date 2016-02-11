@@ -2,18 +2,21 @@
 <!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="110px" height="110px" viewBox="0 0 110 110" enable-background="new 0 0 110 110" xml:space="preserve">
-<g id="label_1_">
-	<circle fill="#DE5D64" cx="55" cy="55" r="55"/>
-</g>
+	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<path fill="#BF1717" d="M32,29c0,1.105-0.895,2-2,2H2c-1.104,0-2-0.895-2-2V3c0-1.104,0.896-2,2-2h28c1.105,0,2,0.896,2,2V29z"/>
+<path fill="#FFFFFF" d="M22.621,15.323l-10.5-6.221C12.007,9.034,11.878,9,11.75,9c-0.131,0-0.261,0.034-0.377,0.104
+	C11.143,9.244,11,9.499,11,9.777v12.445c0,0.277,0.143,0.533,0.373,0.674C11.489,22.965,11.619,23,11.75,23
+	c0.128,0,0.257-0.035,0.371-0.104l10.5-6.22C22.854,16.538,23,16.28,23,16S22.854,15.462,22.621,15.323z"/>
 <g>
-	<defs>
-		<rect id="SVGID_1_" x="35.7" y="22.7" width="54" height="64.6"/>
-	</defs>
-	<clipPath id="SVGID_2_">
-		<use xlink:href="#SVGID_1_"  overflow="visible"/>
-	</clipPath>
-	<path clip-path="url(#SVGID_2_)" fill="#FFFFFF" d="M35.7,84.6c0,0,0,4.3,3.6,2l48.8-29.5c0,0,3.6-2.2,0-4.4L39.4,23.3
-		c0,0-3.6-2.2-3.6,2.1V84.6z"/>
+	<rect x="2" y="5" fill="#FFFFFF" width="4" height="2"/>
+	<rect x="2" y="10" fill="#FFFFFF" width="4" height="2"/>
+	<rect x="2" y="15" fill="#FFFFFF" width="4" height="2"/>
+	<rect x="2" y="20" fill="#FFFFFF" width="4" height="2"/>
+	<rect x="2" y="25" fill="#FFFFFF" width="4" height="2"/>
+	<rect x="26" y="5" fill="#FFFFFF" width="4" height="2"/>
+	<rect x="26" y="10" fill="#FFFFFF" width="4" height="2"/>
+	<rect x="26" y="15" fill="#FFFFFF" width="4" height="2"/>
+	<rect x="26" y="20" fill="#FFFFFF" width="4" height="2"/>
+	<rect x="26" y="25" fill="#FFFFFF" width="4" height="2"/>
 </g>
 </svg>

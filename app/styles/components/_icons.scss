@@ -36,14 +36,12 @@
 
 }
 
-@mixin filetype($thisSize: $unit*4){
+@mixin filetype($thisSize: $unit*3){
 	width: $thisSize;
 	height: $thisSize;
-	border-radius: 50%;
-	background-color: #eee;
 	background-size: contain;
 
-	$filetypes: "pdf", "audio", "video", "image";
+	$filetypes: "audio-sheet", "audio", "doc", "image", "pdf", "presentation", "sheet", "video-sheet",  "video";
 	@each $type in $filetypes{
 	    &-#{$type}{
 		    background-image: url('../images/icon-filetype-#{$type}.svg');
