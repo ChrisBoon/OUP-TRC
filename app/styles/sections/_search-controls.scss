@@ -82,7 +82,7 @@ $panel-time: 0.35s;
 	cursor: pointer;
 	flex: 1 1 auto;
 	display: block;
-	background-color: #aaa;
+	background-color: $c-search;
 	padding: $unit/4 $unit/2;
 	border-radius: 2px;
 	color:#fff;
