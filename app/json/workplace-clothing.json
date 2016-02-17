@@ -67,6 +67,12 @@
 					"size" : "2.1MB"
 				},
 				{
+					"name" : "Text doc and PDF of same item - use a combination icon?",
+					"link" : "",
+					"filetypeIcon" : "pdf-and-doc",
+					"size" : "2.1MB"
+				},
+				{
 					"name" : "Video Worksheet",
 					"link" : "",
 					"topicSubtitle": "Can you have too many shoes?",
