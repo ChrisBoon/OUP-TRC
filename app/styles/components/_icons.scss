@@ -35,3 +35,16 @@
 
 
 }
+
+@mixin filetype($thisSize: $unit*3){
+	width: $thisSize;
+	height: $thisSize;
+	background-size: contain;
+
+	$filetypes: "audio-sheet", "audio", "doc", "image", "pdf", "pdf-and-doc", "presentation", "sheet", "video-sheet",  "video";
+	@each $type in $filetypes{
+	    &-#{$type}{
+		    background-image: url('../images/icon-filetype-#{$type}.svg');
+		}
+	}
+}

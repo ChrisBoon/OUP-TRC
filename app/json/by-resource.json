@@ -8,28 +8,28 @@
 	"parentURL" : "/",
 	"folderList" : [
 		{
-			"icon" : "images/icon-rt-lesson-plan.svg",
+			"icon" : "images/icon-rt-lesson-plan-small.svg",
 			"color1" : "#68C2C2",
 			"title" : "Lesson Plans",
 			"description" : "They're for planning lessons, yeah.",
 			"link" : "files/lesson-plans"
 		},
 		{
-			"icon" : "images/icon-rt-dictionary-audio.svg",
+			"icon" : "images/icon-rt-dictionary-audio-small.svg",
 			"color1" : "#68C2C2",
 			"title" : "Dictionary Audio",
 			"description" : "Paragraph text goes here. This one is a bit longer than the first one. Lets me figure out how to deal with line length.",
 			"link" : "resource-files/dictionary-audio"
 		},
 		{
-			"icon" : "images/icon-rt-vocabulary-images.svg",
+			"icon" : "images/icon-rt-vocabulary-images-small.svg",
 			"color1" : "#68C2C2",
 			"title" : "Vocabulary Images",
 			"description" : "Check out Corrrelations - it doesn't have any description text!",
 			"link" : "resource-files/vocabulary-images"
 		},
 		{
-			"icon" : "images/icon-rt-professional-dev.svg",
+			"icon" : "images/icon-rt-professional-dev-small.svg",
 			"color1" : "#68C2C2",
 			"title" : "Professional Development",
 			"link" : "files/professional-development",
@@ -37,7 +37,7 @@
 			"badge" : "new"
 		},
 		{
-			"icon" : "images/icon-rt-videos.svg",
+			"icon" : "images/icon-rt-videos-small.svg",
 			"color1" : "#68C2C2",
 			"title" : "Videos",
 			"description" : "Description text goes here.",
@@ -45,21 +45,21 @@
 			"badge" : "updated"
 		},
 		{
-			"icon" : "images/icon-rt-newsela.svg",
+			"icon" : "images/icon-rt-newsela-small.svg",
 			"color1" : "#68C2C2",
 			"title" : "Newsela",
 			"description" : "Check out my 'updated' badge.",
 			"link" : "resource-files/newsela"
 		},
 		{
-			"icon" : "images/icon-rt-classroom-activities.svg",
+			"icon" : "images/icon-rt-classroom-activities-small.svg",
 			"color1" : "#68C2C2",
 			"title" : "Classroom Activities",
 			"description" : "Description text goes here.",
 			"link" : "resource-files/classroom-activities"
 		},
 		{
-			"icon" : "images/icon-rt-assessment.svg",
+			"icon" : "images/icon-rt-assessment-small.svg",
 			"color1" : "#68C2C2",
 			"title" : "Assessment",
 			"description" : "Description text goes here.",

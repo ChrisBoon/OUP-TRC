@@ -71,6 +71,15 @@
 }
 .modal-body {
 	min-height: $unit*10;
+  
+  //styling for content:
+
+  p:not(:last-child){
+    margin-bottom: 0.8em;
+  }
+
+
+
 }
 .modal-footer {
   display: flex;

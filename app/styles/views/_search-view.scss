@@ -1,0 +1,45 @@
+.view-search{
+	display: flex;
+	flex-direction: column;
+}
+
+.search-view-content{
+	flex: 1 0 auto;
+	background-color: #e4e8eb;
+	display: flex;
+	flex-direction: column;
+
+	.container{
+		display: flex;
+		align-items: flex-start;
+		padding: 0 $unit*2;
+		flex: 1 1 auto;
+		width: 100%;
+		@include mq-lessthan(650px){
+			flex-direction: column;
+		}
+	}
+}
+
+.search-view-content-holder{
+	flex: 1 1 auto;
+	align-self: stretch;
+	display: flex;
+}
+
+.search-view-badge-new{
+	@include badge(new);
+}
+
+.search-view-badge-updated{
+	@include badge(updated);
+}
+
+
+
+.search-view-list-iconType{
+	@include filetype;
+}
+
+@import "sections/_search-controls";
+@import "sections/_search-results";

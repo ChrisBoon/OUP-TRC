@@ -44,7 +44,7 @@
 // Other courses may choose to use full bleed illustrtion so the styles that govern icon placement are OPD specific:
 .folder-view-list-item-icon-holder{
 	@include OPD{
-		padding: $unit;
+		// padding: $unit;
 		img{
 			display: block;
 			width: 100%;

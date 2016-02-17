@@ -110,19 +110,7 @@ td.file-view-list-iconType-cell{
 }
 
 .file-view-list-iconType{
-	$thisSize: $unit*4;
-	width: $thisSize;
-	height: $thisSize;
-	border-radius: 50%;
-	background-color: #eee;
-	background-size: contain;
-
-	$filetypes: "pdf", "audio", "video", "image";
-	@each $type in $filetypes{
-	    &-#{$type}{
-		    background-image: url('../images/icon-filetype-#{$type}.svg');
-		}
-	}
+	@include filetype;
 }
 td.file-view-list-name{
 	width: 80%;

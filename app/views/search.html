@@ -1,0 +1,247 @@
+    <script type="text/ng-template" id="myModalContent.html">
+
+        <div class="modal-body" ng-bind-html="myModal.longText">
+
+        </div>
+        <div class="modal-footer">
+          <div class="close-modal-button" ng-click="myModal.ok()">Close</div>
+        </div>
+    </script>
+
+<div class="view view-search">
+	<header class="content-view-header">
+
+		<div class="container">
+			<div class="view-icon-holder">
+				<img ng-src="{{search.json.icon}}" alt="">
+			</div>
+			<div class="content-view-header-text">
+				<h1 class="content-view-heading-main">
+					{{search.json.title}}
+				</h1>
+				<p class="content-view-page-desc" >
+					<span ng-bind-html="search.json.description"></span> <span ng-if ="search.json.descriptionLong" class="more-button" ng-click="search.readMore()">Read more</span>
+				</p>
+			</div>
+		</div>
+
+	</header>
+
+
+	<div class="search-view-content">
+		<div class="container">
+		<!-- Controls-->
+		<div class="search-view-controls">
+
+
+
+		<!-- using accordion: -->
+		<uib-accordion close-others="true">
+
+			<!-- Resource Type filter -->
+		    <uib-accordion-group class="search-view-controls-level1" is-open="search.dropdowns.isResTypesOpen">
+		      <uib-accordion-heading>
+		        <span class="search-view-controls-level1-heading">
+			        <span class="search-view-controls-level1-title">Resource Types</span>
+			        <span class="search-view-controls-toggle" ng-class="{'is-open': search.dropdowns.isResTypesOpen}"></span>
+			    </span>
+
+				<!-- Area in header where 'chips' for currently selected options sit - makes it easy to clear them without opening accordion. -->
+				<div class="search-view-control-header-chosen-stuff"
+				ng-click="$event.preventDefault();$event.stopPropagation();"
+				ng-hide="search.dropdowns.isResTypesOpen"
+				>
+			        <div ng-repeat="chosen in search.filters.resTypes"
+			        	 class="search-view-control-header-chosen-thing"
+			        	 ng-click="$event.preventDefault();$event.stopPropagation();search.customFilterMe('resTypes',chosen)"
+			        >
+			        	{{chosen}}
+			        </div>
+		        </div>
+
+		      </uib-accordion-heading>
+			      <ul class="search-view-control-choices">
+			        <li ng-repeat="type in search.json.filterList.resTypes">
+			          <div
+			          	class="search-view-control-choice"
+			            href
+			            ng-click = "search.customFilterMe('resTypes',type.search)"
+			            ng-class = "{'is-active': search.isTagActive('resTypes',type.search)}"
+			          >{{type.name}}</div>
+			        </li>
+			      </ul>
+		    </uib-accordion-group>
+
+
+			<!-- Topics filter -->
+		    <uib-accordion-group class="search-view-controls-level1" is-open="search.dropdowns.isTopicsOpen">
+		      <uib-accordion-heading>
+		        <span class="search-view-controls-level1-heading">
+					<span class="search-view-controls-level1-title">Topics</span>
+			        <span class="search-view-controls-toggle" ng-class="{'is-open': search.dropdowns.isTopicsOpen}"></span>
+		        </span>
+
+				<!-- Area in header where 'chips' for currently selected options sit - makes it easy to clear them without opening accordion. -->
+				<div class="search-view-control-header-chosen-stuff"
+				ng-click="$event.preventDefault();$event.stopPropagation();"
+				ng-hide="search.dropdowns.isTopicsOpen"
+				>
+			        <div ng-repeat="chosen in search.filters.topics"
+			        	 class="search-view-control-header-chosen-thing"
+			        	 ng-click="$event.preventDefault();$event.stopPropagation();search.customFilterMe('topics',chosen)"
+			        >
+			        	{{chosen}}
+			        </div>
+		        </div>
+
+		      </uib-accordion-heading>
+
+			      <ul class="search-view-control-subAccordion">
+			        <li ng-repeat="unit in search.json.filterList.topics">
+			        <uib-accordion>
+						<uib-accordion-group is-open="search.dropdowns[unit.unitName]" panel-class="search-view-controls-level2-panel">
+							<uib-accordion-heading>
+								<span class="search-view-controls-level2-heading">
+									<span class="search-view-controls-level2-title">{{unit.unitName}}</span>
+							        <span class="search-view-controls-toggle" ng-class="{'is-open': search.dropdowns[unit.unitName] }"></span>
+								</span>
+							</uib-accordion-heading>
+							<div class="search-view-control-toggle-all-container">
+								<span 
+								class="search-view-control-toggle-all"
+								ng-click="search.toggleAll(unit)"
+								ng-class="{'all-active': search.allTopicsActive(unit)}"
+								 >select all</span>
+							</div>
+
+							<ul>
+								<li ng-repeat="topic in unit.topicList">
+									<div
+							          	class="search-view-control-choice"
+							            href
+							            ng-click = "search.customFilterMe('topics',topic.search)"
+							            ng-class = "{'is-active': search.isTagActive('topics',topic.search)}"
+							          >{{topic.name}}</div>
+								</li>
+							</ul>
+						</uib-accordion-group>
+
+			        </uib-accordion>
+
+
+			        </li>
+			      </ul>
+		    </uib-accordion-group>
+
+
+
+
+
+
+		    <uib-accordion-group class="search-view-controls-level1" is-open="search.dropdowns.isMediaTypesOpen">
+		      <uib-accordion-heading>
+				<span class="search-view-controls-level1-heading">
+					<span class="search-view-controls-level1-title">Media Types</span>
+			        <span class="search-view-controls-toggle" ng-class="{'is-open': search.dropdowns.isMediaTypesOpen}"></span>
+		        </span>
+
+				<div class="search-view-control-header-chosen-stuff"
+				ng-click="$event.preventDefault();$event.stopPropagation();"
+				ng-hide="search.dropdowns.isMediaTypesOpen"
+				>
+			        <div ng-repeat="chosen in search.filters.mediaTypes"
+			        	 class="search-view-control-header-chosen-thing"
+			        	 ng-click="$event.preventDefault();$event.stopPropagation();search.customFilterMe('mediaTypes',chosen)"
+			        >
+			        	{{chosen}}
+
+			        </div>
+		        </div>
+		      </uib-accordion-heading>
+			      <ul class="search-view-control-choices">
+			        <li ng-repeat="type in search.json.filterList.mediaTypes">
+			          <div
+			          	class="search-view-control-choice"
+			            href
+			            ng-click = "search.customFilterMe('mediaTypes',type.search)"
+			            ng-class = "{'is-active': search.isTagActive('mediaTypes',type.search)}"
+			          >{{type.name}}</div>
+			        </li>
+			      </ul>
+		    </uib-accordion-group>
+
+
+	  </uib-accordion>
+
+
+		</div>
+
+		<div class="search-view-content-holder">
+
+		<!--Empty message-->
+		<div ng-show="search.filters.resTypes.length ===0 && search.filters.topics.length ===0 && search.filters.mediaTypes.length ===0" class="search-view-nothing-selected">
+		<div class="search-view-nothing-selected-image">
+			<img class="search-view-nothing-selected-svg" src="images/icon-custom-search-empty-v2.svg">
+		</div>
+
+			<p class="search-view-nothing-selected-text">Make a selection to get started!</p>
+		</div>
+
+
+		<div ng-show="search.filteredList.length ===0"
+		class="search-view-list-no-results">
+			<p class="search-view-list-no-results-text">Sorry, no matches.</p>
+			<img src= "images/icon-custom-search-no-results.svg" class="search-view-list-no-results-image">
+				<p class="search-view-list-no-results-text-small">If you think we're wrong and there should be something let us know at <a class="link-external" href="mailto:ELTsupport@oup.com?subject= OPD TRC query">ELT Support</a></p>
+		</div>
+
+		<!--File list-->
+
+			<div class="search-view-list-table-holder" ng-hide="search.filteredList.length === search.json.fileList.length|| search.filteredList.length ===0">
+				<table class="search-view-list-table">
+					<tr ng-repeat="item in search.filteredList = (search.json.fileList | filterSearch:search.filters.resTypes:'showResTypes' | filterSearch:search.filters.topics:'showTopics' | filterSearch:search.filters.mediaTypes:'showMediaTypes' )"
+						class="search-view-list-item"
+						ng-click=""
+					>
+						<td class="search-view-list-iconType-cell">
+							<div
+							  class="search-view-list-iconType"
+							  ng-class="'search-view-list-iconType-'+item.filetypeIcon"
+							></div>
+						</td>
+							
+						<td class="search-view-list-name">
+							<div class="search-view-list-name-div">
+								<h2 ng-if="item.resourceTypeName"
+									class="search-view-list-name-rt-name"
+								>
+									{{item.resourceTypeName}}
+								</h2>
+								<h2 class="search-view-list-name-r-name">
+									{{item.resourceName}}
+									<span 
+									  class="search-view-list-name-subtitle"
+									  ng-if="item.resourceSubtitle"
+									>{{item.resourceSubtitle}}</span>
+								</h2>
+							</div>
+						</td>
+						<td ng-if="item.date"
+							class="search-view-list-date">
+								{{item.date | date:'MMM yyyy'}}
+						</td>
+						<td class="search-view-list-size">
+							{{item.size}}
+						</td>
+
+
+					</tr>
+
+				</table>
+			</div>
+			
+
+			</div> <!-- end .search-view-content-holder -->
+		</div>
+	</div>
+</div>

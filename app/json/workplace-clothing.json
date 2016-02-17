@@ -1,0 +1,99 @@
+{
+	"category" : "topicView",
+	"title" : "Workplace Clothing",
+	"description" : "Topic 5.4",
+	"icon" : "images/icon-unit-05.svg",
+	"color1" : "#1e82c1",
+	"color2" : "#1e82c1",
+	"parentURL" : "browse/by-topic-unit-05",
+	"sort" : [ 
+		{
+			"name" : "Default",
+			"orderon" : false
+		},
+		{
+			"name" : "A-Z",
+			"orderon" : "name"
+		}
+	],
+	"hasUnits" : false,
+	"downAll": {
+		"link" : "",
+		"size" : "36.4MB"
+	},
+	"assetList" : [
+		{
+			"fileList" : [
+				{
+					"name" : "Lesson Plan (Just a PDF)",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"size" : "240KB"
+				},
+				{
+					"name" : "Vocabulary Audio (Audio only)",
+					"link" : "",
+					"filetypeIcon" : "audio",
+					"size" : "3.4MB"
+				},
+				{
+					"name" : "Some word doc or other text format",
+					"link" : "",
+					"filetypeIcon" : "doc",
+					"size" : "150KB"
+				},
+				{
+					"name" : "Listening Worksheets (audio + pdf/doc/etc)",
+					"link" : "",
+					"filetypeIcon" : "audio-sheet",
+					"size" : "1.2MB"
+				},
+				{
+					"name" : "Some spreadsheet file",
+					"link" : "",
+					"filetypeIcon" : "sheet",
+					"size" : "2.9MB"
+				},
+				{
+					"name" : "A Powerpoint/Keynote/other presentation file",
+					"link" : "",
+					"filetypeIcon" : "presentation",
+					"size" : "1.2MB"
+				},
+				{
+					"name" : "Text doc and PDF of same item - just use PDF icon?",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"size" : "2.1MB"
+				},
+				{
+					"name" : "Text doc and PDF of same item - use a combination icon?",
+					"link" : "",
+					"filetypeIcon" : "pdf-and-doc",
+					"size" : "2.1MB"
+				},
+				{
+					"name" : "Video Worksheet",
+					"link" : "",
+					"topicSubtitle": "Can you have too many shoes?",
+					"filetypeIcon" : "video-sheet",
+					"size" : "3MB"
+				},
+				{
+					"name" : "Video",
+					"link" : "",
+					"topicSubtitle": "Blue suede shoes",
+					"filetypeIcon" : "video",
+					"size" : "15.9MB"
+				},
+				{
+					"name" : "Vocabulary Images",
+					"link" : "",
+					"filetypeIcon" : "image",
+					"size" : "6.5MB"
+				}
+			]
+		}
+
+	]
+}
