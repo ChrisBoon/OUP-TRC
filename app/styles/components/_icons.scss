@@ -1,10 +1,14 @@
-@mixin fa-arrow-circle-right{
+@mixin fa-arrow-circle-right($size: 16px){
 	&:after{
-		content: "\f0a9";
-		font-family: FontAwesome;
+		content: "";
 		display: inline-block;
+		width: $size;
+		height: $size;
+		background-image: url('../images/icon-goto-arrow.svg');
+		background-size: $size;
 		color: #666;
 		margin-left: 0.5em;
+		transform: translate(0, $size/8);
 	}	
 }
 
