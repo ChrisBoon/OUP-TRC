@@ -1,8 +1,8 @@
 {
 	"category" : "resourceType",
 	"title" : "Videos",
-	"icon" : "images/icon-rt-videos.svg",
-	"color1" : "#68C2C2",
+	"icon" : "images/opd_icon_resType_5.svg",
+	"color1" : "#555",
 	"color2" : "#e4e8eb",
 	"description" : "All videos are MP4. Don't share or post these online or whatever.",
 	"parentURL" : "browse/by-resource",
@@ -41,8 +41,8 @@
 		{
 			"unitName" : "Everyday Language",
 			"showFilter" : ["Everyday Language", "All Units"],
-			"icon" : "images/icon-unit-01-no-bg.svg",
-			"color" : "#27845D",
+			"icon" : "images/opd_icon_topic_1.svg",
+			"color" : "#28855e",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "38MB"
@@ -81,7 +81,7 @@
 		{
 			"unitName" : "People",
 			"showFilter" : ["People", "All Units"],
-			"icon" : "images/icon-unit-02-no-bg.svg",
+			"icon" : "images/opd_icon_topic_2.svg",
 			"color" : "#74ae58",
 			"fileList" : [
 				{
@@ -98,7 +98,7 @@
 		{
 			"unitName" : "Housing",
 			"showFilter" : ["Housing", "All Units"],
-			"icon" : "images/icon-unit-03-no-bg.svg",
+			"icon" : "images/opd_icon_topic_3.svg",
 			"color" : "#a1c15d",
 			"downloadAll" : {
 				"link" : "",
@@ -128,7 +128,7 @@
 		{
 			"unitName" : "Food",
 			"showFilter" : ["Food", "All Units"],
-			"icon" : "images/icon-unit-04-no-bg.svg",
+			"icon" : "images/opd_icon_topic_4.svg",
 			"color" : "#61b0b0",
 			"downloadAll" : {
 				"link" : "",
@@ -158,7 +158,7 @@
 		{
 			"unitName" : "Clothing",
 			"showFilter" : ["Clothing", "All Units"],
-			"icon" : "images/icon-unit-05-no-bg.svg",
+			"icon" : "images/opd_icon_topic_5.svg",
 			"color" : "#1e82c1",
 			"fileList" : [
 				{
@@ -175,7 +175,7 @@
 		{
 			"unitName" : "Health",
 			"showFilter" : ["Health", "All Units"],
-			"icon" : "images/icon-unit-06-no-bg.svg",
+			"icon" : "images/opd_icon_topic_6.svg",
 			"color" : "#3157a0",
 			"downloadAll" : {
 				"link" : "",
@@ -205,7 +205,7 @@
 		{
 			"unitName" : "Community",
 			"showFilter" : ["Community", "All Units"],
-			"icon" : "images/icon-unit-07-no-bg.svg",
+			"icon" : "images/opd_icon_topic_7.svg",
 			"color" : "#493180",
 			"downloadAll" : {
 				"link" : "",
@@ -235,8 +235,8 @@
 		{
 			"unitName" : "Transportation",
 			"showFilter" : ["Transportation", "All Units"],
-			"icon" : "images/icon-unit-08-no-bg.svg",
-			"color" : "#70257d",
+			"icon" : "images/opd_icon_topic_8.svg",
+			"color" : "#6f267c",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "26MB"
@@ -265,8 +265,8 @@
 		{
 			"unitName" : "Job Search",
 			"showFilter" : ["Job Search", "All Units"],
-			"icon" : "images/icon-unit-09-no-bg.svg",
-			"color" : "#aa1b52",
+			"icon" : "images/opd_icon_topic_9.svg",
+			"color" : "#aa1c53",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "26MB"
@@ -295,7 +295,7 @@
 		{
 			"unitName" : "The Workplace",
 			"showFilter" : ["The Workplace", "All Units"],
-			"icon" : "images/icon-unit-10-no-bg.svg",
+			"icon" : "images/opd_icon_topic_10.svg",
 			"color" : "#c73646",
 			"fileList" : [
 				{
@@ -312,8 +312,8 @@
 		{
 			"unitName" : "Academic Study",
 			"showFilter" : ["Academic Study", "All Units"],
-			"icon" : "images/icon-unit-11-no-bg.svg",
-			"color" : "#ed7348",
+			"icon" : "images/opd_icon_topic_11.svg",
+			"color" : "#d37348",
 			"fileList" : [
 				{
 					"name" : "Lights out",
@@ -329,8 +329,8 @@
 		{
 			"unitName" : "Recreation",
 			"showFilter" : ["Recreation", "All Units"],
-			"icon" : "images/icon-unit-12-no-bg.svg",
-			"color" : "#f7ad10",
+			"icon" : "images/opd_icon_topic_12.svg",
+			"color" : "#e5ad1b",
 			"fileList" : [
 				{
 					"name" : "Weekend warrior",

@@ -2,9 +2,9 @@
 	"category" : "topicView",
 	"title" : "Personal Information (B)",
 	"description" : "Topic 1.2",
-	"icon" : "images/icon-unit-01.svg",
-	"color1" : "#555",
-	"color2" : "#ddd",
+	"icon" : "images/opd_icon_topic_1.svg",
+	"color1" : "#28855e",
+	"color2" : "#28855e",
 	"parentURL" : "browse/by-topic-unit-01",
 	"sort" : [ 
 		{

@@ -1,69 +1,97 @@
 {
 	"template" : "grid-view",
 	"title" : "Browse by resource",
-	"icon" : "images/browseby-1.svg",
-	"color1" : "#68C2C2",
+	"icon" : "images/opd_icon_browseBy_resource.svg",
+	"color1" : "#555",
 	"color2" : "#e4e8eb",
 	"description" : "Some helpful, friendly text could go here. Just a sentence or two. Maybe it metions to look for updates, or perhaps we use it to shout out one particular resource type we think people might otherwise not pay attention to.",
 	"parentURL" : "/",
 	"folderList" : [
 		{
-			"icon" : "images/icon-rt-lesson-plan-small.svg",
+			"icon" : "images/opd_icon_resType_1.svg",
 			"color1" : "#68C2C2",
 			"title" : "Lesson Plans",
-			"description" : "They're for planning lessons, yeah.",
+			"description" : "Step-by-step teaching notes support every topic in the OPD and reduce instructor prep time.",
 			"link" : "files/lesson-plans"
 		},
 		{
-			"icon" : "images/icon-rt-dictionary-audio-small.svg",
+			"icon" : "images/opd_icon_resType_2.svg",
 			"color1" : "#68C2C2",
-			"title" : "Dictionary Audio",
-			"description" : "Paragraph text goes here. This one is a bit longer than the first one. Lets me figure out how to deal with line length.",
-			"link" : "resource-files/dictionary-audio"
+			"title" : "Audio",
+			"description" : "Audio for every topic in the OPD supports vocabulary comprehension and pronunciation.",
+			"link" : "browse/by-resource"
 		},
 		{
-			"icon" : "images/icon-rt-vocabulary-images-small.svg",
+			"icon" : "images/opd_icon_resType_3.svg",
 			"color1" : "#68C2C2",
-			"title" : "Vocabulary Images",
-			"description" : "Check out Corrrelations - it doesn't have any description text!",
-			"link" : "resource-files/vocabulary-images"
+			"title" : "Classic Classroom Activities",
+			"description" : "Engaging partner and small-group activities encourage authentic practice of the words in the OPD.",
+			"link" : "browse/by-resource"
 		},
 		{
-			"icon" : "images/icon-rt-professional-dev-small.svg",
+			"icon" : "images/opd_icon_resType_4.svg",
 			"color1" : "#68C2C2",
-			"title" : "Professional Development",
-			"link" : "files/professional-development",
-			"description" : "View this resource type to see what it is like when the assets aren't split into units.",
-			"badge" : "new"
+			"title" : "Assessment Program",
+			"description" : "Customizable tests for every OPD topic help track students' progress. Print-and-go tests and extensive question banks are available.",
+			"link" : "browse/by-resource"
 		},
 		{
-			"icon" : "images/icon-rt-videos-small.svg",
+			"icon" : "images/opd_icon_resType_5.svg",
 			"color1" : "#68C2C2",
 			"title" : "Videos",
-			"description" : "Description text goes here.",
+			"description" : "OPD videos engage students and support vocabulary learning.",
 			"link" : "files/videos",
 			"badge" : "updated"
 		},
 		{
-			"icon" : "images/icon-rt-newsela-small.svg",
+			"icon" : "images/opd_icon_resType_1.svg",
 			"color1" : "#68C2C2",
-			"title" : "Newsela",
-			"description" : "Check out my 'updated' badge.",
-			"link" : "resource-files/newsela"
+			"title" : "NEWSELA© Articles",
+			"description" : "Authentic, high-interest news articles and  comprehension questions support reading and critical thinking skills.",
+			"link" : "browse/by-resource"
 		},
 		{
-			"icon" : "images/icon-rt-classroom-activities-small.svg",
+			"icon" : "images/opd_icon_resType_6.svg",
 			"color1" : "#68C2C2",
-			"title" : "Classroom Activities",
-			"description" : "Description text goes here.",
-			"link" : "resource-files/classroom-activities"
+			"title" : "Images",
+			"description" : "Art from the OPD can be used to facilitate in-class activities and practice. Cropped images are provided for all 4,000 vocabuarly terms.",
+			"link" : "browse/by-resource"
 		},
 		{
-			"icon" : "images/icon-rt-assessment-small.svg",
+			"icon" : "images/opd_icon_resType_7.svg",
 			"color1" : "#68C2C2",
-			"title" : "Assessment",
-			"description" : "Description text goes here.",
-			"link" : "resource-files/assessment"
+			"title" : "Listening Worksheets",
+			"description" : "Multilevel Listening Worksheets with accompanying audio provide hours of listening comprehension practice.",
+			"link" : "browse/by-resource"
+		},
+		{
+			"icon" : "images/opd_icon_resType_3.svg",
+			"color1" : "#68C2C2",
+			"title" : "Grammar Worksheets",
+			"description" : "Customizable worksheets provide focused grammar practice aligned with select OPD topics.",
+			"link" : "browse/by-resource"
+		},
+		{
+			"icon" : "images/opd_icon_resType_7.svg",
+			"color1" : "#68C2C2",
+			"title" : "Vocabulary Worksheets",
+			"description" : "Customizable worksheets provide whole-class practice activities for every unit in the OPD.",
+			"link" : "browse/by-resource"
+		},
+		{
+			"icon" : "images/opd_icon_resType_7.svg",
+			"color1" : "#68C2C2",
+			"title" : "Pronunciation Worksheets",
+			"description" : "Customizable worksheets for every OPD unit provide hours of pronunciation practice.",
+			"link" : "browse/by-resource"
+		},
+		{
+			"icon" : "images/opd_icon_resType_1.svg",
+			"color1" : "#68C2C2",
+			"title" : "Additional Resources",
+			"link" : "files/professional-development",
+			"description" : "Vocabulary Teaching Handbook, Workbook answer keys, correlations to standards, and more professional development materials support your teaching needs.",
+			"badge" : "new"
 		}
 	]
 }

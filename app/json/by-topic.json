@@ -1,92 +1,92 @@
 {
 	"template" : "grid-view",
 	"title" : "Browse by topic",
-	"icon" : "images/browseby-2.svg",
-	"color1" : "#EF7D45",
+	"icon" : "images/opd_icon_topic_8.svg",
+	"color1" : "#555555",
 	"color2" : "#e4e8eb",
 	"description" : "Some helpful, friendly text could go here. Just a sentence or two. Maybe it metions to look for updates, or perhaps we use it to shout out one particular resource type we think people might otherwise not pay attention to.",
 	"parentURL" : "/",
 	"folderList" : [
 		{
-			"icon" : "images/icon-unit-01-no-bg.svg",
-			"color1" : "#27845D",
+			"icon" : "images/opd_icon_topic_1.svg",
+			"color1" : "#28855e",
 			"title" : "Everyday Language",
 			"link" : "browse/by-topic-unit-01"
 
 		},
 		{
-			"icon" : "images/icon-unit-02-no-bg.svg",
+			"icon" : "images/opd_icon_topic_2.svg",
 			"color1" : "#74ae58",
 			"title" : "People",
 			"link" : "browse/by-topic-unit-01"
 
 		},
 		{
-			"icon" : "images/icon-unit-03-no-bg.svg",
+			"icon" : "images/opd_icon_topic_3.svg",
 			"color1" : "#a1c15d",
 			"title" : "Housing",
 			"link" : "browse/by-topic-unit-01"
 
 		},
 		{
-			"icon" : "images/icon-unit-04-no-bg.svg",
+			"icon" : "images/opd_icon_topic_4.svg",
 			"color1" : "#61b0b0",
 			"title" : "Food",
 			"link" : "browse/by-topic-unit-01"
 
 		},
 		{
-			"icon" : "images/icon-unit-05-no-bg.svg",
+			"icon" : "images/opd_icon_topic_5.svg",
 			"color1" : "#1e82c1",
 			"title" : "Clothing",
 			"link" : "browse/by-topic-unit-05"
 
 		},
 		{
-			"icon" : "images/icon-unit-06-no-bg.svg",
+			"icon" : "images/opd_icon_topic_6.svg",
 			"color1" : "#3157a0",
 			"title" : "Health",
 			"link" : "browse/by-topic-unit-01"
 
 		},
 		{
-			"icon" : "images/icon-unit-07-no-bg.svg",
+			"icon" : "images/opd_icon_topic_7.svg",
 			"color1" : "#493180",
 			"title" : "Community",
 			"link" : "browse/by-topic-unit-01"
 
 		},
 		{
-			"icon" : "images/icon-unit-08-no-bg.svg",
-			"color1" : "#70257d",
+			"icon" : "images/opd_icon_topic_8.svg",
+			"color1" : "#6f267c",
 			"title" : "Transportation",
 			"link" : "browse/by-topic-unit-01"
 
 		},
 		{
-			"icon" : "images/icon-unit-09-no-bg.svg",
-			"color1" : "#aa1b52",
+			"icon" : "images/opd_icon_topic_9.svg",
+			"color1" : "#aa1c53",
 			"title" : "Job Search",
 			"link" : "browse/by-topic-unit-01"
 
 		},
 		{
-			"icon" : "images/icon-unit-10-no-bg.svg",
+			"icon" : "images/opd_icon_topic_10.svg",
 			"color1" : "#c73646",
 			"title" : "The Workplace",
 			"link" : "browse/by-topic-unit-01"
 
 		},
 		{
-			"icon" : "images/icon-unit-11-no-bg.svg",
-			"color1" : "#ed7348",
+			"icon" : "images/opd_icon_topic_11.svg",
+			"color1" : "#d37348",
 			"title" : "Academic Study",
 			"link" : "browse/by-topic-unit-01"
 
 		},
 		{
-			"icon" : "images/icon-unit-12-no-bg.svg",
-			"color1" : "#f7ad10",
+			"icon" : "images/opd_icon_topic_12.svg",
+			"color1" : "#e5ad1b",
 			"title" : "Recreation",
 			"link" : "browse/by-topic-unit-01"
 
