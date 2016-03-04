@@ -3,7 +3,7 @@
 
 .homepage-banner{
 	@include OPD{
-		background: #000;
+		background: $c-opd-black;
 		padding: $unit $unit*2 $unit*4;
 	}
 }
