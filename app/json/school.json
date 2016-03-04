@@ -1,0 +1,89 @@
+{
+	"category" : "resourceType",
+	"title" : "Vocabulary Worksheets (A)",
+	"color1" : "#68C2C2",
+	"color2" : "#e4e8eb",
+	"parentURL" : "browse/by-topic-unit-01",
+	"filter" : {
+		"filterType" : "units",
+		"options" : [
+			"All Units",
+			"Everyday Language",
+			"People",
+			"Housing",
+			"Food",
+			"Clothing",
+			"Health",
+			"Community",
+			"Transportation",
+			"Job Search",
+			"The Workplace",
+			"Academic Study",
+			"Recreation"
+		],
+		"setAs" : "All Units"
+	},
+	"sort" : [ 
+		{
+			"name" : "Default",
+			"orderon" : false
+		},
+		{
+			"name" : "A-Z",
+			"orderon" : "name"
+		}
+	],
+	"hasIcons" : true,
+	"hasUnits" : true,
+	"unitList" : [
+		{
+			"unitName" : "Everyday Language",
+			"showFilter" : ["Everyday Language", "All Units"],
+			"icon" : "images/icon-unit-01-no-bg.svg",
+			"color" : "#27845D",
+			"downloadAll" : {
+				"link" : "",
+				"size" : "38MB"
+			},
+			"fileList" : [
+				{
+					"name" : "Meeting and Greeting",
+					"unitName" : "Everyday Language",
+					"resourceSubtitle" : "Categorization",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "10.4MB"
+				},
+				{
+					"name" : "Personal Information",
+					"unitName" : "Everyday Language",
+					"resourceSubtitle" : "Fill in the blanks",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "11.8MB"
+				},
+				{
+					"name" : "Personal Information",
+					"unitName" : "Everyday Language",
+					"resourceSubtitle" : "Labeling",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "15.9MB"
+				},			
+				{
+					"name" : "School",
+					"unitName" : "Everyday Language",
+					"resourceSubtitle" : "Categorization",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "15.9MB"
+				}				
+			]
+
+		}
+	]
+}

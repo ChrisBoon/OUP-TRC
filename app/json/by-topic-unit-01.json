@@ -11,27 +11,27 @@
 		{
 			"title" : "Meeting and Greeting",
 			"description" : "Topic 1.1",
-			"link" : "list/meeting-and-greeting"
+			"link" : "files/meeting-and-greeting"
 		},
 		{
 			"title" : "Personal Info",
 			"description" : "Topic 1.2",
-			"link" : "list/meeting-and-greeting"
+			"link" : "files/personal-info"
 		},
 		{
 			"title" : "School",
 			"description" : "Topic 1.3",
-			"link" : "list/meeting-and-greeting"
+			"link" : "files/school"
 		},
 		{
 			"title" : "Classroom",
 			"description" : "Topic 1.4",
-			"link" : "list/meeting-and-greeting"
+			"link" : "files/classroom"
 		},
 		{
 			"title" : "Studying",
 			"description" : "Topic 1.5",
-			"link" : "list/meeting-and-greeting"
+			"link" : "files/studying"
 		},
 		{
 			"title" : "Succeeding in School",
