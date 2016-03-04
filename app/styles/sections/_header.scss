@@ -10,7 +10,7 @@
 	align-content: stretch;
 
 	@include OPD{
-		background-color: #000;
+		background-color: $c-opd-black;
 	}
 }
 

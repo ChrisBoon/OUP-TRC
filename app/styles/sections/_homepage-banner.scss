@@ -3,13 +3,13 @@
 
 .homepage-banner{
 	@include OPD{
-		background: #000;
+		background: $c-opd-black;
 		padding: $unit $unit*2 $unit*4;
 	}
 }
 
 .logo-opd-huge{
-	max-width: 600px;
+	max-width: 700px;
 	width: 100%;
 	display: block;
 	margin: 0 auto;

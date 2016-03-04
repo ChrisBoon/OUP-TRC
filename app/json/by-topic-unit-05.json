@@ -1,7 +1,7 @@
 {
 	"template" : "list-view",
 	"title" : "Clothing",
-	"icon" : "images/icon-unit-05.svg",
+	"icon" : "images/opd_icon_topic_5.svg",
 	"bgImage" : "images/bg-unit-05.png",
 	"color1" : "#1e82c1",
 	"color2" : "#1e82c1",

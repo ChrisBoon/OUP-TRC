@@ -1,0 +1,82 @@
+{
+	"category" : "resourceType",
+	"title" : "Vocabulary Worksheets (B)",
+	"icon" : "images/opd_icon_resType_7.svg",
+	"color1" : "#68C2C2",
+	"color2" : "#e4e8eb",
+	"parentURL" : "browse/by-topic-unit-01",
+	"filter" : {
+		"filterType" : "units",
+		"options" : [
+			"All Units",
+			"Everyday Language",
+			"People",
+			"Housing",
+			"Food",
+			"Clothing",
+			"Health",
+			"Community",
+			"Transportation",
+			"Job Search",
+			"The Workplace",
+			"Academic Study",
+			"Recreation"
+		],
+		"setAs" : "All Units"
+	},
+	"sort" : [ 
+		{
+			"name" : "Default",
+			"orderon" : false
+		},
+		{
+			"name" : "A-Z",
+			"orderon" : "name"
+		}
+	],
+	"hasIcons" : true,
+	"hasUnits" : true,
+	"unitList" : [
+		{
+			"unitName" : "Everyday Language",
+			"showFilter" : ["Everyday Language", "All Units"],
+			"icon" : "images/opd_icon_topic_1.svg",
+			"color" : "#28855e",
+			"downloadAll" : {
+				"link" : "",
+				"size" : "38MB"
+			},
+			"fileList" : [
+				{
+					"name" : "Meeting and Greeting",
+					"unitName" : "Everyday Language",
+					"resourceSubtitle" : "Topic 1.1",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "10.4MB"
+				},
+				{
+					"name" : "Personal Information",
+					"unitName" : "Everyday Language",
+					"resourceSubtitle" : "Topic 1.2",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "11.8MB"
+				},
+		
+				{
+					"name" : "School",
+					"unitName" : "Everyday Language",
+					"resourceSubtitle" : "Topic 1.3",
+					"link" : "",
+					"filetypeIcon" : "pdf",
+					"date" : "2016-02-27",
+					"size" : "15.9MB"
+				}				
+			]
+
+		}
+	]
+}
