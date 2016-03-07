@@ -2,7 +2,7 @@
 	"template" : "grid-view",
 	"title" : "Browse by topic",
 	"icon" : "images/opd_icon_topic_8.svg",
-	"color1" : "#555555",
+	"color1" : "#333",
 	"color2" : "#e4e8eb",
 	"description" : "Some helpful, friendly text could go here. Just a sentence or two. Maybe it metions to look for updates, or perhaps we use it to shout out one particular resource type we think people might otherwise not pay attention to.",
 	"parentURL" : "/",
