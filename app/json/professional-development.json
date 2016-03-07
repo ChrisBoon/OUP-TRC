@@ -2,7 +2,7 @@
 	"category" : "resourceType",
 	"title" : "Professional Development",
 	"icon" : "images/opd_icon_resType_1.svg",
-	"color1" : "#555",
+	"color1" : "#333",
 	"color2" : "#e4e8eb",
 	"parentURL" : "browse/by-resource",
 	"sort" : [ 

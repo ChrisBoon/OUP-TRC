@@ -2,7 +2,7 @@
 	"category" : "resourceType",
 	"title" : "Videos",
 	"icon" : "images/opd_icon_resType_5.svg",
-	"color1" : "#555",
+	"color1" : "#333",
 	"color2" : "#e4e8eb",
 	"description" : "All videos are MP4. Don't share or post these online or whatever.",
 	"parentURL" : "browse/by-resource",
