@@ -17,7 +17,9 @@ angular
     'ngSanitize',
     'ngTouch',
     'LocalStorageModule',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'angularMoment',
+    'ngPassword'
   ])
   .config(['localStorageServiceProvider', function(localStorageServiceProvider){
     localStorageServiceProvider.setPrefix('ls');
@@ -43,6 +45,11 @@ angular
         templateUrl: 'views/files.html',
         controller: 'FilesCtrl',
         controllerAs: 'files'
+      })
+      .when('/settings', {
+        templateUrl: 'views/settings.html',
+        controller: 'SettingsCtrl',
+        controllerAs: 'settings'
       })
       .otherwise({
         redirectTo: '/'

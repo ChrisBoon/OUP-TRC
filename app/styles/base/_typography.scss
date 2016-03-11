@@ -23,6 +23,10 @@
 	}
 }
 
+@mixin labelUIText {
+	font-weight: 600;
+}
+
 @mixin footerText{
 	font-size: 0.8em;
 	color: $c-light-text;

@@ -1,0 +1,83 @@
+.view-settings{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.settings-view-content{
+	flex: 1 0 auto;
+	background:$c-trc-bg;
+}
+
+.settings-section{
+	margin: $unit*2 0 $unit*4;
+}
+
+.settings-section-content{
+	@include card($padding:0);
+}
+
+.settings-section-heading{
+	@include pageHeadingLight;
+	margin-bottom: 0.25em;
+	color: $c-trc-settings;
+}
+
+.settings-item{
+	&:not(:last-child){
+		border-bottom: 1px solid $c-line;
+	}
+	
+}
+
+.settings-item-static{
+	display: flex;
+	padding: $unit $unit*2;
+	cursor: pointer;
+}
+
+.settings-item-label-faux{
+	margin-right: $unit;
+	min-width: 8em;
+}
+.settings-item-current{
+	color: $c-light-text;
+	flex: 1 0 auto;
+}
+
+.settings-edit-button{
+	@include button-minimal;
+	color: $c-trc-settings;
+	text-transform: uppercase;
+	text-align: center;	
+	align-self: flex-end;
+	transition: all 0.2s;
+	font-size: 0.8em;
+	.settings-item-static:hover &{
+		background-color: $c-trc-settings;
+		color: #fff;
+	}
+}
+
+.settings-item-change{
+	padding: $unit $unit*2;
+}
+.settings-form{
+	display: flex;
+	align-items: center;
+}
+
+.settings-editing-button{
+	//reset:
+    background: none;
+    border: 0;
+    color: inherit;
+
+	@include button-minimal;
+	color: $c-trc-settings;
+	text-transform: uppercase;
+	text-align: center;	
+	align-self: flex-end;
+	transition: all 0.2s;
+	font-size: 0.8em;
+}

@@ -27,7 +27,7 @@ angular.module('trcApp')
       },
       {
       	'text': 'Settings',
-      	'link': '/settings'
+      	'link': 'settings'
       },
       {
       	'text': 'Sign out',
