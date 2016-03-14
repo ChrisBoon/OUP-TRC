@@ -11,6 +11,7 @@
 
 .settings-section{
 	margin: $unit*2 0 $unit*4;
+	padding: 0 $unit*2;
 }
 
 .settings-section-content{
@@ -34,6 +35,10 @@
 	display: flex;
 	padding: $unit $unit*2;
 	cursor: pointer;
+    align-items: center;
+	&:focus{
+		outline-color: $c-trc-settings;
+	}
 }
 
 .settings-item-label-faux{
@@ -52,8 +57,8 @@
 	text-align: center;	
 	align-self: flex-end;
 	transition: all 0.2s;
-	font-size: 0.8em;
-	.settings-item-static:hover &{
+	.settings-item-static:hover &,
+	.settings-item-static:focus &{
 		background-color: $c-trc-settings;
 		color: #fff;
 	}
@@ -67,17 +72,64 @@
 	align-items: center;
 }
 
+.settings-form-group{
+	flex: 1 1 auto;
+}
+
+.settings-form-item{
+	display: flex;
+	flex-direction: column;
+	margin-right: $unit;
+	&:not(:last-child){
+		margin-bottom: $unit*1.5;
+	}
+}
+
+.settings-form-label{
+	display: block;
+	cursor: pointer;
+	padding: $unit 0 $unit/2;
+	order: -1;
+}
+
+.settings-form-control-text{
+	border-radius: none;
+	outline: none;
+	border: none;
+	font-size: inherit;
+	color: $c-light-text;
+	padding: 0.25em 0;
+	border-bottom: 2px solid #bbb;
+	cursor: text;
+	transition: border 0.2s, color 0.2s;
+	&:focus{
+		border-bottom-color: $c-trc-settings;
+		color: $c-trc-settings;
+	}
+}
+
+//needs pulling out into a 'button' reset mixin and a 'settings' style mixin:
 .settings-editing-button{
 	//reset:
     background: none;
     border: 0;
     color: inherit;
-
+	line-height: inherit;
+	font-size: inherit;
 	@include button-minimal;
 	color: $c-trc-settings;
 	text-transform: uppercase;
 	text-align: center;	
 	align-self: flex-end;
 	transition: all 0.2s;
-	font-size: 0.8em;
+	&:disabled{
+		color: $c-disabled-text;
+		pointer-events: none;
+	}
+	&:focus,
+	&:hover{
+		background-color: $c-trc-settings;
+		color: #fff;
+		outline: none;
+	}
 }
