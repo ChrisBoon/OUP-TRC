@@ -87,4 +87,42 @@ angular.module('trcApp')
     	thisSettings.setState('viewing');
     };
 
-  });
+  })
+
+  	//THESE ARE DIRECTIVES - I SHOULD MOVE IT INTO SEPARATE FILES!:
+
+  	//directive for adding 'enter' keyboard control on divs - requires same function be called in 'my-enter' as 'ng-click'
+	.directive('oupEnter', function () {
+	    return function (scope, element, attrs) {
+	        element.bind('keydown keypress', function (event) {
+	            if(event.which === 13) {
+	                scope.$apply(function (){
+	                    scope.$eval(attrs.oupEnter);
+	                });
+
+	                event.preventDefault();
+	            }
+	        });
+	    };
+	})
+
+	//directive for setting focus on an element - used in TRC to auto set focus to first input in a section when pressing 'edit'.
+	.directive('oupFocus', function ($timeout) {
+    return {
+        restrict: 'A',
+        link: {
+            post: function postLink(scope, element, attrs) {
+                scope.$watch(attrs.oupFocus, function (value) {
+                	console.log(value);
+                    if (attrs.oupFocus) {
+                        if (scope.$eval(attrs.oupFocus)) {
+                            $timeout(function () {
+                                element[0].focus();
+                            }, 100); //need some delay to work with ng-disabled
+                        }
+                    }
+                });
+            }
+        }
+    };
+});
