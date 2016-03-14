@@ -29,7 +29,13 @@
 			<h2 class="settings-section-heading">Profile</h2>
 			<div class="settings-section-content">
 				<div class="settings-item">
-					<div class="settings-item-static" ng-hide="settings.state ==='editName'" ng-click="settings.setState('editName')">
+					<div 
+						class="settings-item-static" 
+						ng-hide="settings.state ==='editName'" 
+						ng-click="settings.setState('editName')" 
+						oup-enter="settings.setState('editName')"
+						tabindex="0" 
+					>
 						<p class="settings-item-label-faux">Name</p>
 						<p class="settings-item-current">{{settings.userDetails.profile.firstName}} {{settings.userDetails.profile.lastName}}</p>
 						<div class="settings-edit-button">Edit</div>
@@ -39,13 +45,33 @@
 			        <!-- NAME -->
 					    <form class="settings-form"  name="nameForm" ng-submit="submitChange(nameForm, 'name')" novalidate>
 					        <div class="settings-form-group" ng-class="{ 'has-error' : nameForm.first.$invalid && !nameForm.first.$pristine }">
-					            <label>First</label>
-					            <input type="first" name="first" class="form-control" required ng-model="settings.userDetails.profile.firstName">
-								 <p ng-show="nameForm.first.$invalid && !nameForm.first.$pristine" class="help-block">Sorry, we need a name.</p>
-
-					            <label>Last</label>
-					            <input type="last" name="last" class="form-control" required ng-model="settings.userDetails.profile.lastName">
-					            <p ng-show="nameForm.last.$invalid && !nameForm.last.$pristine" class="help-block">Sorry, we need a name.</p>
+						        <div class="settings-form-item">
+						            <label for="settingsFirst" class="settings-form-label">First</label>
+						            <input 
+							            type="first" 
+							            name="first"
+							            id="settingsFirst"
+							            class="form-control settings-form-control-text" 
+							            ng-model="settings.userDetails.profile.firstName" 
+							            oup-focus="settings.state ==='editName'"
+							            required
+							        >
+								    
+									<p ng-show="nameForm.first.$invalid && !nameForm.first.$pristine" class="help-block">Sorry, we need a name.</p>
+								</div>
+								<div class="settings-form-item">
+						            <label for="settingsLast" class="settings-form-label">Last</label>
+						            <input
+							            type="last"
+							            name="last"
+							            id="settingsLast"
+							            class="form-control settings-form-control-text"
+							            ng-model="settings.userDetails.profile.lastName"
+							            required
+							        >
+							        
+						            <p ng-show="nameForm.last.$invalid && !nameForm.last.$pristine" class="help-block">Sorry, we need a name.</p>
+					            </div>
 					        </div>
 					        
 					        <input type="button" ng-click="settings.cancelChange()" value="Cancel" class="settings-editing-button"/>
@@ -67,7 +93,13 @@
 
 
 				<div class="settings-item">
-					<div class="settings-item-static" ng-hide="settings.state ==='editEmail'" ng-click="settings.setState('editEmail')">
+					<div
+						class="settings-item-static"
+						ng-hide="settings.state ==='editEmail'"
+						ng-click="settings.setState('editEmail')"
+						oup-enter="settings.setState('editEmail')"
+						tabindex="0"
+					>
 						<p class="settings-item-label-faux">Email address</p>
 						<p class="settings-item-current">{{settings.userDetails.email}}</p>
 						<div class="settings-edit-button">Edit</div>
@@ -79,9 +111,20 @@
 			        <!-- EMAIL -->
 					    <form class="settings-form"  name="emailForm" ng-submit="submitChange(emailForm, 'email')" novalidate>
 					        <div class="settings-form-group" ng-class="{ 'has-error' : emailForm.email.$invalid && !emailForm.email.$pristine }">
-					            <label>Email</label>
-					            <input type="email" name="email" class="form-control" ng-model="settings.userDetails.email">
-					            <p ng-show="emailForm.email.$invalid && !emailForm.email.$pristine" class="help-block">Enter a valid email.</p>
+						        <div class="settings-form-item">
+						            <input
+						            	type="email"
+						            	name="email"
+						            	id="settingsEmail"
+						            	class="form-control settings-form-control-text"
+						            	ng-model="settings.userDetails.email"
+						            	oup-focus="settings.state ==='editEmail'"
+						            	required
+						            >
+						            <label for="settingsEmail" class="settings-form-label">Email</label>
+							            
+						            <p ng-show="emailForm.email.$invalid && !emailForm.email.$pristine" class="help-block">Enter a valid email.</p>
+					            </div>
 					        </div>
 					        
 					        <input type="button" ng-click="settings.cancelChange()" value="Cancel" class="settings-editing-button"/>
@@ -94,7 +137,13 @@
 
 				<div class="settings-item">
 
-					<div class="settings-item-static" ng-hide="settings.state ==='editPassword'" ng-click="settings.setState('editPassword')">
+					<div
+						class="settings-item-static"
+						ng-hide="settings.state ==='editPassword'"
+						ng-click="settings.setState('editPassword')"
+						oup-enter="settings.setState('editPassword')"
+						tabindex="0"
+					>
 						<p class="settings-item-label-faux">Password</p>
 						<p class="settings-item-current">Last changed <span am-time-ago="settings.userDetails.password.lastUpdate"></span></p>
 						<div class="settings-edit-button">Edit</div>
@@ -105,13 +154,35 @@
 			        <!-- PASSWORD -->
 					    <form class="settings-form"  name="passwordForm" ng-submit="submitChangePassword(passwordForm)" novalidate>
 					        <div class="settings-form-group" ng-class="{ 'has-error' : passwordForm.password.$invalid && !passwordForm.password.$pristine }">
-					            <label>New password</label>
-					            <input type="password" name="password" class="form-control" ng-model="settings.setNewPassword" ng-minlength="5" required>
-					            <p ng-show="passwordForm.password.$invalid-minlength && !passwordForm.password.$pristine" class="help-block">Must be at least 5 characters.</p>
-					            <label>Retype password</label>
-					            <input type="password" match-password="password" name="confirmPassword" ng-minlength="5" ng-model="password.confirm">
-					            <p ng-show="passwordForm.confirmPassword.$invalid" class="help-block">Must match password field.</p>
-					            <p ng-show="passwordForm.confirmPassword.$valid && passwordForm.password.$valid"  class="help-block-good">Match confirmed.</p>
+						        <div class="settings-form-item">
+						            <input 
+						            	type="password"
+						            	name="password"
+						            	id="settingsPassword"
+						            	class="form-control settings-form-control-text"
+						            	ng-model="settings.setNewPassword"
+						            	oup-focus="settings.state ==='editPassword'"
+						            	ng-minlength="5"
+						            	required
+						            >
+						            <label for="settingsPassword" class="settings-form-label">New password</label>
+						            
+						            <p ng-show="passwordForm.password.$invalid-minlength && !passwordForm.password.$pristine" class="help-block">Must be at least 5 characters.</p>
+					            </div>
+					            <div class="settings-form-item">
+						            <input
+							            type="password"
+							            match-password="password"
+							            name="confirmPassword"
+							            id="settingsConfirmPassword"
+							            class="form-control settings-form-control-text"
+							            ng-minlength="5"
+							            ng-model="password.confirm"
+							        >
+						            <label for="settingsConfirmPassword" class="settings-form-label">Retype password</label>
+							        
+						            <p ng-show="passwordForm.confirmPassword.$valid && passwordForm.password.$valid"  class="help-block-good">Match confirmed.</p>
+					            </div>
 					        </div>
 					        
 					        <input type="button" ng-click="settings.cancelChange()" value="Cancel" class="settings-editing-button"/>
