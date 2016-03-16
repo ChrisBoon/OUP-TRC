@@ -20,7 +20,41 @@ angular.module('trcApp')
     this.state = 'viewing';
     this.changed = false;
 
-    this.setState = function(setAs){
+
+
+	thisSettings.emptyPasswordFields = function(){
+		thisSettings.setNewPassword = {
+			currentOne: '',
+			newOne: '',
+			confirm: ''
+		};
+	};
+	thisSettings.emptyPasswordFields();
+
+	this.clearMessages = function(){
+		thisSettings.showUpdate(false);	
+	    thisSettings.showError(false);
+	};
+
+    this.setState = function(setAs,asCommand){
+    	//if called by opening another item on page instead of pressing cancel:
+    	if (typeof asCommand === 'undefined') { asCommand = 'implicit'; }
+    	//if something else already open:
+    	if (thisSettings.state !== 'viewing' && asCommand === 'implicit') {
+    		
+
+			if (thisSettings.state ==='editName') {
+				thisSettings.cancelData($scope.nameForm);
+			}
+			else if (thisSettings.state ==='editEmail') {
+				thisSettings.cancelData($scope.emailForm);
+			}
+			else if (thisSettings.state ==='editPassword') {
+				thisSettings.cancelData($scope.passwordForm);
+			}
+    	}
+
+	    
     	thisSettings.state = setAs;
     };
 
@@ -32,7 +66,7 @@ angular.module('trcApp')
 	    	},
 	    	'password' : {
 		    	'value' : 'weakPassword',
-		    	'lastUpdate': '2016-02-27'
+		    	'lastUpdate': '2016-02-10'
 	    	},
 	    	'email' : 'chris.boon@oup.com',
 	    	'role' : 'teacher'
@@ -45,23 +79,38 @@ angular.module('trcApp')
 
 
 
-    this.saveData = function(){
+    this.saveData = function(thisForm){
 		localStorageService.set('settingsChanged', thisSettings.userDetails);
 		thisSettings.setState('viewing');
+		thisForm.$setPristine();
     };
 
-    this.cancelData = function(){
+    this.cancelData = function(thisForm){
+    	if (thisForm.$name === 'passwordForm') {
+    		thisSettings.emptyPasswordFields();
+    	}
     	thisSettings.userDetails = localStorageService.get('settingsChanged'); 
+    	thisForm.$setPristine();
+    	thisForm.$setUntouched();
     };
 
     this.showUpdate = function(type){
     	thisSettings.changed = type;
     };
 
+    this.showError = function(type){
+    	if (type === 'oldPasswordFail') {
+	    	thisSettings.errorText = 'The password you entered is incorrect. Please try again.';
+    	}
+    	else if (type === false) {
+    		thisSettings.errorText = type ;
+    	}
+    };
+
 	$scope.submitChange = function(thisForm,type) {
 		// check to make sure the form is completely valid
 		if (thisForm.$valid) {
-			thisSettings.saveData();
+			thisSettings.saveData(thisForm);
 			if (type ==='email') {
 				thisSettings.showUpdate('email address');
 			}
@@ -69,28 +118,37 @@ angular.module('trcApp')
 				thisSettings.showUpdate('name');
 			}
 		}
-	};
 
+	};
+  	
 	$scope.submitChangePassword = function(thisForm) {
 		// check to make sure the form is completely valid
-		if (thisForm.$valid) {
-			console.log(thisSettings.setNewPassword);
-			thisSettings.userDetails.password.value = thisSettings.setNewPassword;
-			thisSettings.userDetails.password.lastUpdate = Date.now();
-			thisSettings.saveData();
-			thisSettings.showUpdate('password');
+		if (thisSettings.setNewPassword.oldOne !== thisSettings.userDetails.password.value) {
+			thisSettings.showError('oldPasswordFail');
+			thisSettings.showUpdate(false);
+			thisSettings.cancelChange(thisForm, 'error');
+		}
+		else{
+			if (thisForm.$valid) {
+				thisSettings.userDetails.password.value = thisSettings.setNewPassword.newOne;
+				thisSettings.userDetails.password.lastUpdate = Date.now();
+				thisSettings.saveData(thisForm);
+				thisSettings.showUpdate('password');
+
+			}
 		}
 
+		thisSettings.emptyPasswordFields();
 	};
-    this.cancelChange = function(){
-    	thisSettings.userDetails = localStorageService.get('settingsChanged');
-    	thisSettings.setState('viewing');
+    this.cancelChange = function(thisForm){
+    	thisSettings.cancelData(thisForm);
+    	thisSettings.setState('viewing', 'explicit');
     };
+
 
   })
 
   	//THESE ARE DIRECTIVES - I SHOULD MOVE IT INTO SEPARATE FILES!:
-
   	//directive for adding 'enter' keyboard control on divs - requires same function be called in 'my-enter' as 'ng-click'
 	.directive('oupEnter', function () {
 	    return function (scope, element, attrs) {
@@ -112,8 +170,7 @@ angular.module('trcApp')
         restrict: 'A',
         link: {
             post: function postLink(scope, element, attrs) {
-                scope.$watch(attrs.oupFocus, function (value) {
-                	console.log(value);
+                scope.$watch(attrs.oupFocus, function ( ) {
                     if (attrs.oupFocus) {
                         if (scope.$eval(attrs.oupFocus)) {
                             $timeout(function () {

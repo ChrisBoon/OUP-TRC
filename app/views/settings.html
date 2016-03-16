@@ -21,7 +21,11 @@
 		<div class="container">
 
 		<div class="setting-change-confirmation" ng-show="settings.changed">
-			<p>Your <span class="setting-change-item">{{settings.changed}}</span> was successfully updated</p>
+			<p class="setting-change-confirmation-text" >Your <span class="setting-change-item">{{settings.changed}}</span> was successfully updated</p>
+		</div>
+
+		<div class="setting-change-error" ng-show="settings.errorText">
+			<p class="setting-change-error-text" ><span class="setting-change-item">{{settings.errorText}}</span></p>
 		</div>
 
 
@@ -32,8 +36,8 @@
 					<div 
 						class="settings-item-static" 
 						ng-hide="settings.state ==='editName'" 
-						ng-click="settings.setState('editName')" 
-						oup-enter="settings.setState('editName')"
+						ng-click="settings.setState('editName'); settings.clearMessages()"
+						oup-enter="settings.setState('editName'); settings.clearMessages()"
 						tabindex="0" 
 					>
 						<p class="settings-item-label-faux">Name</p>
@@ -46,7 +50,6 @@
 					    <form class="settings-form"  name="nameForm" ng-submit="submitChange(nameForm, 'name')" novalidate>
 					        <div class="settings-form-group" ng-class="{ 'has-error' : nameForm.first.$invalid && !nameForm.first.$pristine }">
 						        <div class="settings-form-item">
-						            <label for="settingsFirst" class="settings-form-label">First</label>
 						            <input 
 							            type="first" 
 							            name="first"
@@ -56,11 +59,12 @@
 							            oup-focus="settings.state ==='editName'"
 							            required
 							        >
+						            <label for="settingsFirst" class="settings-form-label">First name</label>
+
+							        <p ng-show="nameForm.first.$invalid && nameForm.first.$dirty" class="is-invalid settings-helper">Required.</p>
 								    
-									<p ng-show="nameForm.first.$invalid && !nameForm.first.$pristine" class="help-block">Sorry, we need a name.</p>
 								</div>
 								<div class="settings-form-item">
-						            <label for="settingsLast" class="settings-form-label">Last</label>
 						            <input
 							            type="last"
 							            name="last"
@@ -69,14 +73,20 @@
 							            ng-model="settings.userDetails.profile.lastName"
 							            required
 							        >
+						            <label for="settingsLast" class="settings-form-label">Last name</label>
+
+							        <p ng-show="nameForm.last.$invalid && nameForm.last.$dirty" class="is-invalid settings-helper">Required.</p>
 							        
-						            <p ng-show="nameForm.last.$invalid && !nameForm.last.$pristine" class="help-block">Sorry, we need a name.</p>
 					            </div>
 					        </div>
-					        
-					        <input type="button" ng-click="settings.cancelChange()" value="Cancel" class="settings-editing-button"/>
+					        <div class="settings-form-buttons">
+						        <input type="button" ng-click="settings.cancelChange(nameForm)" value="Cancel" class="settings-editing-button"/>
 
-					        <button type="submit" class="settings-editing-button" ng-disabled="nameForm.$invalid || nameForm.first.$viewValue.length<1 || nameForm.first.$pristine">Save</button>
+						        <button type="submit" class="settings-editing-button" 
+						        ng-disabled="nameForm.$invalid || ( nameForm.first.$viewValue.length<1 || nameForm.last.$viewValue.length<1 ) || (nameForm.first.$pristine && nameForm.last.$pristine)"
+
+						        >Save</button>
+						    </div>
 					    </form>
 
 
@@ -96,8 +106,8 @@
 					<div
 						class="settings-item-static"
 						ng-hide="settings.state ==='editEmail'"
-						ng-click="settings.setState('editEmail')"
-						oup-enter="settings.setState('editEmail')"
+						ng-click="settings.setState('editEmail'); settings.clearMessages()"
+						oup-enter="settings.setState('editEmail'); settings.clearMessages()"
 						tabindex="0"
 					>
 						<p class="settings-item-label-faux">Email address</p>
@@ -121,15 +131,14 @@
 						            	oup-focus="settings.state ==='editEmail'"
 						            	required
 						            >
-						            <label for="settingsEmail" class="settings-form-label">Email</label>
-							            
-						            <p ng-show="emailForm.email.$invalid && !emailForm.email.$pristine" class="help-block">Enter a valid email.</p>
+						            <label for="settingsEmail" class="settings-form-label">Email address</label>
+							        <p ng-class="{'is-valid' : emailForm.email.$valid && !emailForm.email.$pristine, 'is-invalid' : emailForm.email.$invalid}" class="settings-helper">Must be a valid email address eg. <em>'user@email.com'.</em></p>   
 					            </div>
 					        </div>
-					        
-					        <input type="button" ng-click="settings.cancelChange()" value="Cancel" class="settings-editing-button"/>
-
-					        <button type="submit" class="settings-editing-button" ng-disabled="emailForm.$invalid ||emailForm.email.$viewValue.length<1 || emailForm.email.$pristine">Save</button>
+					        <div class="settings-form-buttons">
+						        <input type="button" ng-click="settings.cancelChange(emailForm)" value="Cancel" class="settings-editing-button"/>
+						        <button type="submit" class="settings-editing-button" ng-disabled="emailForm.$invalid ||emailForm.email.$viewValue.length<1 || emailForm.email.$pristine">Save</button>
+					        </div>
 					    </form>
 
 					</div>
@@ -140,8 +149,8 @@
 					<div
 						class="settings-item-static"
 						ng-hide="settings.state ==='editPassword'"
-						ng-click="settings.setState('editPassword')"
-						oup-enter="settings.setState('editPassword')"
+						ng-click="settings.setState('editPassword'); settings.clearMessages()"
+						oup-enter="settings.setState('editPassword'); settings.clearMessages()"
 						tabindex="0"
 					>
 						<p class="settings-item-label-faux">Password</p>
@@ -157,17 +166,32 @@
 						        <div class="settings-form-item">
 						            <input 
 						            	type="password"
+						            	name="oldPassword"
+						            	id="settingsOldPassword"
+						            	class="form-control settings-form-control-text"
+						            	oup-focus="settings.state ==='editPassword'"
+						            	ng-model="settings.setNewPassword.oldOne"
+						            	ng-minlength="5"
+						            	required
+						            >
+						            <label for="settingsOldPassword" class="settings-form-label">Current password</label>
+						            <p ng-class="{'is-valid' : passwordForm.oldPassword.$valid && !passwordForm.oldPassword.$pristine, 'is-invalid' : passwordForm.oldPassword.$invalid && !passwordForm.oldPassword.$pristine}" class="settings-helper">Your password must contain a minimum of 5 characters.</p>  
+						            
+					            </div>
+						        <div class="settings-form-item">
+						            <input 
+						            	type="password"
 						            	name="password"
 						            	id="settingsPassword"
 						            	class="form-control settings-form-control-text"
-						            	ng-model="settings.setNewPassword"
-						            	oup-focus="settings.state ==='editPassword'"
+						            	ng-model="settings.setNewPassword.newOne"
+						            	
 						            	ng-minlength="5"
 						            	required
 						            >
 						            <label for="settingsPassword" class="settings-form-label">New password</label>
+						            <p ng-class="{'is-valid' : passwordForm.password.$valid && !passwordForm.password.$pristine, 'is-invalid' : passwordForm.password.$invalid && !passwordForm.password.$pristine}" class="settings-helper">Your password must contain a minimum of 5 characters.</p>  
 						            
-						            <p ng-show="passwordForm.password.$invalid-minlength && !passwordForm.password.$pristine" class="help-block">Must be at least 5 characters.</p>
 					            </div>
 					            <div class="settings-form-item">
 						            <input
@@ -177,17 +201,17 @@
 							            id="settingsConfirmPassword"
 							            class="form-control settings-form-control-text"
 							            ng-minlength="5"
-							            ng-model="password.confirm"
+							            ng-model="settings.setNewPassword.confirm"
 							        >
-						            <label for="settingsConfirmPassword" class="settings-form-label">Retype password</label>
-							        
-						            <p ng-show="passwordForm.confirmPassword.$valid && passwordForm.password.$valid"  class="help-block-good">Match confirmed.</p>
+						            <label for="settingsConfirmPassword" class="settings-form-label">Confirm password</label>
+							        <p ng-class="{'is-valid' : passwordForm.confirmPassword.$valid && !passwordForm.confirmPassword.$pristine, 'is-invalid' : passwordForm.confirmPassword.$invalid && !passwordForm.confirmPassword.$pristine}" class="settings-helper">Make sure to match the password above.</p>  
 					            </div>
 					        </div>
-					        
-					        <input type="button" ng-click="settings.cancelChange()" value="Cancel" class="settings-editing-button"/>
+					        <div class="settings-form-buttons">
+						        <input type="button" ng-click="settings.cancelChange(passwordForm)" value="Cancel" class="settings-editing-button"/>
 
-					        <button type="submit" class="settings-editing-button" ng-disabled="passwordForm.$invalid || passwordForm.password.$pristine">Save</button>
+						        <button type="submit" class="settings-editing-button" ng-disabled="passwordForm.$invalid || passwordForm.password.$pristine">Save</button>
+					        </div>
 					    </form>
 
 
