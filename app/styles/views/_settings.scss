@@ -6,7 +6,6 @@
 	}
 }
 
-
 .settings-view-content{
 	flex: 1 0 auto;
 	background:$c-trc-bg;
@@ -49,9 +48,7 @@
 		flex-direction: column;
 		align-items: stretch;
 	}
-	&.ng-animate{
-		transition: none; // TODO: make this a helper.
-	}
+	@include ng-no-animate;
 }
 
 .settings-item-label-faux{
@@ -107,80 +104,26 @@
 }
 
 .settings-form-control-text{
-	border-radius: none;
-	outline: none;
-	border: none;
-	font-size: inherit;
+	@include input-text-line($color: $c-light-text, $focus: $c-trc-settings);
+
 	max-width: 30em;
-	color: $c-light-text;
-	padding: 0.25em 0;
-	border-bottom: 2px solid #bbb;
-	cursor: text;
-	transition: border 0.2s, color 0.2s;
-	&:focus{
-		border-bottom-color: $c-trc-settings;
-		color: $c-trc-settings;
-		outline-color: $c-trc-settings;
-		& ~ .settings-form-label{
-	
-		}
-	}
+
 	&.ng-valid:not(.ng-pristine){
-		border-bottom-color: $c-success;
-		// color: $c-success;
+		@include input-text-line--valid;
 	}
+
 	&.ng-invalid:not(.ng-pristine){
-		border-bottom-color: $c-warning;
-		color: $c-warning;
+		@include input-text-line--invalid;
 	}
 }
 
 
 .settings-helper{
-	font-size: 0.9em;
-	color: $c-lightest-text;
-	padding: $unit 0;
-	&.is-valid{
-		&:after{
-			display: inline-block;
-			@include valid-check;
-			background-color: $c-success;
-			border-radius: 50%;
-			margin-left: 0.5em;
-		}
-	}
-	&.is-invalid{
-		&:after{
-			display: inline-block;
-			@include valid-cross;
-			background-color: $c-warning;
-			border-radius: 50%;
-			margin-left: 0.5em;
-		}
-	}
+	@include helper-text;
 	&-error-on-blur{
-		background-color: $c-warning;
-		position: absolute;
-		z-index: 2;
+		@include helper-text-error-on-blur;
 		top: calc(100% + #{$unit});
 		left: 0;
-		display: block;
-		color: #fff;
-		padding: $unit/2 $unit;
-		border-radius: 2px;
-		&:before{
-			content: "";
-			display: block;
-			position: absolute;
-			bottom: 100%;
-			left: $unit;
-			width: 0;
-			height: 0;
-			border-style: solid;
-			border-width: 0 5px 6px 5px;
-			border-color: transparent transparent $c-warning transparent;
-
-		}
 	}
 }
 
@@ -201,16 +144,9 @@
 
 //needs pulling out into a 'button' reset mixin and a 'settings' style mixin:
 .settings-editing-button{
-	//reset:
-    background: none;
-    border: 0;
-	background-color: $c-trc-settings;
-	color: #fff;
-	line-height: inherit;
-	font-size: inherit;
-	@include button-minimal;
-	text-transform: uppercase;
-	text-align: center;	
+	@include real-button-override;
+	@include button-basic($c-trc-settings);
+
 	align-self: flex-end;
 	transition: all 0.2s;
 	&:disabled{
@@ -234,40 +170,14 @@
 }
 
 .setting-change-confirmation{
-	$thisColor:$c-success;
 	margin: $unit*2 0 $unit*4;
 	padding: 0 $unit*2;
-	&-text{
-		@include card($thisColor);
-		color: #fff;
-		text-align: center;
-		padding: $unit $unit*2;
-		&:after{
-			display: inline-block;
-				@include valid-check(2em);
-				background-size: 1.2em;
-				background-color: mix($thisColor,#000,50);
-				border-radius: 50%;
-				margin: 0.5em;
-		}
-	}
+	@include submission-message-success;	
 
 }
 .setting-change-error{
-	$thisColor:$c-warning;
-	@extend .setting-change-confirmation;
-	&-text{
-		@include card($thisColor);
-		color: #fff;
-		text-align: center;
-		padding: $unit $unit*2;
-		&:after{
-			display: inline-block;
-				@include valid-warn(2em);
-				background-size: 1.2em;
-				background-color: mix($thisColor,#000,50);
-				border-radius: 50%;
-				margin: 0.5em;
-		}
-	}
+	margin: $unit*2 0 $unit*4;
+	padding: 0 $unit*2;
+	@include submission-message-error;	
+
 }

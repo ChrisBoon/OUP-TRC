@@ -1,0 +1,106 @@
+@mixin input-text-reset{
+	border-radius: none;
+	outline: none;
+	border: none;
+	font-size: inherit;
+	cursor: text;
+}
+
+@mixin input-text-line--valid{
+	border-bottom-color: $c-success;
+}
+
+@mixin input-text-line--invalid{
+	border-bottom-color: $c-warning;
+	color: $c-warning;
+}
+
+@mixin input-text-line($color:$c-light-text, $focus: orange){
+	@include input-text-reset;
+	color: $color;
+	padding: 0.25em 0;
+	border-bottom: 2px solid #bbb;
+	transition: border 0.2s, color 0.2s;
+	&:focus{
+		border-bottom-color: $focus;
+		color: $focus;
+		outline-color: $focus;
+	}
+}
+
+@mixin helper-text{
+	font-size: 0.9em;
+	color: $c-lightest-text;
+	padding: $unit 0;
+	&.is-valid{
+		&:after{
+			display: inline-block;
+			@include valid-check;
+			background-color: $c-success;
+			border-radius: 50%;
+			margin-left: 0.5em;
+		}
+	}
+	&.is-invalid{
+		&:after{
+			display: inline-block;
+			@include valid-cross;
+			background-color: $c-warning;
+			border-radius: 50%;
+			margin-left: 0.5em;
+		}
+	}
+
+}
+
+@mixin helper-text-error-on-blur{
+	background-color: $c-warning;
+	position: absolute;
+	z-index: 2;
+	display: block;
+	color: #fff;
+	padding: $unit/2 $unit;
+	border-radius: 2px;
+	&:before{
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 100%;
+		left: $unit;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 5px 6px 5px;
+		border-color: transparent transparent $c-warning transparent;
+
+	}
+}
+
+@mixin submission-message($thisColor){
+	&-text{
+		@include card($thisColor);
+		color: #fff;
+		text-align: center;
+		padding: $unit $unit*2;
+		&:after{
+			display: inline-block;
+				background-size: 1.2em;
+				background-color: mix($thisColor,#000,50);
+				border-radius: 50%;
+				margin: 0.5em;
+		}
+	}
+}
+@mixin submission-message-success{
+	@include submission-message($c-success);
+	&:after{
+		@include valid-check(2em);
+	}
+}
+
+@mixin submission-message-error{
+	@include submission-message($c-warning);
+	&:after{
+		@include valid-warn(2em);
+	}
+}
