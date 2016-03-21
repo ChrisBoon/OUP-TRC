@@ -2,12 +2,13 @@
 	<div class="homepage-banner homepage-banner-opd">
 		<img class="logo-opd-huge" sizes="(max-width: 46em) calc(100vw - 32px), 700px" src="images/opd_trc_logo_homepage_1x.jpg" srcset="images/opd_trc_logo_homepage_1x.jpg 700w, images/opd_trc_logo_homepage_2x.jpg 1400w" alt="OPD Teacher Resource Center">
 	</div>
-	<div class="container">
+	
   	
 	<div class="signIn-section">
+		<div class="container">
 		<div class="signIn-card signIn-card-signIn">
 			<div class="signIn-card-heading">Already have on OPD TRC account?</div>
-			<form class="signIn-form"  name="signInForm" rc-submit="logMeIn(signInForm)">
+			<form class="signIn-form"  name="signInForm" submit="logMeIn(signInForm)">
 
 		        <div class="signIn-form-item">
 		            <input
@@ -18,7 +19,7 @@
 		            	ng-model="signInAttempt.email"
 		            	required
 		            >
-		            <label for="signInEmail" class="settings-form-label">Email address</label>
+		            <label for="signInEmail" class="signIn-form-label">Email</label>
 	            </div>
 
 		        <div class="signIn-form-item">
@@ -31,8 +32,10 @@
 		            	required
 		            	minlength="5"
 		            >
-		            <label for="signInPassword" class="settings-form-label">Password</label>
+		            <label for="signInPassword" class="signIn-form-label">Password</label>
 	            </div>
+
+
 
 	            <button type="submit" class="signIn-card-action signIn-card-action-button" value="Sign in">Sign In</button>
 
@@ -44,10 +47,46 @@
 			<div class="signIn-card-description">
 				<p>Register now for access to lesson plans, audio files, images, videos, stuff, and more. You’ll need an access code to get started. If you don’t have one do this thing which could include a link <a class="link-external" href="">like this</a></p>
 			</div>
-			<a href="" class="signIn-card-action signIn-card-action-link">Register</a>
+			<a href="" class="signIn-card-action signIn-card-action-link signIn-card-action-register">Register</a>
 		</div>
+
+		
+        <div class="signIn-forgot-pw-area">
+        	<a href="" class="signIn-forgot-pw-link">Forgotten your password?</a>
+        </div>
+
+
 	</div><!-- end signIn-section -->
 
+
+
 	</div><!-- end container -->
+
+
+
+      <div class="page-footer" ng-controller="HeaderCtrl">
+      <div class="slt-banner"  ng-class="locationClass()">
+        <div class="container">
+          <div class="logo-holder">
+            <img class="logo-slt" src="images/logo-SLT.svg" alt="Shaping Learning Together">
+          </div>
+        </div>      
+      </div>
+      <div class="container main-footer-content">
+        <a class="logo-oup-a" href="https://elt.oup.com/">
+          <img src="images/logo-OUP.svg" alt="Oxford University Press" class="logo-oup">
+        </a>
+        <div class="boring-footer-stuff">
+          <ul class="footer-links-list" ng-click="home.unsetWelcomeStatus()">
+            <li ng-repeat="item in footerLinks"><a href="">{{item.text}}</a></li>
+          </ul>
+          <p class="copyright-line">Copyright © Oxford University Press, 2015. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
 
 </div><!-- end view -->

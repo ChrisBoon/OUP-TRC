@@ -1,0 +1,142 @@
+$c-register: #227090;
+.view-signIn{
+	display: flex;
+	flex-direction: column;
+	background:$c-trc-bg;
+	margin-top: 0;
+	.content-view-heading-main{
+		color: $c-trc-settings;
+	}
+	.homepage-banner{
+		padding-top: $unit*4;
+	}
+}
+
+.signIn-section{
+	padding: 0 $unit*2;
+	flex: 1 0 auto;
+	@include OPD{
+		background-color: $c-opd-black;
+	}
+	>.container{
+		display: flex;
+		padding: $unit*2 0;
+		flex: 1 0 auto;
+		flex-wrap: wrap;
+	}	
+}
+
+.signIn-card{
+	flex: 1 1 40%;
+	@include card($padding:0);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	&-signUp{
+		margin-left: $unit*2;
+		@include OPD{
+			background-color: $c-register;
+			color: #fff;
+		}
+	}
+}
+.signIn-forgot-pw-area{
+	flex: 1 0 40%;
+	max-width: calc(50% - #{$unit});
+	margin-top: $unit*4;
+
+}
+.signIn-forgot-pw-link{
+	padding: $unit*2;
+	display: block;
+	text-align: center;
+	border-radius: 2px;
+	@include OPD{
+	background-color: rgba(#fff,0.2);
+		color: #fff;
+	}
+}
+
+.signIn-card-heading{
+	@include pageHeadingLight;
+	padding: $unit $unit $unit $unit*2;
+}
+
+.signIn-form{
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+	justify-content: space-between;
+}
+
+.signIn-form-item{
+	position: relative;
+	display: flex;
+	flex: 1 0 auto;
+	background-color: #fff;
+	&:not(:last-child){
+		border-top: 1px solid $c-line;
+	}
+}
+
+.signIn-form-label{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	padding: $unit*2 $unit $unit*2 $unit*2;
+	order: -1;
+	min-width: 7em;
+	transition: color 0.2s;
+}
+
+.signIn-form-control-text{
+	@include input-text-line($color: $c-light-text, $focus: $c-trc-settings, $focusColor:$base-text-color);
+	border-bottom-color:#fff ;
+	flex: 1 1 auto;
+	margin: $unit $unit*2 $unit $unit;
+	&:focus ~ .signIn-form-label{
+		color: $c-trc-settings;
+	}
+}
+
+.signIn-card-action-button{
+	@include real-button-override;
+}
+
+.signIn-card-action{
+	display: block;
+	$thisColor: $c-trc-settings;
+	@include button-basic($thisColor);
+	padding: $unit*2;
+	transition: all 0.2s;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	&:focus,
+	&:hover{
+		background-color: lighten($thisColor,10);
+	}
+	&-register{
+		background-color: mix($c-register,#000,50);
+		&:focus,
+		&:hover{
+			background-color: lighten(mix($c-register,#000,50),10);
+		}
+	}
+}
+
+.signIn-card-description{
+	padding: $unit $unit*2;
+}
+
+.setting-change-confirmation{
+	margin: $unit*2 0 $unit*4;
+	padding: 0 $unit*2;
+	@include submission-message-success;	
+
+}
+.setting-change-error{
+	margin: $unit*2 0 $unit*4;
+	padding: 0 $unit*2;
+	@include submission-message-error;	
+
+}
