@@ -15,7 +15,7 @@
 	color: $c-warning;
 }
 
-@mixin input-text-line($color:$c-light-text, $focus: orange){
+@mixin input-text-line($color:$c-light-text, $focus: orange, $focusColor: $focus){
 	@include input-text-reset;
 	color: $color;
 	padding: 0.25em 0;
@@ -23,7 +23,7 @@
 	transition: border 0.2s, color 0.2s;
 	&:focus{
 		border-bottom-color: $focus;
-		color: $focus;
+		color: $focusColor;
 		outline-color: $focus;
 	}
 }
