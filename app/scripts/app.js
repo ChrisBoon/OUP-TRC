@@ -51,6 +51,11 @@ angular
         controller: 'SettingsCtrl',
         controllerAs: 'settings'
       })
+      .when('/sign-in', {
+        templateUrl: 'views/sign-in.html',
+        controller: 'SignInCtrl',
+        controllerAs: 'signIn'
+      })
       .otherwise({
         redirectTo: '/'
       });

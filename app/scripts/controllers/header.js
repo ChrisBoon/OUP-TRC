@@ -31,7 +31,7 @@ angular.module('trcApp')
       },
       {
       	'text': 'Sign out',
-      	'link': '/sign-out'
+      	'link': 'sign-in'
       }
     ];
 
