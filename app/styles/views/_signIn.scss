@@ -2,27 +2,29 @@ $c-register: #227090;
 .view-signIn{
 	display: flex;
 	flex-direction: column;
-	background:$c-trc-bg;
 	margin-top: 0;
 	.content-view-heading-main{
 		color: $c-trc-settings;
 	}
 	.homepage-banner{
-		padding-top: $unit*4;
+		padding-top: $unit*6;
 	}
 }
 
 .signIn-section{
-	padding: 0 $unit*2;
-	flex: 1 0 auto;
+	padding: $unit*2 $unit*2 $unit*6;
+	flex: 0 0 auto;
 	@include OPD{
 		background-color: $c-opd-black;
 	}
 	>.container{
 		display: flex;
 		padding: $unit*2 0;
-		flex: 1 0 auto;
+		flex: 0 0 auto;
 		flex-wrap: wrap;
+		@include media-regDown{
+			flex-direction: column;
+		}
 	}	
 }
 
@@ -38,11 +40,20 @@ $c-register: #227090;
 			background-color: $c-register;
 			color: #fff;
 		}
+		@include media-regDown{
+			margin-left: 0;
+			margin-top: $unit*4;
+			order: 1;
+		}
 	}
+
 }
 .signIn-forgot-pw-area{
 	flex: 1 0 40%;
 	max-width: calc(50% - #{$unit});
+	@include media-regDown{
+		max-width: 100%;
+	}
 	margin-top: $unit*4;
 
 }
@@ -93,6 +104,7 @@ $c-register: #227090;
 	@include input-text-line($color: $c-light-text, $focus: $c-trc-settings, $focusColor:$base-text-color);
 	border-bottom-color:#fff ;
 	flex: 1 1 auto;
+	min-width: 8em;
 	margin: $unit $unit*2 $unit $unit;
 	&:focus ~ .signIn-form-label{
 		color: $c-trc-settings;
@@ -126,17 +138,65 @@ $c-register: #227090;
 
 .signIn-card-description{
 	padding: $unit $unit*2;
+	flex: 1 0 auto;
+	.link-external{
+		color: lighten($c-trc-accent-1,20);
+	}
 }
 
-.setting-change-confirmation{
-	margin: $unit*2 0 $unit*4;
-	padding: 0 $unit*2;
-	@include submission-message-success;	
 
-}
-.setting-change-error{
-	margin: $unit*2 0 $unit*4;
-	padding: 0 $unit*2;
+.signIn-form-error{
 	@include submission-message-error;	
+	// padding:0 $unit*2 $unit;
+	&-text{
+		@include pageHeadingLight;
+		text-align: left;
+		display: flex;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	}
 
+}
+
+
+//marketing stuff (probably make a component):
+
+.signIn-marketing{
+	background:$c-trc-bg;
+	padding: $unit*6 $unit*2;
+	flex: 1 0 auto;
+}
+
+.marketing-section-heading{
+	@include intro-line;
+	margin-bottom: $unit*4;
+	text-align: center;
+}
+
+.marketing-section-list{
+	@include card($padding:0);
+}
+.marketing-section-list-item{
+	padding: $unit*2;
+	border-bottom: 1px solid $c-line;
+	display: flex;
+	align-items: center;
+	@include media-xtraSmall{
+		flex-direction: column;
+		text-align: center;
+	}
+}
+.marketing-section-list-item-img{
+	max-width: $unit*6;
+	margin-right: $unit*2;
+	@include media-xtraSmall{
+		margin-right: 0;
+		margin-bottom: $unit;
+	}
+}
+.marketing-section-list-item-title{
+	@include itemHeading;
+}
+.marketing-section-list-item-description{
+	@include textExplain;
 }

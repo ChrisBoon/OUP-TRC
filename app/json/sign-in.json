@@ -1,0 +1,76 @@
+{
+	"folderList" : [
+		{
+			"icon" : "images/opd_icon_resType_1.svg",
+			"color1" : "#68C2C2",
+			"title" : "Lesson Plans",
+			"description" : "Step-by-step teaching notes support every topic in the OPD and reduce instructor prep time."
+		},
+		{
+			"icon" : "images/opd_icon_resType_2.svg",
+			"color1" : "#68C2C2",
+			"title" : "Audio",
+			"description" : "Audio for every topic in the OPD supports vocabulary comprehension and pronunciation."
+		},
+		{
+			"icon" : "images/opd_icon_resType_3.svg",
+			"color1" : "#68C2C2",
+			"title" : "Classic Classroom Activities",
+			"description" : "Engaging partner and small-group activities encourage authentic practice of the words in the OPD."
+		},
+		{
+			"icon" : "images/opd_icon_resType_4.svg",
+			"color1" : "#68C2C2",
+			"title" : "Assessment Program",
+			"description" : "Customizable tests for every OPD topic help track students' progress. Print-and-go tests and extensive question banks are available."
+		},
+		{
+			"icon" : "images/opd_icon_resType_5.svg",
+			"color1" : "#68C2C2",
+			"title" : "Videos",
+			"description" : "OPD videos engage students and support vocabulary learning."
+		},
+		{
+			"icon" : "images/opd_icon_resType_1.svg",
+			"color1" : "#68C2C2",
+			"title" : "NEWSELA© Articles",
+			"description" : "Authentic, high-interest news articles and  comprehension questions support reading and critical thinking skills."
+		},
+		{
+			"icon" : "images/opd_icon_resType_6.svg",
+			"color1" : "#68C2C2",
+			"title" : "Images",
+			"description" : "Art from the OPD can be used to facilitate in-class activities and practice. Cropped images are provided for all 4,000 vocabuarly terms."
+		},
+		{
+			"icon" : "images/opd_icon_resType_7.svg",
+			"color1" : "#68C2C2",
+			"title" : "Listening Worksheets",
+			"description" : "Multilevel Listening Worksheets with accompanying audio provide hours of listening comprehension practice."
+		},
+		{
+			"icon" : "images/opd_icon_resType_3.svg",
+			"color1" : "#68C2C2",
+			"title" : "Grammar Worksheets",
+			"description" : "Customizable worksheets provide focused grammar practice aligned with select OPD topics."
+		},
+		{
+			"icon" : "images/opd_icon_resType_7.svg",
+			"color1" : "#68C2C2",
+			"title" : "Vocabulary Worksheets",
+			"description" : "Customizable worksheets provide whole-class practice activities for every unit in the OPD."
+		},
+		{
+			"icon" : "images/opd_icon_resType_7.svg",
+			"color1" : "#68C2C2",
+			"title" : "Pronunciation Worksheets",
+			"description" : "Customizable worksheets for every OPD unit provide hours of pronunciation practice."
+		},
+		{
+			"icon" : "images/opd_icon_resType_1.svg",
+			"color1" : "#68C2C2",
+			"title" : "Additional Resources",
+			"description" : "Vocabulary Teaching Handbook, Workbook answer keys, correlations to standards, and more professional development materials support your teaching needs."
+		}
+	]
+}

@@ -6,18 +6,23 @@
   	
 	<div class="signIn-section">
 		<div class="container">
-		<div class="signIn-card signIn-card-signIn">
-			<div class="signIn-card-heading">Already have on OPD TRC account?</div>
-			<form class="signIn-form"  name="signInForm" submit="logMeIn(signInForm)">
-
+		<div class="signIn-card signIn-card-signIn" ng-class="{'has-error': signIn.signInAttempt.error}">
+			<div class="signIn-card-heading" ng-hide= "signIn.signInAttempt.error">Already have on OPD TRC account?</div>
+			<form class="signIn-form"  name="signInForm" ng-submit="signIn.logMeIn()">
+				<div 
+				  ng-show = "signIn.signInAttempt.error"
+				  class="signIn-form-error">
+					<p class="signIn-form-error-text">{{signIn.signInAttempt.error}}</p>
+				</div>
 		        <div class="signIn-form-item">
 		            <input
 		            	type="email"
 		            	name="email"
 		            	id="signInEmail"
 		            	class="form-control signIn-form-control-text"
-		            	ng-model="signInAttempt.email"
+		            	ng-model="signIn.signInAttempt.email"
 		            	required
+		            	focus-me="isRetry"
 		            >
 		            <label for="signInEmail" class="signIn-form-label">Email</label>
 	            </div>
@@ -28,7 +33,7 @@
 		            	name="password"
 		            	id="signInPassword"
 		            	class="form-control signIn-form-control-text"
-		            	ng-model="signInAttempt.password"
+		            	ng-model="signIn.signInAttempt.password"
 		            	required
 		            	minlength="5"
 		            >
@@ -37,7 +42,7 @@
 
 
 
-	            <button type="submit" class="signIn-card-action signIn-card-action-button" value="Sign in">Sign In</button>
+	            <button type="submit" class="signIn-card-action signIn-card-action-button">Sign In</button>
 
 			</form>
 		</div>
@@ -52,16 +57,37 @@
 
 		
         <div class="signIn-forgot-pw-area">
-        	<a href="" class="signIn-forgot-pw-link">Forgotten your password?</a>
+        	<a href="" class="signIn-forgot-pw-link" ng-click="signIn.dontIncludeThisFunctionItsJustForThePrototype()">Forgotten your password?</a>
         </div>
+
+
+
+
+		</div><!-- end container -->
+
 
 
 	</div><!-- end signIn-section -->
 
 
+	<div class="signIn-marketing">
 
-	</div><!-- end container -->
+		<!-- Marketing section should be updatable within a product and allow for completely different functioality/content/design in different producs so should probably be a separate file. Also could be static html/css/js rather than generated from JSON via Angular as in this mockup for retaining authoring simplicity in the context of its customizationabililty. -->
+		<div class="container">
+			<h2 class="marketing-section-heading">OPD TRC includes all this great stuff...</h2>
 
+
+			<ul class="marketing-section-list">
+				<li class="marketing-section-list-item" ng-repeat="item in signIn.json.folderList">
+					<img class="marketing-section-list-item-img" ng-src="{{item.icon}}">
+					<div class="marketing-section-list-item-text">
+						<h3 class="marketing-section-list-item-title" >{{item.title}}</h3>
+						<p class="marketing-section-list-item-description" >{{item.description}}</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
 
 
       <div class="page-footer" ng-controller="HeaderCtrl">
