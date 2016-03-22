@@ -8,14 +8,21 @@ $c-register: #227090;
 	}
 	.homepage-banner{
 		padding-top: $unit*6;
+		padding-bottom: $unit*6;
+		@include media-regDown{
+			padding: $unit*2;
+		}
 	}
 }
 
 .signIn-section{
-	padding: $unit*2 $unit*2 $unit*6;
+	padding: $unit*4 $unit*2 $unit*6;
+	@include media-regDown{
+		padding-top: $unit;
+	}
 	flex: 0 0 auto;
 	@include OPD{
-		background-color: $c-opd-black;
+		background-color: $c-trc-bg;
 	}
 	>.container{
 		display: flex;
@@ -48,25 +55,7 @@ $c-register: #227090;
 	}
 
 }
-.signIn-forgot-pw-area{
-	flex: 1 0 40%;
-	max-width: calc(50% - #{$unit});
-	@include media-regDown{
-		max-width: 100%;
-	}
-	margin-top: $unit*4;
 
-}
-.signIn-forgot-pw-link{
-	padding: $unit*2;
-	display: block;
-	text-align: center;
-	border-radius: 2px;
-	@include OPD{
-	background-color: rgba(#fff,0.2);
-		color: #fff;
-	}
-}
 
 .signIn-card-heading{
 	@include pageHeadingLight;
@@ -156,6 +145,26 @@ $c-register: #227090;
 	border-bottom-left-radius: 0;
 	}
 
+}
+
+.signIn-forgot-pw-area{
+	flex: 1 0 40%;
+	max-width: calc(50% - #{$unit});
+	@include media-regDown{
+		max-width: 100%;
+	}
+	margin-top: $unit*4;
+
+}
+.signIn-forgot-pw-link{
+	padding: $unit*2;
+	display: block;
+	text-align: center;
+	border-radius: 2px;
+	@include OPD{
+	background-color: rgba(#000,0.4);
+		color: #fff;
+	}
 }
 
 
