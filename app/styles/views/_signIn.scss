@@ -43,10 +43,7 @@ $c-register: #227090;
 	justify-content: space-between;
 	&-signUp{
 		margin-left: $unit*2;
-		@include OPD{
-			background-color: $c-register;
-			color: #fff;
-		}
+
 		@include media-regDown{
 			margin-left: 0;
 			margin-top: $unit*4;
@@ -110,14 +107,14 @@ $c-register: #227090;
 	@include button-basic($thisColor);
 	padding: $unit*2;
 	transition: all 0.2s;
-	border-top-right-radius: 0;
-	border-top-left-radius: 0;
+	margin: $unit;
 	&:focus,
 	&:hover{
 		background-color: lighten($thisColor,10);
 	}
 	&-register{
 		background-color: mix($c-register,#000,50);
+
 		&:focus,
 		&:hover{
 			background-color: lighten(mix($c-register,#000,50),10);
@@ -153,18 +150,23 @@ $c-register: #227090;
 	@include media-regDown{
 		max-width: 100%;
 	}
-	margin-top: $unit*4;
+	margin-top: $unit*2;
 
 }
 .signIn-forgot-pw-link{
+	@include button-minimal;
 	padding: $unit*2;
 	display: block;
 	text-align: center;
-	border-radius: 2px;
 	@include OPD{
-	background-color: rgba(#000,0.4);
-		color: #fff;
+		background-color: rgba(#fff,1);
+		color: $c-trc-settings;
+		&:hover,
+		&:focus{
+			background-color: rgba(#fff,0.7);
+		}
 	}
+
 }
 
 
