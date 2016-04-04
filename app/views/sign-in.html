@@ -7,7 +7,7 @@
 	<div class="signIn-section">
 		<div class="container">
 		<div class="signIn-card signIn-card-signIn" ng-class="{'has-error': signIn.signInAttempt.error}">
-			<div class="signIn-card-heading" ng-hide= "signIn.signInAttempt.error">Already have an OPD TRC account?</div>
+			<div class="signIn-card-heading" ng-hide= "signIn.signInAttempt.error">Sign in</div>
 			<form class="signIn-form"  name="signInForm" ng-submit="signIn.logMeIn()">
 				<div 
 				  ng-show = "signIn.signInAttempt.error"
@@ -48,9 +48,9 @@
 		</div>
 
 		<div class="signIn-card signIn-card-signUp">
-			<div class="signIn-card-heading">First time here?</div>
+			<div class="signIn-card-heading">Are you a first-time user?</div>
 			<div class="signIn-card-description">
-				<p>Register now with your teacher access code. If you don’t have an access code, talk to your OUP representative or <a class="link-external" href="" target="_blank">click here for more information.</a></p>
+				<p>Register now with your teacher access code.</p>
 			</div>
 			<a href="" class="signIn-card-action signIn-card-action-link signIn-card-action-register">Register</a>
 		</div>
@@ -74,18 +74,7 @@
 
 		<!-- Marketing section should be updatable within a product and allow for completely different functioality/content/design in different producs so should probably be a separate file. Also could be static html/css/js rather than generated from JSON via Angular as in this mockup for retaining authoring simplicity in the context of its customizationabililty. -->
 		<div class="container">
-			<h2 class="marketing-section-heading">OPD TRC includes all this great stuff...</h2>
-
-
-			<ul class="marketing-section-list">
-				<li class="marketing-section-list-item" ng-repeat="item in signIn.json.folderList">
-					<img class="marketing-section-list-item-img" ng-src="{{item.icon}}" width="48" height="48">
-					<div class="marketing-section-list-item-text">
-						<h3 class="marketing-section-list-item-title" >{{item.title}}</h3>
-						<p class="marketing-section-list-item-description" >{{item.description}}</p>
-					</div>
-				</li>
-			</ul>
+			
 		</div>
 	</div>
 
