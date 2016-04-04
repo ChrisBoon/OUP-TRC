@@ -26,6 +26,7 @@
       class="page-header page-header-opd"
       ng-controller="HeaderCtrl"
       ng-class=" {'-no-back-button': parentURL===undefined}"
+      ng-hide="setViewAs==='signIn'"
     >
       <a ng-hide = "parentURL===undefined"
        class= "upOneLevel"

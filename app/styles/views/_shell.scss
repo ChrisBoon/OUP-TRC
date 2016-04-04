@@ -20,7 +20,7 @@ body{
 .page-header{
 	//styling of header can be found in _header.scss
 	position: fixed;
-	max-height: $unit*7;
+	height: $unit*7;
 	width: 100%;
 	z-index: 1;
 }
