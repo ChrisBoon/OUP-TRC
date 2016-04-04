@@ -178,36 +178,3 @@ $c-register: #227090;
 	flex: 1 0 auto;
 }
 
-.marketing-section-heading{
-	@include intro-line;
-	margin-bottom: $unit*4;
-	text-align: center;
-}
-
-.marketing-section-list{
-	@include card($padding:0);
-}
-.marketing-section-list-item{
-	padding: $unit*2;
-	border-bottom: 1px solid $c-line;
-	display: flex;
-	align-items: center;
-	@include media-xtraSmall{
-		flex-direction: column;
-		text-align: center;
-	}
-}
-.marketing-section-list-item-img{
-	max-width: $unit*6;
-	margin-right: $unit*2;
-	@include media-xtraSmall{
-		margin-right: 0;
-		margin-bottom: $unit;
-	}
-}
-.marketing-section-list-item-title{
-	@include itemHeading;
-}
-.marketing-section-list-item-description{
-	@include textExplain;
-}
