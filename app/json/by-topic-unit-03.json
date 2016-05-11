@@ -1,9 +1,9 @@
 {
 	"template" : "list-view",
-	"title" : "Everyday Language",
-	"icon" : "images/opd_icon_topic_1.svg",
-	"bgImage" : "images/opd-unit-bg-01.svg",
-	"color2" : "#009966",
+	"title" : "Housing",
+	"icon" : "images/opd_icon_topic_3.svg",
+	"bgImage" : "images/opd-unit-bg-03.svg",
+	"color2" : "#99cc66",
 	"description" : "Some helpful, friendly text could go here. Just a sentence or two. Maybe it metions something which topics are particularly interesting, or it could point out if there’s a new one added for the third edition.",
 	"parentURL" : "browse/by-topic",
 	"folderList" : [
