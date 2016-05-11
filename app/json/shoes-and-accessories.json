@@ -3,8 +3,8 @@
 	"title" : "Shoes and Accessories",
 	"description" : "Topic 5.5",
 	"icon" : "images/opd_icon_topic_5.svg",
-	"color1" : "#1e82c1",
-	"color2" : "#1e82c1",
+	"color1" : "#0099cc",
+	"color2" : "#0099cc",
 	"parentURL" : "browse/by-topic-unit-05",
 	"sort" : [ 
 		{

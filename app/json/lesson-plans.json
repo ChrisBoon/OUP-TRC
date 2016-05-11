@@ -43,7 +43,7 @@
 			"unitName" : "Everyday Language",
 			"showFilter" : ["Everyday Language", "All Units"],
 			"icon" : "images/opd_icon_topic_1.svg",
-			"color" : "#28855e",
+			"color" : "#009966",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "3.2MB"
@@ -224,7 +224,7 @@
 			"unitName" : "People",
 			"showFilter" : ["People", "All Units"],
 			"icon" : "images/opd_icon_topic_2.svg",
-			"color" : "#74ae58",
+			"color" : "#6ec166",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "3.2MB"
@@ -308,7 +308,7 @@
 			"unitName" : "Housing",
 			"showFilter" : ["Housing", "All Units"],
 			"icon" : "images/opd_icon_topic_3.svg",
-			"color" : "#a1c15d",
+			"color" : "#99cc66",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "3.2MB"
@@ -440,7 +440,7 @@
 			"unitName" : "Food",
 			"showFilter" : ["Food", "All Units"],
 			"icon" : "images/opd_icon_topic_4.svg",
-			"color" : "#61b0b0",
+			"color" : "#3ac0c4",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "3.2MB"
@@ -564,7 +564,7 @@
 			"unitName" : "Clothing",
 			"showFilter" : ["Clothing", "All Units"],
 			"icon" : "images/opd_icon_topic_5.svg",
-			"color" : "#1e82c1",
+			"color" : "#0099cc",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "3.2MB"
@@ -664,7 +664,7 @@
 			"unitName" : "Health",
 			"showFilter" : ["Health", "All Units"],
 			"icon" : "images/opd_icon_topic_6.svg",
-			"color" : "#3157a0",
+			"color" : "#175ca2",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "3.2MB"
