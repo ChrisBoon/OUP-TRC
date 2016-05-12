@@ -19,7 +19,8 @@ angular
     'LocalStorageModule',
     'ui.bootstrap',
     'angularMoment',
-    'ngPassword'
+    'ngPassword',
+    'vAccordion'
   ])
   .config(['localStorageServiceProvider', function(localStorageServiceProvider){
     localStorageServiceProvider.setPrefix('ls');
@@ -55,6 +56,11 @@ angular
         templateUrl: 'views/sign-in.html',
         controller: 'SignInCtrl',
         controllerAs: 'signIn'
+      })
+      .when('/help', {
+        templateUrl: 'views/help.html',
+        controller: 'HelpCtrl',
+        controllerAs: 'help'
       })
       .otherwise({
         redirectTo: '/'

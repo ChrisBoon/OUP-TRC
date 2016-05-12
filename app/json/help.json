@@ -1,0 +1,58 @@
+{
+	"faq" : [
+		{
+			"question" : "System Requirements",
+			"answer" : "<p>(TK from VST / Media)</p>"
+		},
+
+		{
+			"question" : "What is the OPD Teacher Resource Center?",
+			"answer" : "<p>The Teacher Resource Center (TRC) is an easy-to-use collection of downloadable resources that support the Oxford Picture Dictionary vocabulary development program. These materials will provide many hours’ worth of content to support your students’ learning and reduce your prep time. The site is designed to ensure that you will quickly and easily find what you’re looking for.</p>"
+		},
+
+		{
+			"question" : "What materials are available on the TRC?",
+			"answer" : "<p>The following materials are currently available:</p><ul><li>Lesson Plans for every OPD topic</li><li>the complete Audio Program for every OPD topic</li><li>Assessment Program with tests for every OPD topic</li><li>20 original videos aligning with OPD topics</li><li>multilevel listening worksheets</li><li>grammar worksheets</li><li>vocabulary worksheets</li><li>pronunciation worksheets</li></ul><p>The following materials will be added to the TRC site by December 1, 2016:</p><ul><li>Classic Classroom Activities for many OPD topics</li><li>Newsela high-interest news articles and comprehension questions</li><li>Images for all 4,000 OPD vocabulary terms</li><li>Additional resources including:<ul><li>the Vocabulary Teaching Handbook</li><li>the OPD College & Career Readiness Toolkit</li><li>answer keys for the OPD Workbooks</li><li>video scripts</li><li>correlations to state and national standards</li><li>the Family Literacy Handbook and worksheets</li><li>teaching notes for the OPD Reading Library</li></ul></li></ul>"
+		},
+
+		{
+			"question" : "What are Browse by Topic, Browse by Resource, and Custom Search?",
+			"answer" : "<p><strong>Browse by Topic</strong> allows you to browse and download all of the resources available for a particular OPD topic, such as Shoes and Accessories or Digital Literacy. For instance, you’ll find the topic-specific Lesson Plan, Assessment, audio, video, worksheets, etc. Go to Browse by Topic, select your unit, and then select a topic to continue.</p><p><strong>Browse by Resource</strong> allows you to browse and download all of a particular type of resource, such as videos, Lesson Plans, or Newsela articles. Go to Browse by Resource and choose a resource type to continue.</p><p><strong>Custom Search</strong> is a tool that lets you filter combinations of OPD topics, resource types, and/or media types to find exactly what you’re looking for. For instance, you could select multiple topics (Kitchen Utensils and A Restaurant, for example) and some media types (audio and video) to see and download all of the audio and video materials for these combined topics. Use this function if you’re looking for materials for several OPD topics, or if you’re looking for something very specific.</p>"
+		},
+
+		{
+			"question" : "Can I download multiple files at once?",
+			"answer" : "<p>Yes. “Download All” buttons allow you to download groups of files. For instance, in the Browse by Topic area, you can download all of the resources for a particular topic by choosing Download All. In the Browse by Resource area, you can download all of the resources for an OPD unit (for instance, all Lesson Plans for Unit 2 / Food.)</p>"
+		},
+
+		{
+			"question" : "Can I print materials from the TRC?",
+			"answer" : "<p>Yes, all PDF and Word documents from the TRC can be printed and photocopied for classroom use.</p>"
+		},
+
+		{
+			"question" : "Help: I can’t find the resource I’m looking for.",
+			"answer" : "<ul><li>Some resources are currently unavailable and will be added to the TRC site by December 1, 2016. These include: Classic Classroom Activities, Newsela articles, Images, and additional resources which include the Vocabulary Teaching Handbook, correlations, and more. Please check back in December!</li><li>Try using the Custom Search tool to filter your search by topic, resource type, and/or media type.</li><li>Note that some resource types are available only for select OPD topics: For instance, videos are available for 20 topics, and Multilevel Listening Worksheets are available for 35 topics.</li><li>If you still can’t find what you’re looking for, contact <a class='link-external' href='mailto:ELTsupport@oup.com?subject= OPD TRC query'>ELTsupport@oup.com</a> or ask your OUP representative.</li></ul>"
+		},
+
+		{
+			"question" : "Can I use the TRC on a tablet / iPad?",
+			"answer" : "<p>Yes. Please see the System Requirements[link] for more details. Please note that you must have the appropriate applications to be able to open Zip files, Word documents, PDFs, MP3s, and MP4s on your device.</p>"
+		},
+
+		{
+			"question" : "How do I change my name, email address, or password?",
+			"answer" : "<p>In the top right corner of your screen, select the <span class='inline-icon-hamburger'></span> button, and go to Settings. Next to Name, Email address, or Password, select EDIT to change any of these details.</p>"
+		},
+
+		{
+			"question" : "Does my access to the TRC expire?",
+			"answer" : "No. Once you’ve registered for the TRC, your access will not expire."
+		},
+
+		{
+			"question" : "Is this a classroom presentation tool with on-screen OPD pages?",
+			"answer" : "No, the Teacher Resource Center does not contain the OPD pages on screen. Please talk to your OUP representative about the OPD iTools Classroom Presentation Tool and the Student e-book."
+		}
+	]
+}

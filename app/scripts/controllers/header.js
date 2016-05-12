@@ -30,7 +30,7 @@ angular.module('trcApp')
     $scope.otherStuff = [
       {
       	'text': 'Help',
-      	'link': '/help'
+      	'link': 'help'
       },
       {
       	'text': 'Settings',
