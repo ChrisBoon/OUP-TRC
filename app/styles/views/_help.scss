@@ -62,11 +62,11 @@
 		&:before{
 			content: "";
 			display: inline-block;
-			width: 0.5em;
-			height: 0.5em;
+			width: 6px;
+			height: 6px;
 			margin-right: 0.5em;
 			margin-left: -1em;
-			background:#999;
+			background:#777;
 			transform: translateY(-0.2em);
 			border-radius: 50%;
 		}
