@@ -155,6 +155,11 @@ $z-layers: (
   -moz-osx-font-smoothing: grayscale;
 }
 
+@mixin ng-no-animate{
+  &.ng-animate{
+    transition: none;
+  }
+}
 
 @mixin OPD{
   @at-root .product-OPD &{

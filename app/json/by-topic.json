@@ -9,86 +9,86 @@
 	"folderList" : [
 		{
 			"icon" : "images/opd_icon_topic_1.svg",
-			"color1" : "#28855e",
+			"color1" : "#008f68",
 			"title" : "Everyday Language",
 			"link" : "browse/by-topic-unit-01"
 
 		},
 		{
 			"icon" : "images/opd_icon_topic_2.svg",
-			"color1" : "#74ae58",
+			"color1" : "#4ab965",
 			"title" : "People",
-			"link" : "browse/by-topic-unit-01"
+			"link" : "browse/by-topic-unit-02"
 
 		},
 		{
 			"icon" : "images/opd_icon_topic_3.svg",
-			"color1" : "#a1c15d",
+			"color1" : "#99cc66",
 			"title" : "Housing",
-			"link" : "browse/by-topic-unit-01"
+			"link" : "browse/by-topic-unit-03"
 
 		},
 		{
 			"icon" : "images/opd_icon_topic_4.svg",
-			"color1" : "#61b0b0",
+			"color1" : "#3ac0c4",
 			"title" : "Food",
-			"link" : "browse/by-topic-unit-01"
+			"link" : "browse/by-topic-unit-04"
 
 		},
 		{
 			"icon" : "images/opd_icon_topic_5.svg",
-			"color1" : "#1e82c1",
+			"color1" : "#0099cc",
 			"title" : "Clothing",
 			"link" : "browse/by-topic-unit-05"
 
 		},
 		{
 			"icon" : "images/opd_icon_topic_6.svg",
-			"color1" : "#3157a0",
+			"color1" : "#175ca2",
 			"title" : "Health",
-			"link" : "browse/by-topic-unit-01"
+			"link" : "browse/by-topic-unit-06"
 
 		},
 		{
 			"icon" : "images/opd_icon_topic_7.svg",
-			"color1" : "#493180",
+			"color1" : "#573c92",
 			"title" : "Community",
-			"link" : "browse/by-topic-unit-01"
+			"link" : "browse/by-topic-unit-07"
 
 		},
 		{
 			"icon" : "images/opd_icon_topic_8.svg",
-			"color1" : "#6f267c",
+			"color1" : "#85338a",
 			"title" : "Transportation",
-			"link" : "browse/by-topic-unit-01"
+			"link" : "browse/by-topic-unit-08"
 
 		},
 		{
 			"icon" : "images/opd_icon_topic_9.svg",
-			"color1" : "#aa1c53",
+			"color1" : "#cc3366",
 			"title" : "Job Search",
-			"link" : "browse/by-topic-unit-01"
+			"link" : "browse/by-topic-unit-09"
 
 		},
 		{
 			"icon" : "images/opd_icon_topic_10.svg",
-			"color1" : "#c73646",
+			"color1" : "#e83b3b",
 			"title" : "The Workplace",
-			"link" : "browse/by-topic-unit-01"
+			"link" : "browse/by-topic-unit-10"
 
 		},
 		{
 			"icon" : "images/opd_icon_topic_11.svg",
-			"color1" : "#d37348",
+			"color1" : "#ff6633",
 			"title" : "Academic Study",
-			"link" : "browse/by-topic-unit-01"
+			"link" : "browse/by-topic-unit-11"
 
 		},
 		{
 			"icon" : "images/opd_icon_topic_12.svg",
-			"color1" : "#e5ad1b",
+			"color1" : "#ffc233",
 			"title" : "Recreation",
-			"link" : "browse/by-topic-unit-01"
+			"link" : "browse/by-topic-unit-12"
 
 		}
 	]

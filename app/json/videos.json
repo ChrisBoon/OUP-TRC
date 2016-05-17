@@ -42,7 +42,7 @@
 			"unitName" : "Everyday Language",
 			"showFilter" : ["Everyday Language", "All Units"],
 			"icon" : "images/opd_icon_topic_1.svg",
-			"color" : "#28855e",
+			"color" : "#008f68",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "38MB"
@@ -82,7 +82,7 @@
 			"unitName" : "People",
 			"showFilter" : ["People", "All Units"],
 			"icon" : "images/opd_icon_topic_2.svg",
-			"color" : "#74ae58",
+			"color" : "#4ab965",
 			"fileList" : [
 				{
 					"name" : "Phoning it in",
@@ -99,7 +99,7 @@
 			"unitName" : "Housing",
 			"showFilter" : ["Housing", "All Units"],
 			"icon" : "images/opd_icon_topic_3.svg",
-			"color" : "#a1c15d",
+			"color" : "#99cc66",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "26MB"
@@ -129,7 +129,7 @@
 			"unitName" : "Food",
 			"showFilter" : ["Food", "All Units"],
 			"icon" : "images/opd_icon_topic_4.svg",
-			"color" : "#61b0b0",
+			"color" : "#3ac0c4",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "26MB"
@@ -159,7 +159,7 @@
 			"unitName" : "Clothing",
 			"showFilter" : ["Clothing", "All Units"],
 			"icon" : "images/opd_icon_topic_5.svg",
-			"color" : "#1e82c1",
+			"color" : "#0099cc",
 			"fileList" : [
 				{
 					"name" : "Laundry woes",
@@ -176,7 +176,7 @@
 			"unitName" : "Health",
 			"showFilter" : ["Health", "All Units"],
 			"icon" : "images/opd_icon_topic_6.svg",
-			"color" : "#3157a0",
+			"color" : "#175ca2",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "26MB"
@@ -206,7 +206,7 @@
 			"unitName" : "Community",
 			"showFilter" : ["Community", "All Units"],
 			"icon" : "images/opd_icon_topic_7.svg",
-			"color" : "#493180",
+			"color" : "#573c92",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "26MB"
@@ -236,7 +236,7 @@
 			"unitName" : "Transportation",
 			"showFilter" : ["Transportation", "All Units"],
 			"icon" : "images/opd_icon_topic_8.svg",
-			"color" : "#6f267c",
+			"color" : "#85338a",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "26MB"
@@ -266,7 +266,7 @@
 			"unitName" : "Job Search",
 			"showFilter" : ["Job Search", "All Units"],
 			"icon" : "images/opd_icon_topic_9.svg",
-			"color" : "#aa1c53",
+			"color" : "#cc3366",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "26MB"
@@ -296,7 +296,7 @@
 			"unitName" : "The Workplace",
 			"showFilter" : ["The Workplace", "All Units"],
 			"icon" : "images/opd_icon_topic_10.svg",
-			"color" : "#c73646",
+			"color" : "#e83b3b",
 			"fileList" : [
 				{
 					"name" : "Forty percent off",
@@ -313,7 +313,7 @@
 			"unitName" : "Academic Study",
 			"showFilter" : ["Academic Study", "All Units"],
 			"icon" : "images/opd_icon_topic_11.svg",
-			"color" : "#d37348",
+			"color" : "#ff6633",
 			"fileList" : [
 				{
 					"name" : "Lights out",
@@ -330,7 +330,7 @@
 			"unitName" : "Recreation",
 			"showFilter" : ["Recreation", "All Units"],
 			"icon" : "images/opd_icon_topic_12.svg",
-			"color" : "#e5ad1b",
+			"color" : "#ffc233",
 			"fileList" : [
 				{
 					"name" : "Weekend warrior",

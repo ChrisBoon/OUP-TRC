@@ -1,0 +1,232 @@
+<div class="view view-settings">
+	<header class="content-view-header">
+
+		<div class="container">
+			<div class="view-icon-holder">
+				<img src="images/icon-settings.svg" alt="">
+			</div>
+			<div class="content-view-header-text">
+				<h1 class="content-view-heading-main">
+					Settings
+				</h1>
+				<p class="content-view-page-desc">
+					
+				</p>
+			</div>
+		</div>
+
+	</header>
+
+	<div class="settings-view-content">
+		<div class="container">
+
+		<div class="setting-change-confirmation" ng-show="settings.changed">
+			<p class="setting-change-confirmation-text" >Your <span class="setting-change-item">{{settings.changed}}</span> was successfully updated</p>
+		</div>
+
+		<div class="setting-change-error" ng-show="settings.errorText">
+			<p class="setting-change-error-text" ><span class="setting-change-item">{{settings.errorText}}</span></p>
+		</div>
+
+
+		<div class="settings-section">
+			<h2 class="settings-section-heading">Profile</h2>
+			<div class="settings-section-content">
+				<div class="settings-item">
+					<div 
+						class="settings-item-static" 
+						ng-hide="settings.state ==='editName'" 
+						ng-click="settings.setState('editName'); settings.clearMessages()"
+						oup-enter="settings.setState('editName'); settings.clearMessages()"
+						tabindex="0" 
+					>
+						<p class="settings-item-label-faux">Name</p>
+						<p class="settings-item-current">{{settings.userDetails.profile.firstName}} {{settings.userDetails.profile.lastName}}</p>
+						<div class="settings-edit-button">Edit</div>
+					</div>
+					<div class="settings-item-change" ng-show="settings.state ==='editName'">
+
+			        <!-- NAME -->
+					    <form class="settings-form"  name="nameForm" ng-submit="submitChange(nameForm, 'name')" novalidate>
+					        <div class="settings-form-group" ng-class="{ 'has-error' : nameForm.first.$invalid && !nameForm.first.$pristine }">
+						        <div class="settings-form-item">
+						            <input 
+							            type="first" 
+							            name="first"
+							            id="settingsFirst"
+							            class="form-control settings-form-control-text" 
+							            ng-model="settings.userDetails.profile.firstName" 
+							            oup-focus="settings.state ==='editName'"
+							            required
+							        >
+						            <label for="settingsFirst" class="settings-form-label">First name</label>
+
+							        <p ng-show="nameForm.first.$invalid && nameForm.first.$dirty" class="is-invalid settings-helper">Required.</p>
+								    
+								</div>
+								<div class="settings-form-item">
+						            <input
+							            type="last"
+							            name="last"
+							            id="settingsLast"
+							            class="form-control settings-form-control-text"
+							            ng-model="settings.userDetails.profile.lastName"
+							            required
+							        >
+						            <label for="settingsLast" class="settings-form-label">Last name</label>
+
+							        <p ng-show="nameForm.last.$invalid && nameForm.last.$dirty" class="is-invalid settings-helper">Required.</p>
+							        
+					            </div>
+					        </div>
+					        <div class="settings-form-buttons">
+						        <input type="button" ng-click="settings.cancelChange(nameForm)" value="Cancel" class="settings-editing-button"/>
+
+						        <button type="submit" class="settings-editing-button" 
+						        ng-disabled="nameForm.$invalid || ( nameForm.first.$viewValue.length<1 || nameForm.last.$viewValue.length<1 ) || (nameForm.first.$pristine && nameForm.last.$pristine)"
+
+						        >Save</button>
+						    </div>
+					    </form>
+
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="settings-section">
+			<h2 class="settings-section-heading">Account details</h2>
+			<div class="settings-section-content">
+
+
+				<div class="settings-item">
+					<div
+						class="settings-item-static"
+						ng-hide="settings.state ==='editEmail'"
+						ng-click="settings.setState('editEmail'); settings.clearMessages()"
+						oup-enter="settings.setState('editEmail'); settings.clearMessages()"
+						tabindex="0"
+					>
+						<p class="settings-item-label-faux">Email address</p>
+						<p class="settings-item-current">{{settings.userDetails.email}}</p>
+						<div class="settings-edit-button">Edit</div>
+					</div>
+
+
+					<div class="settings-item-change" ng-show="settings.state ==='editEmail'">
+
+			        <!-- EMAIL -->
+					    <form class="settings-form"  name="emailForm" ng-submit="submitChange(emailForm, 'email')" novalidate>
+					        <div class="settings-form-group" ng-class="{ 'has-error' : emailForm.email.$invalid && !emailForm.email.$pristine }">
+						        <div class="settings-form-item">
+						            <input
+						            	type="email"
+						            	name="email"
+						            	id="settingsEmail"
+						            	class="form-control settings-form-control-text"
+						            	ng-model="settings.userDetails.email"
+						            	oup-focus="settings.state ==='editEmail'"
+						            	required
+						            >
+						            <label for="settingsEmail" class="settings-form-label">Email address</label>
+							        <p ng-class="{'is-valid' : emailForm.email.$valid && !emailForm.email.$pristine, 'is-invalid' : emailForm.email.$invalid}" class="settings-helper">Must be a valid email address eg. <em>'user@email.com'.</em></p>   
+					            </div>
+					        </div>
+					        <div class="settings-form-buttons">
+						        <input type="button" ng-click="settings.cancelChange(emailForm)" value="Cancel" class="settings-editing-button"/>
+						        <button type="submit" class="settings-editing-button" ng-disabled="emailForm.$invalid ||emailForm.email.$viewValue.length<1 || emailForm.email.$pristine">Save</button>
+					        </div>
+					    </form>
+
+					</div>
+				</div>
+
+				<div class="settings-item">
+
+					<div
+						class="settings-item-static"
+						ng-hide="settings.state ==='editPassword'"
+						ng-click="settings.setState('editPassword'); settings.clearMessages()"
+						oup-enter="settings.setState('editPassword'); settings.clearMessages()"
+						tabindex="0"
+					>
+						<p class="settings-item-label-faux">Password</p>
+						<p class="settings-item-current">Last changed <span am-time-ago="settings.userDetails.password.lastUpdate"></span></p>
+						<div class="settings-edit-button">Edit</div>
+					</div>
+					<div class="settings-item-change" ng-show="settings.state ==='editPassword'">
+
+
+			        <!-- PASSWORD -->
+					    <form class="settings-form"  name="passwordForm" ng-submit="submitChangePassword(passwordForm)" novalidate>
+					        <div class="settings-form-group" ng-class="{ 'has-error' : passwordForm.password.$invalid && !passwordForm.password.$pristine }">
+						        <div class="settings-form-item">
+						            <input 
+						            	type="password"
+						            	name="oldPassword"
+						            	id="settingsOldPassword"
+						            	class="form-control settings-form-control-text"
+						            	oup-focus="settings.state ==='editPassword'"
+						            	ng-model="settings.setNewPassword.oldOne"
+						            	ng-minlength="5"
+						            	required
+						            >
+						            <label for="settingsOldPassword" class="settings-form-label">Current password</label>
+						            <p ng-class="{'is-valid' : passwordForm.oldPassword.$valid && !passwordForm.oldPassword.$pristine, 'is-invalid' : passwordForm.oldPassword.$invalid && !passwordForm.oldPassword.$pristine}" class="settings-helper">Your password must contain a minimum of 5 characters.</p>  
+						            
+					            </div>
+						        <div class="settings-form-item">
+						            <input 
+						            	type="password"
+						            	name="password"
+						            	id="settingsPassword"
+						            	class="form-control settings-form-control-text"
+						            	ng-model="settings.setNewPassword.newOne"
+						            	
+						            	ng-minlength="5"
+						            	required
+						            >
+						            <label for="settingsPassword" class="settings-form-label">New password</label>
+						            <p ng-class="{'is-valid' : passwordForm.password.$valid && !passwordForm.password.$pristine, 'is-invalid' : passwordForm.password.$invalid && !passwordForm.password.$pristine}" class="settings-helper">Your password must contain a minimum of 5 characters.</p>  
+						            
+					            </div>
+					            <div class="settings-form-item">
+						            <input
+							            type="password"
+							            match-password="password"
+							            name="confirmPassword"
+							            id="settingsConfirmPassword"
+							            class="form-control settings-form-control-text"
+							            ng-minlength="5"
+							            ng-model="settings.setNewPassword.confirm"
+							        >
+						            <label for="settingsConfirmPassword" class="settings-form-label">Confirm password</label>
+							        <p ng-class="{'is-valid' : passwordForm.confirmPassword.$valid && !passwordForm.confirmPassword.$pristine, 'is-invalid' : passwordForm.confirmPassword.$invalid && !passwordForm.confirmPassword.$pristine}" class="settings-helper">Make sure to match the password above.</p>  
+					            </div>
+					        </div>
+					        <div class="settings-form-buttons">
+						        <input type="button" ng-click="settings.cancelChange(passwordForm)" value="Cancel" class="settings-editing-button"/>
+
+						        <button type="submit" class="settings-editing-button" ng-disabled="passwordForm.$invalid || passwordForm.password.$pristine">Save</button>
+					        </div>
+					    </form>
+
+
+					</div>
+				</div>
+
+
+
+
+			</div>
+
+		</div>
+	
+	</div>
+
+	</div>
+
+</div>

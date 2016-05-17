@@ -9,29 +9,36 @@ angular.module('trcApp')
 
   	//sets class on branding element to adjust styling depnding on current view
   	//probably want to move this to a servce or directive or something
+  	$scope.setViewAs = false;
   	$scope.locationClass = function (){
   		var locationString = $location.path();
   		if (locationString === '/'){
-  			return 'home';
+  			$scope.setViewAs = 'home';
+  		}
+  		else if (locationString === '/sign-in'){
+  			$scope.setViewAs = 'signIn';
   		}
   		else{
-  			return 'page';
+  			$scope.setViewAs = false;
   		}
   	};
-
+  	$scope.$on('$routeChangeSuccess', function () {
+	  	$scope.locationClass();
+  	});
+  	
   	//defines content of dropdown on hamburger
     $scope.otherStuff = [
       {
       	'text': 'Help',
-      	'link': '/help'
+      	'link': 'help'
       },
       {
       	'text': 'Settings',
-      	'link': '/settings'
+      	'link': 'settings'
       },
       {
       	'text': 'Sign out',
-      	'link': '/sign-out'
+      	'link': 'sign-in'
       }
     ];
 

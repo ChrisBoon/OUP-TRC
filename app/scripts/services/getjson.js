@@ -14,6 +14,16 @@ angular.module('trcApp')
        });
       },
       
+      JSONbyPath: function() {
+        var thePath = $location.path().split(/[\s/]+/).pop();
+          return $http.get('json/'+thePath+'.json')
+          .then(
+            function(result) {
+             return result.data;
+            }
+          );
+      },
+      
       headerStuff: function() {
         var thePath = $location.path().split(/[\s/]+/).pop();
         if ( thePath ===' '){

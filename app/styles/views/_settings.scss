@@ -1,0 +1,183 @@
+.view-settings{
+	display: flex;
+	flex-direction: column;
+	.content-view-heading-main{
+		color: $c-trc-settings;
+	}
+}
+
+.settings-view-content{
+	flex: 1 0 auto;
+	background:$c-trc-bg;
+}
+
+.settings-section{
+	margin: $unit*2 0 $unit*4;
+	padding: 0 $unit*2;
+}
+
+.settings-section-content{
+	@include card($padding:0);
+}
+
+.settings-section-heading{
+	@include pageHeadingLight;
+	margin-bottom: 0.25em;
+	color: $c-trc-settings;
+}
+
+.settings-item{
+	&:not(:last-child){
+		border-bottom: 1px solid $c-line;
+	}
+	
+}
+
+.settings-item-static{
+	display: flex;
+	padding: $unit $unit*2;
+	align-items: center;
+    @include cardListHover;
+	&:focus{
+		outline-color: $c-trc-settings;
+	}
+	&:active{
+		outline: none;
+	}
+	@include media-xtraSmall{
+		flex-direction: column;
+		align-items: stretch;
+	}
+	@include ng-no-animate;
+}
+
+.settings-item-label-faux{
+	margin-right: $unit;
+	min-width: 8em;
+}
+.settings-item-current{
+	color: $c-light-text;
+	flex: 1 0 auto;
+}
+
+.settings-edit-button{
+	@include button-minimal;
+	color: $c-trc-settings;
+	text-transform: uppercase;
+	text-align: center;	
+	align-self: flex-end;
+	transition: all 0.2s;
+	.settings-item-static:hover &,
+	.settings-item-static:focus &{
+		background-color: mix($c-trc-settings,#000,80);
+		color: #fff;
+	}
+}
+
+.settings-item-change{
+	padding: $unit $unit*2;
+}
+.settings-form{
+	display: flex;
+	flex-direction: column;
+}
+
+.settings-form-group{
+	flex: 1 1 auto;
+}
+
+.settings-form-item{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	&:not(:last-child){
+		margin-bottom: $unit*1.5;
+	}
+}
+
+.settings-form-label{
+	display: block;
+	cursor: pointer;
+	padding: $unit/2 0;
+	order: -1;
+	font-weight: 600;
+}
+
+.settings-form-control-text{
+	@include input-text-line($color: $c-light-text, $focus: $c-trc-settings);
+
+	max-width: 30em;
+
+	&.ng-valid:not(.ng-pristine){
+		@include input-text-line--valid;
+	}
+
+	&.ng-invalid:not(.ng-pristine){
+		@include input-text-line--invalid;
+	}
+}
+
+
+.settings-helper{
+	@include helper-text;
+	&-error-on-blur{
+		@include helper-text-error-on-blur;
+		top: calc(100% + #{$unit});
+		left: 0;
+	}
+}
+
+.settings-validation-message{
+	background: $c-warning;
+	position: absolute;
+	border-radius: 2px;
+	padding: $unit/2 $unit;
+	color: #fff;
+	top: 100%;
+	right: 0;
+}
+.settings-form-buttons{
+	display: flex;
+	justify-content: flex-end;
+	padding: $unit 0;
+}
+
+//needs pulling out into a 'button' reset mixin and a 'settings' style mixin:
+.settings-editing-button{
+	@include real-button-override;
+	@include button-basic($c-trc-settings);
+
+	align-self: flex-end;
+	transition: all 0.2s;
+	&:disabled{
+		background-color: mix(rgba($c-trc-settings,0.4),#000,94);
+		pointer-events: none;
+	}
+	&:focus,
+	&:hover{
+		background-color: mix($c-trc-settings,#000,80);
+		color: #fff;
+		// outline: none;
+	}
+	&:focus:not(:active){
+		box-shadow: 0 2px 0 0 mix($c-trc-settings,#000,50);
+		transform: translate(0, -2px);
+		outline-color: $c-trc-settings;
+	}
+	~ .settings-editing-button{
+		margin-left: $unit;
+	}
+}
+
+.setting-change-confirmation{
+	margin: $unit*2 0 $unit*4;
+	padding: 0 $unit*2;
+	@include submission-message-success;	
+
+}
+.setting-change-error{
+	margin: $unit*2 0 $unit*4;
+	padding: 0 $unit*2;
+	@include submission-message-error;	
+
+}

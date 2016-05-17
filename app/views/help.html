@@ -1,0 +1,43 @@
+<div class="view view-help">
+	<header class="content-view-header">
+
+		<div class="container">
+			<div class="view-icon-holder">
+				<img src="images/icon-help.svg" alt="">
+			</div>
+			<div class="content-view-header-text">
+				<h1 class="content-view-heading-main">
+					Help
+				</h1>
+				<p class="content-view-page-desc">Here are answers to the most common questions people have about the Teacher's Resource Center. If you have a problem or question that isn't covered below, please email us at <a class="link-external" href="mailto:ELTsupport@oup.com?subject= OPD TRC query">ELTsupport@oup.com</a>.</p>
+			</div>
+		</div>
+
+	</header>
+
+	<div class="help-view-content">
+		<div class="container">
+		<div class="help-section">
+			<h2 class="help-section-heading">Frequently asked questions</h2>
+			<v-accordion class="help-accordion">
+			<div ng-repeat="pane in help.json.faq" class="help-item">
+				<v-pane ng-if="pane.question" expanded="pane.isExpanded">
+				    <v-pane-header class="help-question">
+				      {{ ::pane.question }}
+				    </v-pane-header>
+
+				    <v-pane-content class="help-answer">
+						<div ng-bind-html="pane.answer"></div>
+
+				    </v-pane-content>
+				</v-pane>
+				<div ng-if="pane.statement" ng-bind-html="pane.statement" class="help-statement">
+					
+				</div>
+			</div>
+
+			</v-accordion>
+			</div>
+		</div>
+	</div>
+</div>

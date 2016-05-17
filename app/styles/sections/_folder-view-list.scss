@@ -8,7 +8,8 @@
 		//eg. we're currently including one fixed position image, but another course may choose to use a repeat pattern.
 		background-repeat: no-repeat;
 		background-position: 100% 100%;
-		background-size: auto 100%;
+		background-size: auto 80vh;
+		background-attachment: fixed;
 		@include media-small{
 			background-image: none !important;
 		}

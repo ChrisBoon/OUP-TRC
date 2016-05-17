@@ -23,6 +23,10 @@
 	}
 }
 
+@mixin labelUIText {
+	font-weight: 600;
+}
+
 @mixin footerText{
 	font-size: 0.8em;
 	color: $c-light-text;
@@ -34,6 +38,12 @@
 @mixin smallUiText{
 	//only to be used on nonessesntial UI elements.
 	font-size:0.8em;
+}
+
+@mixin intro-line{
+	font-size: 1.4em;
+	line-height: 1.3;
+	margin-bottom: 0.5em;
 }
 
 html{
@@ -49,9 +59,7 @@ html{
 }
 
 .intro-line{
-	font-size: 1.4em;
-	line-height: 1.3;
-	margin-bottom: 0.5em;
+	@include intro-line;
 }
 
 .paragraph{

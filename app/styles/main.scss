@@ -17,6 +17,7 @@
 @import "components/_buttons";
 @import "components/_dropdowns";
 @import "components/_modal";
+@import "components/_forms";
 
 @import "libs/_bootstrap";
 
@@ -32,3 +33,6 @@
 @import "views/folder-view";
 @import "views/files-view";
 @import "views/search-view";
+@import "views/_settings";
+@import "views/_help";
+@import "views/_signIn";

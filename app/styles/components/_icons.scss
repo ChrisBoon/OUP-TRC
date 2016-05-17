@@ -52,3 +52,30 @@
 		}
 	}
 }
+
+@mixin valid-check($size: 1em){
+	content: "";
+	background:url('../images/icon-check-tick.svg') no-repeat center;
+	width: $size;
+	height: $size;
+	background-size: $size*0.8;
+	vertical-align: middle;
+}
+
+
+@mixin valid-cross($size: 1em){
+	content: "";
+	background:url('../images/icon-close-x.svg') no-repeat center;
+	width: $size;
+	height: $size;
+	background-size: $size*0.8;
+	vertical-align: middle;
+}
+@mixin valid-warn($size: 1em){
+	content: "";
+	background:url('../images/icon-warning.svg') no-repeat center;
+	width: $size;
+	height: $size;
+	background-size: $size*0.8;
+	vertical-align: middle;
+}

@@ -1,0 +1,91 @@
+.view-help{
+	display: flex;
+	flex-direction: column;
+	.content-view-heading-main{
+		color: $c-trc-help;
+	}
+}
+
+.help-view-content{
+	flex: 1 0 auto;
+	background:$c-trc-bg;
+}
+
+.help-section{
+	margin: $unit*2 0 $unit*4;
+	padding: 0 $unit*2;
+}
+
+.help-section-heading{
+	@include pageHeadingLight;
+	margin-bottom: 0.25em;
+	color: $c-trc-help;
+}
+
+.help-accordion{
+	@include card($padding:0);
+}
+.help-item{
+	&:not(:last-child){
+		border-bottom: 1px solid $c-line;
+	}
+}
+.help-question{
+	@include cardListHover;
+	padding: $unit*2;
+	.is-expanded &{
+		color: $c-trc-help;
+		&:hover{
+			background-color: transparent;
+		}
+	}
+}
+
+.help-answer{
+
+	&>div{
+		padding: 0 $unit*2 $unit*2;
+		@include textExplain;
+	}
+	ul{
+		margin-left: 1.5em;
+	}
+	p~p,
+	ul~p{
+		margin-top: 1em;
+	}
+	p~ul{
+		margin-top: 0.5em;
+	}
+	li{
+		margin-bottom: 0.5em;
+		&:before{
+			content: "";
+			display: inline-block;
+			width: 6px;
+			height: 6px;
+			margin-right: 0.5em;
+			margin-left: -1em;
+			background:#777;
+			transform: translateY(-0.2em);
+			border-radius: 50%;
+		}
+		>ul{
+			margin-top: 0.25em;
+		}
+	}
+}
+.help-statement{
+	padding: $unit*2;
+	@include textExplain;
+}
+
+.inline-icon-hamburger{
+	&:before{
+		display: inline-block;
+		content: "";
+		width: 1em;
+		height: 1em;
+		background:url('../images/icon-hamburger-inline.svg') left top no-repeat;
+	}
+}
