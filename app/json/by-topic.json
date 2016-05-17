@@ -9,14 +9,14 @@
 	"folderList" : [
 		{
 			"icon" : "images/opd_icon_topic_1.svg",
-			"color1" : "#009966",
+			"color1" : "#008f68",
 			"title" : "Everyday Language",
 			"link" : "browse/by-topic-unit-01"
 
 		},
 		{
 			"icon" : "images/opd_icon_topic_2.svg",
-			"color1" : "#6ec166",
+			"color1" : "#4ab965",
 			"title" : "People",
 			"link" : "browse/by-topic-unit-02"
 
@@ -51,7 +51,7 @@
 		},
 		{
 			"icon" : "images/opd_icon_topic_7.svg",
-			"color1" : "#5c3894",
+			"color1" : "#573c92",
 			"title" : "Community",
 			"link" : "browse/by-topic-unit-07"
 
@@ -65,14 +65,14 @@
 		},
 		{
 			"icon" : "images/opd_icon_topic_9.svg",
-			"color1" : "#cc3466",
+			"color1" : "#cc3366",
 			"title" : "Job Search",
 			"link" : "browse/by-topic-unit-09"
 
 		},
 		{
 			"icon" : "images/opd_icon_topic_10.svg",
-			"color1" : "#ff3333",
+			"color1" : "#e83b3b",
 			"title" : "The Workplace",
 			"link" : "browse/by-topic-unit-10"
 
@@ -86,7 +86,7 @@
 		},
 		{
 			"icon" : "images/opd_icon_topic_12.svg",
-			"color1" : "#ffb933",
+			"color1" : "#ffc233",
 			"title" : "Recreation",
 			"link" : "browse/by-topic-unit-12"
 

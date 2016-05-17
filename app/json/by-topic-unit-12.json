@@ -3,7 +3,7 @@
 	"title" : "Recreation",
 	"icon" : "images/opd_icon_topic_12.svg",
 	"bgImage" : "images/opd-unit-bg-12.svg",
-	"color2" : "#ffb933",
+	"color2" : "#ffc233",
 	"description" : "Some helpful, friendly text could go here. Just a sentence or two. Maybe it metions something which topics are particularly interesting, or it could point out if there’s a new one added for the third edition.",
 	"parentURL" : "browse/by-topic",
 	"folderList" : [

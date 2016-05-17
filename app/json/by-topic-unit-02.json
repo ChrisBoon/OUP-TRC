@@ -3,7 +3,7 @@
 	"title" : "People",
 	"icon" : "images/opd_icon_topic_2.svg",
 	"bgImage" : "images/opd-unit-bg-02.svg",
-	"color2" : "#6ec166",
+	"color2" : "#4ab965",
 	"description" : "Some helpful, friendly text could go here. Just a sentence or two. Maybe it metions something which topics are particularly interesting, or it could point out if there’s a new one added for the third edition.",
 	"parentURL" : "browse/by-topic",
 	"folderList" : [

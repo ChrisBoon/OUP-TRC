@@ -42,7 +42,7 @@
 			"unitName" : "Everyday Language",
 			"showFilter" : ["Everyday Language", "All Units"],
 			"icon" : "images/opd_icon_topic_1.svg",
-			"color" : "#009966",
+			"color" : "#008f68",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "38MB"
@@ -82,7 +82,7 @@
 			"unitName" : "People",
 			"showFilter" : ["People", "All Units"],
 			"icon" : "images/opd_icon_topic_2.svg",
-			"color" : "#6ec166",
+			"color" : "#4ab965",
 			"fileList" : [
 				{
 					"name" : "Phoning it in",
@@ -206,7 +206,7 @@
 			"unitName" : "Community",
 			"showFilter" : ["Community", "All Units"],
 			"icon" : "images/opd_icon_topic_7.svg",
-			"color" : "#5c3894",
+			"color" : "#573c92",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "26MB"
@@ -266,7 +266,7 @@
 			"unitName" : "Job Search",
 			"showFilter" : ["Job Search", "All Units"],
 			"icon" : "images/opd_icon_topic_9.svg",
-			"color" : "#cc3466",
+			"color" : "#cc3366",
 			"downloadAll" : {
 				"link" : "",
 				"size" : "26MB"
@@ -296,7 +296,7 @@
 			"unitName" : "The Workplace",
 			"showFilter" : ["The Workplace", "All Units"],
 			"icon" : "images/opd_icon_topic_10.svg",
-			"color" : "#ff3333",
+			"color" : "#e83b3b",
 			"fileList" : [
 				{
 					"name" : "Forty percent off",
@@ -330,7 +330,7 @@
 			"unitName" : "Recreation",
 			"showFilter" : ["Recreation", "All Units"],
 			"icon" : "images/opd_icon_topic_12.svg",
-			"color" : "#ffb933",
+			"color" : "#ffc233",
 			"fileList" : [
 				{
 					"name" : "Weekend warrior",
